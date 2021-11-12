@@ -3,6 +3,15 @@
     text-transform: uppercase;
     white-space: nowrap;
     cursor: pointer;
+}
 
-
+.button-primary {
+    transition: all 0.25s ease 0s;
+    letter-spacing: 1px;
+    font-weight: 500;
+    background: $color-secondary;
+    color: $color-primary;
+    text-align: center;
+    min-width: 234px;
+    padding: 12px 10px;
 }

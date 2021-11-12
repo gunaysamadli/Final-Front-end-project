@@ -5930,6 +5930,16 @@ a {
   white-space: nowrap;
   cursor: pointer; }
 
+.button-primary {
+  transition: all 0.25s ease 0s;
+  letter-spacing: 1px;
+  font-weight: 500;
+  background: white;
+  color: black;
+  text-align: center;
+  min-width: 234px;
+  padding: 12px 10px; }
+
 header {
   position: sticky;
   top: 0px;
@@ -5945,8 +5955,8 @@ header {
     transition: height 0.4s ease 0s; }
     header nav .nav-items {
       display: flex;
-      align-items: center;
-      justify-content: space-between; }
+      justify-content: space-between;
+      align-items: center; }
       header nav .nav-items li {
         padding: 1rem 2rem; }
         header nav .nav-items li a {
@@ -5961,3 +5971,29 @@ header {
           header nav .nav-items li a:hover {
             color: #807c7c;
             outline: none; }
+          header nav .nav-items li a i {
+            font-size: 2rem; }
+
+main #info .info {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  main #info .info .info-img img {
+    width: 100%; }
+  main #info .info .info-text {
+    position: absolute; }
+    main #info .info .info-text p {
+      color: white;
+      font-size: 4rem;
+      line-height: 6rem;
+      margin-bottom: 3rem;
+      letter-spacing: 2px;
+      width: 30rem;
+      font-weight: 700; }
+    main #info .info .info-text a {
+      font-size: 1.6rem;
+      font-weight: 500; }
+      main #info .info .info-text a:hover {
+        color: white;
+        background-color: black; }

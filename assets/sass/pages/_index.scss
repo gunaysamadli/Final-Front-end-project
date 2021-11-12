@@ -1,0 +1,40 @@
+main {
+    #info {
+        .info {
+            position: relative;
+            @include flexbox(flex, center, center);
+
+            .info-img {
+                img {
+                    width: 100%;
+
+                }
+            }
+
+            .info-text {
+                position: absolute;
+
+                p {
+                    color: $color-secondary;
+                    font-size: 4rem;
+                    line-height: 6rem;
+                    margin-bottom: 3rem;
+                    letter-spacing: 2px;
+                    width: 30rem;
+                    font-weight: 700;
+                }
+
+                a {
+                    font-size: 1.6rem;
+                    font-weight: 500;
+
+                    &:hover {
+                        color: $color-secondary;
+                        background-color: $color-primary;
+                    }
+                }
+            }
+        }
+
+    }
+}
