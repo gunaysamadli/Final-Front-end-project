@@ -1,0 +1,42 @@
+header {
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+
+    nav {
+        border-bottom: 1px solid $color-secondary;
+        background-color: $color-secondary;
+        font-size: 12px;
+        font-weight: 300;
+        letter-spacing: 1px;
+        line-height: 1.5;
+        position: relative;
+        transition: height 0.4s ease 0s;
+
+        .nav-items {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            li {
+                padding: 1rem 2rem;
+
+                a {
+                    font-weight: 300;
+                    letter-spacing: 1px;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    transition: all 0.25s ease 0s;
+                    white-space: nowrap;
+                    line-height: 1.5;
+                    font-size: 1.2rem;
+
+                    &:hover {
+                        color: $color-primary-hover;
+                        outline: none;
+                    }
+                }
+            }
+        }
+    }
+}

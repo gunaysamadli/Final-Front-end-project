@@ -1,5 +1,5 @@
-@import "../vendors/bootstrap-5.1.0/scss/bootstrap-grid.scss";
-@import "../vendors/bootstrap-5.1.0/scss/bootstrap-utilities.scss";
+@import "../vendors/bootstrap-5.1.3/scss/bootstrap-grid.scss";
+@import "../vendors/bootstrap-5.1.3/scss/bootstrap-utilities.scss";
 
 @import "mixins";
 @import "variables";
@@ -12,3 +12,4 @@
 @import "components/button";
 
 @import "pages/index";
+@import "pages/header"
