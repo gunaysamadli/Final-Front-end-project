@@ -1,0 +1,33 @@
+.accordion {
+    margin: 30px auto;
+    &-item {
+        background-color: #fff;
+        color: #111;
+        margin: 1rem 0;
+        border-radius: $border-radius-base;
+        // border: solid 1px $color-gray-4;
+        &-header {
+            padding: 20px;
+            line-height: 1.25rem;
+            display: flex;
+            align-items: center;
+            position: relative;
+            cursor: pointer;
+
+            &.active {
+                & > img {
+                    transform: rotate(180deg);
+                }
+            }
+        }
+        &-body {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+            &-content {
+                padding: 20px;
+                line-height: 1.5rem;
+            }
+        }
+    }
+}
