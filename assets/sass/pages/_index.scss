@@ -245,4 +245,32 @@ main {
             }
         }
     }
+
+    #location {
+        .location-left {
+            background-color: $color-berj;
+            padding: 0;
+            @include flexbox(flex, center, center);
+
+            .location-info {
+                color: $color-primary;
+
+                h3 {
+                    font-weight: 500;
+                    margin-bottom: 20px;
+                    font-size: 4rem;
+                }
+
+                p {
+                    font-size: 1.6rem;
+                    font-weight: 300;
+                    margin-bottom: 30px;
+                }
+            }
+        }
+
+        img {
+            width: 100%;
+        }
+    }
 }

@@ -5949,6 +5949,22 @@ section {
     color: white;
     background-color: black; }
 
+.button-secondary {
+  transition: all 0.25s ease 0s;
+  letter-spacing: 1px;
+  font-weight: 500;
+  background: transparent;
+  border: 1px solid black;
+  color: black;
+  text-align: center;
+  min-width: 200px;
+  padding: 12px 10px;
+  font-size: 1.2rem;
+  font-weight: 500; }
+  .button-secondary:hover {
+    color: white;
+    background-color: black; }
+
 header {
   position: sticky;
   top: 0px;
@@ -6161,3 +6177,23 @@ main #new .new-items {
       main #new .new-items .slick-dots li.slick-active button {
         opacity: 1;
         border: none; }
+
+main #location .location-left {
+  background-color: #faf7f0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  main #location .location-left .location-info {
+    color: black; }
+    main #location .location-left .location-info h3 {
+      font-weight: 500;
+      margin-bottom: 20px;
+      font-size: 4rem; }
+    main #location .location-left .location-info p {
+      font-size: 1.6rem;
+      font-weight: 300;
+      margin-bottom: 30px; }
+
+main #location img {
+  width: 100%; }
