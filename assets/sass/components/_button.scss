@@ -9,9 +9,17 @@
     transition: all 0.25s ease 0s;
     letter-spacing: 1px;
     font-weight: 500;
-    background: $color-secondary;
-    color: $color-primary;
+    background: transparent;
+    border: 1px solid $color-secondary;
+    color: $color-secondary;
     text-align: center;
-    min-width: 234px;
+    min-width: 200px;
     padding: 12px 10px;
+    font-size: 1.2rem;
+    font-weight: 500;
+
+    &:hover {
+        color: $color-secondary;
+        background-color: $color-primary;
+    }
 }

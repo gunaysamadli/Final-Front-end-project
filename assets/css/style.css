@@ -5937,11 +5937,17 @@ section {
   transition: all 0.25s ease 0s;
   letter-spacing: 1px;
   font-weight: 500;
-  background: white;
-  color: black;
+  background: transparent;
+  border: 1px solid white;
+  color: white;
   text-align: center;
-  min-width: 234px;
-  padding: 12px 10px; }
+  min-width: 200px;
+  padding: 12px 10px;
+  font-size: 1.2rem;
+  font-weight: 500; }
+  .button-primary:hover {
+    color: white;
+    background-color: black; }
 
 header {
   position: sticky;
@@ -5994,12 +6000,6 @@ main #info .info {
       letter-spacing: 2px;
       width: 30rem;
       font-weight: 700; }
-    main #info .info .info-text a {
-      font-size: 1.6rem;
-      font-weight: 500; }
-      main #info .info .info-text a:hover {
-        color: white;
-        background-color: black; }
 
 main #category .category-info {
   display: flex;
@@ -6074,3 +6074,90 @@ main #company .company-item {
     font-size: 2rem;
     font-weight: 500;
     line-height: 1.1; }
+
+main #edit .edit-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 0; }
+  main #edit .edit-info h2 {
+    font-weight: 500;
+    line-height: 1.1;
+    font-size: 3.2rem; }
+  main #edit .edit-info a {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1.6rem;
+    text-decoration: underline;
+    color: #737373; }
+
+main #edit .edit-item img {
+  opacity: 1;
+  transition: opacity 200ms ease-out 0s;
+  width: 100%;
+  padding-right: 1.8rem;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center; }
+  main #edit .edit-item img:hover {
+    opacity: 0.7; }
+
+main #edit .edit-item p {
+  padding: 2rem 0;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.1; }
+
+main #edit .slick-next {
+  position: absolute;
+  top: 0;
+  right: 0; }
+
+main #new .new-items {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end; }
+  main #new .new-items .new-item {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    main #new .new-items .new-item img {
+      width: 100%; }
+    main #new .new-items .new-item .new-info {
+      position: absolute;
+      margin-left: 50%; }
+      main #new .new-items .new-item .new-info h4 {
+        font-size: 1.4rem;
+        color: white;
+        font-weight: 400;
+        margin-bottom: 15px;
+        letter-spacing: 1px;
+        line-height: 1.1; }
+      main #new .new-items .new-item .new-info p {
+        font-size: 3.2rem;
+        font-weight: 500;
+        color: white;
+        line-height: 40px;
+        margin-bottom: 30px; }
+  main #new .new-items .slick-dots {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding-bottom: 2rem; }
+    main #new .new-items .slick-dots li {
+      margin: 0 4px; }
+      main #new .new-items .slick-dots li button {
+        cursor: pointer;
+        height: 3px;
+        width: 35px;
+        overflow: hidden;
+        border-radius: 2px;
+        font-size: 0px;
+        border: none;
+        opacity: 0.75; }
+      main #new .new-items .slick-dots li.slick-active button {
+        opacity: 1;
+        border: none; }

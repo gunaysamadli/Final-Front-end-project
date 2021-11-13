@@ -24,15 +24,6 @@ main {
                     font-weight: 700;
                 }
 
-                a {
-                    font-size: 1.6rem;
-                    font-weight: 500;
-
-                    &:hover {
-                        color: $color-secondary;
-                        background-color: $color-primary;
-                    }
-                }
             }
         }
 
@@ -132,6 +123,125 @@ main {
                 font-size: 2rem;
                 font-weight: 500;
                 line-height: 1.1;
+            }
+        }
+    }
+
+    #edit {
+        .edit-info {
+            @include flexbox;
+            padding: 3rem 0;
+
+            h2 {
+                font-weight: 500;
+                line-height: 1.1;
+                font-size: 3.2rem;
+            }
+
+            a {
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                font-size: 1.6rem;
+                text-decoration: underline;
+                color: $color-gray;
+            }
+        }
+
+        .edit-item {
+            img {
+                opacity: 1;
+                transition: opacity 200ms ease-out 0s;
+                width: 100%;
+                padding-right: 1.8rem;
+                height: 100%;
+                object-fit: cover;
+                object-position: center center;
+
+                &:hover {
+                    opacity: 0.7;
+                }
+            }
+
+            p {
+                padding: 2rem 0;
+                font-size: 2rem;
+                font-weight: 500;
+                line-height: 1.1;
+            }
+        }
+
+        .slick-next {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    }
+
+    #new {
+        .new-items {
+            @include flexbox(flex, center, flex-end);
+
+            .new-item {
+                position: relative;
+                @include flexbox(flex, center, center);
+
+                img {
+                    width: 100%;
+                }
+
+                .new-info {
+                    position: absolute;
+                    margin-left: 50%;
+
+                    h4 {
+                        font-size: 1.4rem;
+                        color: $color-secondary;
+                        font-weight: 400;
+                        margin-bottom: 15px;
+                        letter-spacing: 1px;
+                        line-height: 1.1;
+                    }
+
+                    p {
+                        font-size: 3.2rem;
+                        font-weight: 500;
+                        color: rgb(255, 255, 255);
+                        line-height: 40px;
+                        margin-bottom: 30px;
+                    }
+                }
+            }
+
+            .slick-dots {
+                position: absolute;
+                display: flex;
+                justify-content: center;
+                list-style: none;
+                margin: 0;
+                padding-bottom: 2rem;
+
+                li {
+                    margin: 0 4px;
+
+                    button {
+                        cursor: pointer;
+                        height: 3px;
+                        width: 35px;
+                        overflow: hidden;
+                        border-radius: 2px;
+                        font-size: 0px;
+                        border: none;
+                        opacity: 0.75;
+                    }
+
+                    &.slick-active {
+                        button {
+                            opacity: 1;
+                            border: none;
+
+                        }
+                    }
+                }
             }
         }
     }
