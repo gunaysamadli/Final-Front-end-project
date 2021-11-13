@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="icon" type="image/png" href="https://static.mejuri.com/front-assets/production/images/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
         integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -75,6 +76,7 @@
         </nav>
     </header>
     <main>
+        <!--Info-->
         <section id="info">
             <div class="container-fluid">
                 <div class="row">
@@ -92,7 +94,108 @@
                 </div>
             </div>
         </section>
+        <!--Category-->
+        <section id="category">
+            <div class="container">
+                <div class="row">
+                    <div class="category-info">
+                        <h2>Shop By Category</h2>
+                        <a href="">Shop All</a>
+                    </div>
+                    <div class="category-item slider">
+                        <div class="col-md-4">
+                            <a href="">
+                                <img src="./assets/images/earing.jfif" alt="">
+                                <a href="">
+                                    <p>EARRINGS</p>
+                                </a>
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="">
+                                <img src="./assets/images/necklas.jfif" alt="">
+                            </a>
+                            <a href="">
+                                <p>NECKLACES</p>
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="">
+                                <img src="./assets/images/rings.jfif" alt="">
+                            </a>
+                            <a href="">
+                                <p>RINGS</p>
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="">
+                                <img src="./assets/images/bracelets.jfif" alt="">
+                            </a>
+                            <a href="">
+                                <p>BRACELETS</p>
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="">
+                                <img src="./assets/images/bestSteller.jfif" alt="">
+                            </a>
+                            <a href="">
+                                <p>BEST SELLERS</p>
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="">
+                                <img src="./assets/images/wedding.jfif" alt="">
+                            </a>
+                            <a href="">
+                                <p>WEDDING</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- <script src="./assets/js/main.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script type="text/javascript">
+    $('.slider').slick({
+        dots: false,
+        arrows: true,
+        infinite: false,
+        speed: 300,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    });
+</script>
 
 </html>
