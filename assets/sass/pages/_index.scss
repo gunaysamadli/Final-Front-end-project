@@ -88,4 +88,51 @@ main {
             right: 0;
         }
     }
+
+    #company {
+        .company-info {
+            @include flexbox;
+            padding: 3rem 0;
+
+            h2 {
+                font-weight: 500;
+                line-height: 1.1;
+                font-size: 3.2rem;
+            }
+
+            a {
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                font-size: 1.6rem;
+                text-decoration: underline;
+                color: $color-gray;
+            }
+
+        }
+
+        .company-item {
+            @include flexbox(flex, center, center);
+            padding: 1rem 0;
+
+            img {
+                opacity: 1;
+                transition: opacity 200ms ease-out 0s;
+                width: 100%;
+                padding-right: 1.8rem;
+                object-fit: cover;
+                object-position: center center;
+
+                &:hover {
+                    opacity: 0.7;
+                }
+            }
+
+            h3 {
+                padding: 2rem 0;
+                font-size: 2rem;
+                font-weight: 500;
+                line-height: 1.1;
+            }
+        }
+    }
 }

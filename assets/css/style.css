@@ -5901,6 +5901,9 @@ a {
   text-decoration: none;
   color: black; }
 
+section {
+  padding-bottom: 3rem; }
+
 .accordion {
   margin: 30px auto; }
   .accordion-item {
@@ -6035,3 +6038,39 @@ main #category .slick-next {
   position: absolute;
   top: 0;
   right: 0; }
+
+main #company .company-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 0; }
+  main #company .company-info h2 {
+    font-weight: 500;
+    line-height: 1.1;
+    font-size: 3.2rem; }
+  main #company .company-info a {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1.6rem;
+    text-decoration: underline;
+    color: #737373; }
+
+main #company .company-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0; }
+  main #company .company-item img {
+    opacity: 1;
+    transition: opacity 200ms ease-out 0s;
+    width: 100%;
+    padding-right: 1.8rem;
+    object-fit: cover;
+    object-position: center center; }
+    main #company .company-item img:hover {
+      opacity: 0.7; }
+  main #company .company-item h3 {
+    padding: 2rem 0;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.1; }
