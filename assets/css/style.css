@@ -6173,6 +6173,7 @@ main #new .new-items {
         border-radius: 2px;
         font-size: 0px;
         border: none;
+        outline: none;
         opacity: 0.75; }
       main #new .new-items .slick-dots li.slick-active button {
         opacity: 1;
@@ -6197,3 +6198,39 @@ main #location .location-left {
 
 main #location img {
   width: 100%; }
+
+main #brand {
+  padding: 10rem 0; }
+  main #brand .brand-items {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  main #brand .brand-item .tab-brand img {
+    margin-right: 1.4rem;
+    border-radius: 0;
+    opacity: 0.3; }
+  main #brand .brand-item .tab-brand.active {
+    background-color: transparent;
+    opacity: 1; }
+  main #brand .container.brands {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 4rem; }
+    main #brand .container.brands .row {
+      text-align: center; }
+      main #brand .container.brands .row .content-brands {
+        position: relative; }
+        main #brand .container.brands .row .content-brands .content-brand {
+          display: none;
+          position: relative;
+          width: 100%; }
+          main #brand .container.brands .row .content-brands .content-brand .text-brand {
+            margin-bottom: 16px;
+            color: #0f0d1e;
+            font-size: 24px;
+            line-height: 170%;
+            font-weight: 300;
+            text-align: center; }
+        main #brand .container.brands .row .content-brands .content-brand.active {
+          display: block; }

@@ -39,3 +39,28 @@ $('.single-items').slick({
     infinite: false,
 });
 
+// barnd filter
+
+const tabBrands = Array.from(document.querySelectorAll(" .tab-brand"));
+const tabContents = Array.from(document.querySelectorAll(".content-brands .content-brand"));
+
+const clearActives = function () {
+    tabBrands.forEach(tabBrand => {
+        tabBrand.classList.remove("active");
+    });
+    tabContents.forEach(tabContent => {
+        tabContent.classList.remove("active");
+    });
+}
+
+
+
+tabBrands.forEach(tabBrand => {
+    tabBrand.onclick = function () {
+        clearActives();
+        const targetId = tabBrand.getAttribute("data-target");
+        const targetContent = document.getElementById(targetId);
+        tabBrand.classList.add("active");
+        targetContent.classList.add("active")
+    }
+})

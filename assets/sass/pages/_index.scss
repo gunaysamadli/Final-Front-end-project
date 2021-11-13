@@ -231,6 +231,7 @@ main {
                         border-radius: 2px;
                         font-size: 0px;
                         border: none;
+                        outline: none;
                         opacity: 0.75;
                     }
 
@@ -271,6 +272,63 @@ main {
 
         img {
             width: 100%;
+        }
+    }
+
+    #brand {
+        padding: 10rem 0;
+
+        .brand-items {
+            @include flexbox(flex, center, center);
+        }
+
+        .brand-item {
+            .tab-brand {
+
+                img {
+                    margin-right: 1.4rem;
+                    border-radius: 0;
+                    opacity: 0.3;
+                }
+
+            }
+
+            .tab-brand.active {
+                background-color: transparent;
+                opacity: 1;
+            }
+        }
+
+        .container.brands {
+            @include flexbox(flex, center, center);
+            padding-bottom: 4rem;
+
+            .row {
+                text-align: center;
+
+                .content-brands {
+                    position: relative;
+
+                    .content-brand {
+                        display: none;
+                        position: relative;
+                        width: 100%;
+
+                        .text-brand {
+                            margin-bottom: 16px;
+                            color: #0f0d1e;
+                            font-size: 24px;
+                            line-height: 170%;
+                            font-weight: 300;
+                            text-align: center;
+                        }
+                    }
+
+                    .content-brand.active {
+                        display: block;
+                    }
+                }
+            }
         }
     }
 }
