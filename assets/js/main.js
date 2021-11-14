@@ -1,4 +1,4 @@
-
+//Slider
 $('.slider').slick({
     dots: false,
     arrows: true,
@@ -64,3 +64,39 @@ tabBrands.forEach(tabBrand => {
         targetContent.classList.add("active")
     }
 })
+
+
+//Sidebar
+
+
+let opens = document.querySelector("header .openMenu");
+opens.addEventListener("click", function (e) {
+    e.preventDefault();
+    let customResponsiveNav = document.querySelector(".custom-responsive-nav");
+    let navbar = document.querySelector("header .custom-nav");
+    if (customResponsiveNav.style.left == null || customResponsiveNav.style.height == "" || customResponsiveNav.style.height == "0px") {
+        customResponsiveNav.style.height = "100%";
+        customResponsiveNav.style.left = "0";
+        navbar.style.display = "none";
+    }
+
+
+});
+let element = document.getElementById(".close-btn");
+element.addEventListener("click", function (e) {
+    e.preventDefault();
+    let customResponsiveNav = document.querySelector(".custom-responsive-nav");
+    let navbar = document.querySelector("header .custom-nav");
+    if (customResponsiveNav.style.height == "100%") {
+        customResponsiveNav.style.height = "0";
+        navbar.style.display = "block";
+
+    }
+
+});
+
+// $(document).ready(function () {
+//     $('.openMenu').click(function () {
+//         $(".navbar").addClass('active')
+//     })
+// })

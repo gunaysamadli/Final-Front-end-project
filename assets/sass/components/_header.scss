@@ -3,6 +3,7 @@ header {
     top: 0px;
     z-index: 2;
 
+
     nav {
         border-bottom: 1px solid $color-secondary;
         background-color: $color-secondary;
@@ -37,6 +38,119 @@ header {
                     i {
                         font-size: 2rem;
                     }
+                }
+            }
+        }
+
+
+    }
+
+    .openMenu {
+        display: none;
+        padding-left: 16px;
+        font-size: 2.4rem;
+        cursor: pointer;
+    }
+
+    .custom-responsive-nav {
+        position: fixed;
+        height: 0;
+        top: 0;
+        left: -100%;
+        overflow-y: auto;
+        transition-property: left;
+        transform: translateX(0 px);
+        transition: transform 0.25s ease 0s;
+        z-index: 9999;
+
+    }
+
+    .custom-responsive-nav.active {
+        left: 0;
+        width: 100%;
+
+    }
+
+
+
+}
+
+
+@media only screen and (max-width:992px) {
+    header {
+        .navbar {
+            // background: black;
+            // bottom: 0px;
+            // display: block;
+            // height: 100%;
+            // left: 0px;
+            // opacity: 0.5;
+            // position: fixed;
+            // top: 0px;
+            // visibility: visible;
+            // width: 100%;
+            // z-index: 9999;
+
+            .nav-item {
+                display: none;
+            }
+
+            // .custom-nav {
+            //     display: none;
+            // }
+        }
+
+        .openMenu {
+            display: block;
+            padding-left: 16px;
+            font-size: 2.4rem;
+            cursor: pointer;
+        }
+
+        .custom-responsive-nav {
+            background-color: $color-secondary;
+            max-width: 40rem;
+            display: flex;
+            flex-direction: column;
+            position: fixed;
+            z-index: 9999;
+
+            .close-btn {
+                font-size: 2.4rem;
+                padding-right: 1rem;
+                cursor: pointer;
+            }
+
+            .nav-item-logo {
+                @include flexbox;
+                border-bottom: 1px solid rgb(218, 218, 218);
+
+            }
+
+
+            .nav-items {
+                @include flexbox(flex, center, flex-start);
+                text-align: left;
+                flex-direction: column;
+                font-weight: 500;
+                letter-spacing: 1px;
+                margin: 0px 25px;
+                text-transform: uppercase;
+                padding: 0px;
+
+                .nav-item {
+                    background: $color-secondary;
+                    width: 100%;
+                    display: flex;
+                    border-bottom: 1px solid rgb(218, 218, 218);
+                    font-size: 14px;
+                    font-weight: 500;
+                    justify-content: space-between;
+                    line-height: 14px;
+                    padding: 25px 0px;
+                    position: sticky;
+                    top: 0px;
+                    z-index: 1;
                 }
             }
         }

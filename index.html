@@ -18,14 +18,21 @@
     <!--Navbar-->
     <header id="header">
         <nav>
-            <div class="container-fluid">
+            <div class="container-fluid navbar">
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="custom-nav">
                             <ul class="nav-items">
-                                <li><a href="">Shop</a></li>
-                                <li><a href="">Company</a></li>
-                                <li><a href="">Our Commitment</a></li>
+                                <li>
+                                    <a href="">
+                                        <div class="openMenu">
+                                            <i class="fas fa-bars"></i>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="nav-item"><a href="">Shop</a></li>
+                                <li class="nav-item"><a href="">Company</a></li>
+                                <li class="nav-item"><a href="">Our Commitment</a></li>
                                 <li>
                                     <a href="">
                                         <svg class="styled__MejuriLogo-sc-16722op-0 kiWGXF"
@@ -53,11 +60,15 @@
                                                 d="M213.194 34.713c98.705 0 179 81.461 179 181.575 0 100.113-80.295 181.574-179 181.574-98.681 0-178.977-81.46-178.977-181.574 0-100.114 80.296-181.575 178.977-181.575m0 397.863c54.497 0 104.111-21.013 141.864-55.264L487.797 512 512 487.446l-133.241-135.15c29.746-37.19 47.653-84.493 47.653-136.008C426.412 97.036 330.74 0 213.194 0 95.648 0 0 97.036 0 216.288c0 119.275 95.648 216.288 213.194 216.288"
                                                 fill-rule="evenodd"></path>
                                         </svg>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="">
                                         Search
                                     </a>
                                 </li>
-                                <li><a href=""><i class="far fa-heart"></i></a></li>
-                                <li><a href="">Sign In</a></li>
+                                <li class="nav-item"><a href=""><i class="far fa-heart"></i></a></li>
+                                <li class="nav-item"><a href="">Sign In</a></li>
                                 <li>
                                     <a href="">
                                         <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg"
@@ -72,6 +83,44 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="custom-responsive-nav">
+                <nav id="navbar-responsive">
+                    <div class="container-fluid">
+                        <div class="nav-item-logo">
+                            <h2>
+                                <a href="">
+                                    <svg style="font-size: 2rem;" class="styled__MejuriLogo-sc-16722op-0 kiWGXF"
+                                        xmlns="http://www.w3.org/2000/svg" width="281.538" height="92.308"
+                                        viewBox="0 0 281.538 92.308">
+                                        <path
+                                            d="M109.446 33.947v-4.602H87.983l.003 32.588h21.46v-4.546H92.852V48.04h14.202v-4.391H92.852v-9.702zM246.995 29.068V62.46h4.871V29.068h.25-5.37z">
+                                        </path>
+                                        <g>
+                                            <path
+                                                d="M184.359 29.409H179.5v19.232c0 5.436-3.628 9.232-8.823 9.232-5.134 0-8.72-3.838-8.72-9.333V29.41h-4.858v19.488c0 7.741 5.837 13.578 13.578 13.578 7.799 0 13.681-5.837 13.681-13.578V29.409zM222.103 61.965h5.863l-7.702-12.982.271-.109c4.769-1.919 7.395-5.285 7.395-9.478 0-5.694-4.675-9.987-10.874-9.987h-13.268v32.556h4.756v-12.65h6.773l6.786 12.65zm-13.457-28.107h8.001c3.691 0 6.475 2.425 6.475 5.641 0 3.891-3.257 5.927-6.475 5.927h-8.001V33.858z">
+                                            </path>
+                                        </g>
+                                        <path
+                                            d="M64.477 50.775v4.135c0 7.261 2.267 11.021 7.345 12.166l1.154-1.733c-3.12-1.581-3.58-5.203-3.587-8.913l-.003-.094-.07-26.957H65.71L49.986 53.17 34.903 29.377h-4.284v32.615h4.687l-.036-22.495L48.987 59.75h1.733l13.763-20.249v11.281l-.006-.007zM121.541 58.306c1.119 1.332 3.897 4.042 7.963 4.042 6.231 0 10.257-4.309 10.257-10.977V29.347h-4.83v22.079c0 4.633-2.726 6.707-5.427 6.707-1.926 0-4.25-1.812-5.22-2.817l-.449.438L122 57.743l-.459.563z">
+                                        </path>
+                                    </svg>
+                                </a>
+                            </h2>
+                            <a class="">
+                                <i class="fas fa-times close-btn"></i>
+                            </a>
+                        </div>
+                        <ul class="nav-items">
+                            <li class="nav-item"><a href="">Shop</a></li>
+                            <li class="nav-item"><a href="">Company</a>
+                                <i class="fas fa-plus"></i>
+                            </li>
+                            <li class="nav-item"><a href="">Our Commitment</a></li>
+                            <li class="nav-item"><a href="">Sign In/Sign Up</a></li>
+                        </ul>
+                    </div>
+                </nav>
             </div>
         </nav>
     </header>
