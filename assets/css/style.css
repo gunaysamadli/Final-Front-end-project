@@ -5872,7 +5872,7 @@
   src: url(../fonts/HelveticaNeueBold.woff) format("woff"); }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-weight: 400;
   font-size: 1rem; }
 
@@ -6364,10 +6364,15 @@ main #brand {
     display: flex;
     justify-content: center;
     align-items: center; }
-  main #brand .brand-item .tab-brand img {
-    margin-right: 1.4rem;
-    border-radius: 0;
-    opacity: 0.3; }
+    @media screen and (max-width: 768px) {
+      main #brand .brand-items .brand-item:nth-last-child(-n+2) {
+        display: none; } }
+  main #brand .brand-item .tab-brand {
+    opacity: 0.3;
+    cursor: pointer; }
+    main #brand .brand-item .tab-brand img {
+      margin-right: 1.4rem;
+      border-radius: 0; }
   main #brand .brand-item .tab-brand.active {
     background-color: transparent;
     opacity: 1; }

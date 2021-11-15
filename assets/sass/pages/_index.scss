@@ -280,15 +280,22 @@ main {
 
         .brand-items {
             @include flexbox(flex, center, center);
+
+            @media screen and (max-width:768px) {
+                .brand-item:nth-last-child(-n+2) {
+                    display: none;
+                }
+            }
         }
 
         .brand-item {
             .tab-brand {
+                opacity: 0.3;
+                cursor: pointer;
 
                 img {
                     margin-right: 1.4rem;
                     border-radius: 0;
-                    opacity: 0.3;
                 }
 
             }
@@ -296,6 +303,7 @@ main {
             .tab-brand.active {
                 background-color: transparent;
                 opacity: 1;
+
             }
         }
 
