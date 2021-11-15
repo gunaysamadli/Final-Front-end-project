@@ -6315,6 +6315,9 @@ main #new .new-items {
         color: white;
         line-height: 40px;
         margin-bottom: 30px; }
+      @media screen and (max-width: 576px) {
+        main #new .new-items .new-item .new-info {
+          margin: 0; } }
   main #new .new-items .slick-dots {
     position: absolute;
     display: flex;
@@ -6337,6 +6340,9 @@ main #new .new-items {
       main #new .new-items .slick-dots li.slick-active button {
         opacity: 1;
         border: none; }
+    @media screen and (max-width: 420px) {
+      main #new .new-items .slick-dots {
+        padding-bottom: 0; } }
 
 main #location .location-left {
   background-color: #faf7f0;
