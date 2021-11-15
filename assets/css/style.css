@@ -6350,10 +6350,25 @@ main #location .location-left {
       font-weight: 500;
       margin-bottom: 20px;
       font-size: 4rem; }
+      @media screen and (max-width: 768px) {
+        main #location .location-left .location-info h3 {
+          font-size: 3rem; } }
     main #location .location-left .location-info p {
       font-size: 1.6rem;
       font-weight: 300;
       margin-bottom: 30px; }
+  @media screen and (max-width: 768px) {
+    main #location .location-left {
+      padding: 3rem 0; } }
+  @media screen and (max-width: 576px) {
+    main #location .location-left {
+      padding: 3rem; } }
+
+main #location .location-right {
+  padding: 0; }
+  @media screen and (max-width: 768px) {
+    main #location .location-right {
+      display: none; } }
 
 main #location img {
   width: 100%; }
@@ -6398,3 +6413,6 @@ main #brand {
             text-align: center; }
         main #brand .container.brands .row .content-brands .content-brand.active {
           display: block; }
+  @media screen and (max-width: 768px) {
+    main #brand {
+      padding: 5rem 0; } }

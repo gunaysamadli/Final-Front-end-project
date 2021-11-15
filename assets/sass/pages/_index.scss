@@ -260,6 +260,12 @@ main {
                     font-weight: 500;
                     margin-bottom: 20px;
                     font-size: 4rem;
+
+                    @media screen and (max-width:768px) {
+                        font-size: 3rem;
+
+
+                    }
                 }
 
                 p {
@@ -267,6 +273,23 @@ main {
                     font-weight: 300;
                     margin-bottom: 30px;
                 }
+            }
+
+            @media screen and (max-width:768px) {
+                padding: 3rem 0;
+            }
+
+            @media screen and (max-width:576px) {
+                padding: 3rem;
+            }
+        }
+
+        .location-right {
+            padding: 0;
+
+            @media screen and (max-width:768px) {
+                display: none;
+
             }
         }
 
@@ -337,6 +360,10 @@ main {
                     }
                 }
             }
+        }
+
+        @media screen and (max-width:768px) {
+            padding: 5rem 0;
         }
     }
 }
