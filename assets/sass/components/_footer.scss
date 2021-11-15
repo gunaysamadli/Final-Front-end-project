@@ -1,14 +1,20 @@
 footer {
     border-top: 1px solid rgb(218, 218, 218);
+    padding-top: 4rem;
+
 
     .footer-up {
-        padding: 4rem 0;
 
         .footer-right {
             margin: 0 auto;
             display: flex;
             justify-content: flex-end;
             margin-right: 0;
+
+            @media screen and (max-width:768px) {
+                display: block;
+                padding-top: 3rem;
+            }
         }
 
         .footer-item {
@@ -76,7 +82,24 @@ footer {
                     border-width: 1px;
                 }
             }
+
+            @media screen and (max-width:600px) {
+                display: block;
+                padding-left: 2rem;
+            }
         }
+
+        @media screen and (max-width:768px) {
+            padding-bottom: 3rem;
+        }
+
+        @media screen and (max-width:576px) {
+            .row>*:not(:last-child) {
+                width: 50%;
+                padding-left: 2rem;
+            }
+        }
+
     }
 
 
@@ -88,19 +111,30 @@ footer {
         .foot-right {
             display: flex;
             justify-content: flex-end;
-        }
 
-        .foot-item {
-            display: flex;
-
-            li {
-                margin-right: 24px;
-                font-size: 10px;
-
-                i {
-                    font-size: 2rem;
-                }
+            @media screen and (max-width:768px) {
+                @include flexbox(flex, center, center)
             }
         }
     }
+
+    .foot-item {
+        display: flex;
+
+        li {
+            margin-right: 24px;
+            font-size: 10px;
+
+            i {
+                font-size: 2rem;
+            }
+        }
+
+        @media screen and (max-width:768px) {
+            @include flexbox(flex, center, center);
+            padding-top: 2rem;
+        }
+    }
+
+
 }

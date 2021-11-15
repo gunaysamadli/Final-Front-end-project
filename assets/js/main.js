@@ -82,7 +82,7 @@ opens.addEventListener("click", function (e) {
 
 
 });
-let element = document.getElementById(".close-btn");
+let element = document.querySelector(".close-btn");
 element.addEventListener("click", function (e) {
     e.preventDefault();
     let customResponsiveNav = document.querySelector(".custom-responsive-nav");
