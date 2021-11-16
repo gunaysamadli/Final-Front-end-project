@@ -22,9 +22,18 @@ main {
                     letter-spacing: 2px;
                     width: 30rem;
                     font-weight: 700;
+
+                    @media screen and (max-width:576px) {
+                        margin-bottom: 1rem;
+                        font-weight: 600;
+                        line-height: 3rem;
+                        font-size: 2.5rem;
+
+                    }
                 }
 
             }
+
         }
 
     }
@@ -85,6 +94,10 @@ main {
             @include flexbox;
             padding: 3rem 0;
 
+            @media screen and (max-width:576px) {
+                padding: 0 0 !important;
+            }
+
             h2 {
                 font-weight: 500;
                 line-height: 1.1;
@@ -105,6 +118,10 @@ main {
             @include flexbox(flex, center, center);
             padding: 1rem 0;
 
+            @media screen and (max-width:320px) {
+                padding: 0;
+            }
+
             img {
                 opacity: 1;
                 transition: opacity 200ms ease-out 0s;
@@ -116,6 +133,10 @@ main {
                 &:hover {
                     opacity: 0.7;
                 }
+
+                @media screen and (max-width:768px) {
+                    padding: 0;
+                }
             }
 
             h3 {
@@ -123,6 +144,16 @@ main {
                 font-size: 2rem;
                 font-weight: 500;
                 line-height: 1.1;
+            }
+
+            @media screen and (max-width:768px) {
+                flex-wrap: wrap;
+            }
+        }
+
+        @media screen and (max-width:768px) {
+            .company-up .company-up-item:not(:first-child) {
+                display: none;
             }
         }
     }

@@ -5982,8 +5982,25 @@ header {
       display: flex;
       justify-content: space-between;
       align-items: center; }
+      @media screen and (max-width: 992px) {
+        header nav .nav-items .mejuri-li {
+          margin: 0 auto; } }
       header nav .nav-items li {
-        padding: 1rem 2rem; }
+        padding: 1rem 1.8rem; }
+        @media screen and (max-width: 576px) {
+          header nav .nav-items li .mejuri {
+            width: 20rem; } }
+        @media screen and (max-width: 450px) {
+          header nav .nav-items li .mejuri {
+            width: 10rem; } }
+        @media screen and (max-width: 992px) {
+          header nav .nav-items li .search {
+            width: 3rem;
+            height: 3rem; } }
+        @media screen and (max-width: 768px) {
+          header nav .nav-items li .search {
+            width: 2rem;
+            height: 2rem; } }
         header nav .nav-items li a {
           font-weight: 300;
           letter-spacing: 1px;
@@ -6175,6 +6192,12 @@ main #info .info {
       letter-spacing: 2px;
       width: 30rem;
       font-weight: 700; }
+      @media screen and (max-width: 576px) {
+        main #info .info .info-text p {
+          margin-bottom: 1rem;
+          font-weight: 600;
+          line-height: 3rem;
+          font-size: 2.5rem; } }
 
 main #category .category-info {
   display: flex;
@@ -6219,6 +6242,9 @@ main #company .company-info {
   justify-content: space-between;
   align-items: center;
   padding: 3rem 0; }
+  @media screen and (max-width: 576px) {
+    main #company .company-info {
+      padding: 0 0 !important; } }
   main #company .company-info h2 {
     font-weight: 500;
     line-height: 1.1;
@@ -6235,6 +6261,9 @@ main #company .company-item {
   justify-content: center;
   align-items: center;
   padding: 1rem 0; }
+  @media screen and (max-width: 320px) {
+    main #company .company-item {
+      padding: 0; } }
   main #company .company-item img {
     opacity: 1;
     transition: opacity 200ms ease-out 0s;
@@ -6244,11 +6273,21 @@ main #company .company-item {
     object-position: center center; }
     main #company .company-item img:hover {
       opacity: 0.7; }
+    @media screen and (max-width: 768px) {
+      main #company .company-item img {
+        padding: 0; } }
   main #company .company-item h3 {
     padding: 2rem 0;
     font-size: 2rem;
     font-weight: 500;
     line-height: 1.1; }
+  @media screen and (max-width: 768px) {
+    main #company .company-item {
+      flex-wrap: wrap; } }
+
+@media screen and (max-width: 768px) {
+  main #company .company-up .company-up-item:not(:first-child) {
+    display: none; } }
 
 main #edit .edit-info {
   display: flex;

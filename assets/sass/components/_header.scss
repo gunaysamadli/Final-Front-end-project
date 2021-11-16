@@ -17,8 +17,42 @@ header {
         .nav-items {
             @include flexbox;
 
+            .mejuri-li {
+                @media screen and (max-width:992px) {
+                    margin: 0 auto;
+                }
+            }
+
             li {
-                padding: 1rem 2rem;
+                padding: 1rem 1.8rem;
+
+
+
+                .mejuri {
+
+
+                    @media screen and (max-width:576px) {
+                        width: 20rem;
+                    }
+
+                    @media screen and (max-width:450px) {
+                        width: 10rem;
+                    }
+                }
+
+                .search {
+                    @media screen and (max-width:992px) {
+                        width: 3rem;
+                        height: 3rem;
+                    }
+
+                    @media screen and (max-width:768px) {
+                        width: 2rem;
+                        height: 2rem;
+                    }
+
+
+                }
 
                 a {
                     font-weight: 300;
@@ -39,6 +73,7 @@ header {
                         font-size: 2rem;
                     }
                 }
+
             }
         }
 
