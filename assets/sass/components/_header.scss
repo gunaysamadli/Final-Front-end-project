@@ -26,6 +26,10 @@ header {
             li {
                 padding: 1rem 1.8rem;
 
+                @media screen and (max-width:480px) {
+                    padding: 0.5rem;
+
+                }
 
 
                 .mejuri {

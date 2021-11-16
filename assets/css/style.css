@@ -5987,6 +5987,9 @@ header {
           margin: 0 auto; } }
       header nav .nav-items li {
         padding: 1rem 1.8rem; }
+        @media screen and (max-width: 480px) {
+          header nav .nav-items li {
+            padding: 0.5rem; } }
         @media screen and (max-width: 576px) {
           header nav .nav-items li .mejuri {
             width: 20rem; } }
@@ -6244,7 +6247,7 @@ main #company .company-info {
   padding: 3rem 0; }
   @media screen and (max-width: 576px) {
     main #company .company-info {
-      padding: 0 0 !important; } }
+      padding: 2rem; } }
   main #company .company-info h2 {
     font-weight: 500;
     line-height: 1.1;
@@ -6275,7 +6278,7 @@ main #company .company-item {
       opacity: 0.7; }
     @media screen and (max-width: 768px) {
       main #company .company-item img {
-        padding: 0; } }
+        padding-right: 0; } }
   main #company .company-item h3 {
     padding: 2rem 0;
     font-size: 2rem;
@@ -6284,6 +6287,10 @@ main #company .company-item {
   @media screen and (max-width: 768px) {
     main #company .company-item {
       flex-wrap: wrap; } }
+
+@media screen and (max-width: 576px) {
+  main #company .company-up {
+    padding: 0 2rem; } }
 
 @media screen and (max-width: 768px) {
   main #company .company-up .company-up-item:not(:first-child) {
@@ -6461,3 +6468,146 @@ main #brand {
   @media screen and (max-width: 768px) {
     main #brand {
       padding: 5rem 0; } }
+
+aside {
+  position: sticky;
+  float: left;
+  height: 1000px;
+  width: 20%;
+  padding-top: 4rem;
+  padding-left: 3rem; }
+  aside .sidebar .sidebar-item:not(:last-child) {
+    border-bottom: 1px solid #cacaca; }
+  aside .sidebar .sidebar-item {
+    padding-top: 1rem; }
+    aside .sidebar .sidebar-item li {
+      display: block;
+      margin-bottom: 8px;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      line-height: 18px;
+      font-weight: 300; }
+
+#shop-text .shop-texts {
+  display: flex;
+  justify-content: space-between; }
+  #shop-text .shop-texts h1 {
+    font-weight: 500;
+    line-height: 1.1;
+    font-size: 3.2rem; }
+  #shop-text .shop-texts .filters {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    #shop-text .shop-texts .filters .filter-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      min-width: 150px;
+      padding: 8px 0;
+      border-bottom: 1px solid #000000;
+      cursor: pointer;
+      font-size: 12px;
+      margin: 0 2rem; }
+      #shop-text .shop-texts .filters .filter-item h3 {
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 0.85px;
+        font-size: 12px; }
+
+#favory .favory-title {
+  display: inline-block;
+  background-color: #fff;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-family: "brandon_grotesquemedium", Arial, sans-serif;
+  letter-spacing: 1px;
+  z-index: 1;
+  font-weight: 500;
+  line-height: 1.1;
+  margin: 4rem 0; }
+  #favory .favory-title h2 {
+    padding: 0 30px 0 16px; }
+  #favory .favory-title::before {
+    content: '';
+    position: absolute;
+    left: 15px;
+    border-top: 1px solid #eaeaea;
+    width: calc(100% - 30px);
+    z-index: -1; }
+
+#favory .favory-item .card-image {
+  position: relative; }
+  #favory .favory-item .card-image img {
+    width: 100%;
+    transition: opacity 0.25s ease, filter 0.25s ease; }
+  #favory .favory-item .card-image .hover-contents {
+    transition: opacity 0.25s ease, filter 0.25s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0; }
+    #favory .favory-item .card-image .hover-contents .hover-btns {
+      position: absolute;
+      bottom: 16px;
+      right: 16px;
+      pointer-events: none;
+      font-size: 8px;
+      line-height: 10px;
+      padding: 10px 20px 8px;
+      text-transform: uppercase;
+      border-radius: 30px;
+      letter-spacing: 1px;
+      white-space: nowrap; }
+      #favory .favory-item .card-image .hover-contents .hover-btns .single-btn {
+        font-size: 2rem;
+        width: 46px;
+        height: 46px;
+        line-height: 29px;
+        background-color: white;
+        border-radius: 50%;
+        text-align: center;
+        display: block;
+        margin-bottom: 13px;
+        transition: .5s;
+        padding: 10px; }
+    #favory .favory-item .card-image .hover-contents:hover {
+      opacity: 1; }
+
+#favory .fav-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0; }
+  #favory .fav-info p {
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 1px;
+    line-height: 1;
+    color: #807c7c; }
+
+#favory .fav-color .color-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+  #favory .fav-color .color-item img {
+    width: 7%;
+    border-width: 1px;
+    border-color: #c1c1c1;
+    border-style: solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px 5px 0 0;
+    border-radius: 10px;
+    cursor: pointer; }
+    #favory .fav-color .color-item img:active {
+      border: 2px solid firebrick !important; }
+  #favory .fav-color .color-item p {
+    font-size: 12px;
+    margin-top: 5px;
+    line-height: 18px;
+    color: #807c7c; }

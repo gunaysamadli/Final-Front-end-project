@@ -95,8 +95,4 @@ element.addEventListener("click", function (e) {
 
 });
 
-// $(document).ready(function () {
-//     $('.openMenu').click(function () {
-//         $(".navbar").addClass('active')
-//     })
-// })
+
