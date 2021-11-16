@@ -1,0 +1,125 @@
+#detail-home {
+    .detail-right {
+        width: 65%;
+        float: right;
+
+        img {
+            width: 100%;
+            padding-bottom: 2rem;
+        }
+    }
+
+    .detail-left {
+        width: 35%;
+        float: left;
+        padding-top: 3rem;
+        display: flex;
+        justify-content: center;
+
+        h1 {
+            padding-left: 4px;
+            font-weight: 400;
+            margin: 0px 0px 0.25em;
+            letter-spacing: 0.01em;
+            font-size: 2.5rem;
+        }
+
+        .detail-wish {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            i {
+                font-size: 2rem;
+            }
+
+            .star {
+                display: flex;
+                margin: 8px 0px;
+                min-height: 18px;
+
+                p {
+                    font-size: 14px;
+                    margin: 0px 8px;
+
+                }
+
+                span {
+                    text-decoration: underline rgb(91, 91, 91);
+                    color: rgb(91, 91, 91);
+                    font-size: 14px;
+                    font-weight: 400;
+
+                }
+            }
+
+            .detail-color {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+
+                p {
+                    padding: 1rem 0;
+                    font-weight: 300;
+                    font-size: 14px;
+                    cursor: pointer;
+                    line-height: 1.5;
+                }
+
+                .color-item {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    img {
+                        display: inline-block;
+                        font-weight: 300;
+                        padding: 5px;
+                        cursor: pointer;
+                        border-radius: 50px;
+                        margin: 0px 3.5px;
+                        border-width: 1px;
+                        border-style: solid;
+                        border-image: initial;
+                        line-height: 1;
+                        border-color: rgb(173, 173, 173) !important;
+                        width: 8%;
+                    }
+
+                }
+            }
+
+            .stock {
+                background-color: rgb(250, 247, 240);
+                display: flex;
+                align-items: center;
+                width: 100%;
+                padding: 12px 20px;
+                margin: 2rem;
+
+                p {
+                    padding-left: 1rem;
+                    line-height: 18px;
+                    color: rgb(0, 0, 0);
+                    font-size: 13px;
+                    font-weight: 400;
+                }
+
+
+            }
+
+            .stock-btn {
+                width: 100%;
+                padding: 16px;
+                min-width: 64px;
+                background-color: $color-primary;
+                color: $color-secondary;
+
+                &:hover {
+                    background-color: #737373;
+                }
+            }
+        }
+    }
+}

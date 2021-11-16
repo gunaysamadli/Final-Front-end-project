@@ -5959,7 +5959,7 @@ section {
   text-align: center;
   min-width: 200px;
   padding: 12px 10px;
-  font-size: 1.2rem;
+  font-size: 2rem;
   font-weight: 500; }
   .button-secondary:hover {
     color: white;
@@ -6472,7 +6472,7 @@ main #brand {
 aside {
   position: sticky;
   float: left;
-  height: 1000px;
+  height: 2000px;
   width: 20%;
   padding-top: 4rem;
   padding-left: 3rem; }
@@ -6611,3 +6611,90 @@ aside {
     margin-top: 5px;
     line-height: 18px;
     color: #807c7c; }
+
+#detail-home .detail-right {
+  width: 65%;
+  float: right; }
+  #detail-home .detail-right img {
+    width: 100%;
+    padding-bottom: 2rem; }
+
+#detail-home .detail-left {
+  width: 35%;
+  float: left;
+  padding-top: 3rem;
+  display: flex;
+  justify-content: center; }
+  #detail-home .detail-left h1 {
+    padding-left: 4px;
+    font-weight: 400;
+    margin: 0px 0px 0.25em;
+    letter-spacing: 0.01em;
+    font-size: 2.5rem; }
+  #detail-home .detail-left .detail-wish {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    #detail-home .detail-left .detail-wish i {
+      font-size: 2rem; }
+    #detail-home .detail-left .detail-wish .star {
+      display: flex;
+      margin: 8px 0px;
+      min-height: 18px; }
+      #detail-home .detail-left .detail-wish .star p {
+        font-size: 14px;
+        margin: 0px 8px; }
+      #detail-home .detail-left .detail-wish .star span {
+        text-decoration: underline #5b5b5b;
+        color: #5b5b5b;
+        font-size: 14px;
+        font-weight: 400; }
+    #detail-home .detail-left .detail-wish .detail-color {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center; }
+      #detail-home .detail-left .detail-wish .detail-color p {
+        padding: 1rem 0;
+        font-weight: 300;
+        font-size: 14px;
+        cursor: pointer;
+        line-height: 1.5; }
+      #detail-home .detail-left .detail-wish .detail-color .color-item {
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        #detail-home .detail-left .detail-wish .detail-color .color-item img {
+          display: inline-block;
+          font-weight: 300;
+          padding: 5px;
+          cursor: pointer;
+          border-radius: 50px;
+          margin: 0px 3.5px;
+          border-width: 1px;
+          border-style: solid;
+          border-image: initial;
+          line-height: 1;
+          border-color: #adadad !important;
+          width: 8%; }
+    #detail-home .detail-left .detail-wish .stock {
+      background-color: #faf7f0;
+      display: flex;
+      align-items: center;
+      width: 100%;
+      padding: 12px 20px;
+      margin: 2rem; }
+      #detail-home .detail-left .detail-wish .stock p {
+        padding-left: 1rem;
+        line-height: 18px;
+        color: black;
+        font-size: 13px;
+        font-weight: 400; }
+    #detail-home .detail-left .detail-wish .stock-btn {
+      width: 100%;
+      padding: 16px;
+      min-width: 64px;
+      background-color: black;
+      color: white; }
+      #detail-home .detail-left .detail-wish .stock-btn:hover {
+        background-color: #737373; }
