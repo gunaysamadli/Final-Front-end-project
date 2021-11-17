@@ -47,37 +47,44 @@
         padding-left: 10rem;
     }
 
-    .profile-info {
-        font-size: 1.5rem;
+    form {
+        display: flex;
+        flex-direction: column;
         padding-left: 10rem;
 
         @media screen and (max-width:576px) {
-            padding-left: 2rem;
+            padding-left: 1rem;
 
         }
 
-        .user-profile-data {
+        .form-info {
             display: flex;
             align-items: center;
+            margin-bottom: 3rem;
+            font-size: 1.5rem;
 
-            span {
-                margin-left: 2rem;
+            label {
+                padding-right: 3rem;
+            }
+
+            input {
+                border: 1px solid $color-primary-hover;
+                padding: 1rem 2rem;
             }
         }
 
-        a {
+        button {
             font-size: 1rem;
-            min-width: max-content;
+            max-width: max-content;
 
             &:hover {
                 color: #545454 !important;
                 border-color: #acacac;
                 background-color: #fff;
+                outline: none;
             }
         }
     }
 
-    .user-profile-data {
-        margin-bottom: 3rem;
-    }
+
 }

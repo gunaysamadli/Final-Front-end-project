@@ -7010,7 +7010,8 @@ aside {
   font-weight: 500;
   line-height: 1.1;
   margin: 6rem 0;
-  text-align: center; }
+  display: flex;
+  padding-left: 10rem; }
 
 #profile .profile-info {
   font-size: 1.5rem;
@@ -7033,3 +7034,63 @@ aside {
 
 #profile .user-profile-data {
   margin-bottom: 3rem; }
+
+#profile aside {
+  position: sticky; }
+  @media screen and (max-width: 992px) {
+    #profile aside {
+      display: none; } }
+  #profile aside .sidebar {
+    padding-top: 3rem; }
+    #profile aside .sidebar .sidebar-item {
+      background-color: #fafafa;
+      padding: 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 2px; }
+      #profile aside .sidebar .sidebar-item li {
+        text-transform: uppercase;
+        border: none;
+        font-size: 1.3rem;
+        line-height: normal;
+        letter-spacing: 1.5px;
+        padding: 7.5px 10px;
+        padding-bottom: 1.2rem;
+        text-align: center;
+        background-color: #fafafa;
+        cursor: pointer; }
+
+#profile h1 {
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 1.1;
+  margin: 6rem 0;
+  display: flex;
+  padding-left: 10rem; }
+
+#profile form {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10rem; }
+  @media screen and (max-width: 576px) {
+    #profile form {
+      padding-left: 1rem; } }
+  #profile form .form-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3rem;
+    font-size: 1.5rem; }
+    #profile form .form-info label {
+      padding-right: 3rem; }
+    #profile form .form-info input {
+      border: 1px solid #807c7c;
+      padding: 1rem 2rem; }
+  #profile form button {
+    font-size: 1rem;
+    max-width: max-content; }
+    #profile form button:hover {
+      color: #545454 !important;
+      border-color: #acacac;
+      background-color: #fff;
+      outline: none; }
