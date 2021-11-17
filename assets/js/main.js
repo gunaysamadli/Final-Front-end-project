@@ -96,3 +96,29 @@ element.addEventListener("click", function (e) {
 });
 
 
+// Review And Question
+
+
+const tabReviews = Array.from(document.querySelectorAll(" .tab-review"));
+const tabRewContents = Array.from(document.querySelectorAll(".content-reviewes .content-review"));
+
+const clearRewActives = function () {
+    tabReviews.forEach(tabREw => {
+        tabREw.classList.remove("active");
+    });
+    tabRewContents.forEach(tabRewContent => {
+        tabRewContent.classList.remove("active");
+    });
+}
+
+
+
+tabReviews.forEach(tabREw => {
+    tabREw.onclick = function () {
+        clearRewActives();
+        const targetId = tabREw.getAttribute("data-target");
+        const targetContent = document.getElementById(targetId);
+        tabREw.classList.add("active");
+        targetContent.classList.add("active")
+    }
+})

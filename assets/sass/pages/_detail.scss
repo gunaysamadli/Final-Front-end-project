@@ -120,6 +120,308 @@
                     background-color: #737373;
                 }
             }
+
+            .shipping {
+                padding: 3rem 0;
+                width: 100%;
+
+                .shipping-info {
+                    padding: 2rem 0;
+
+                    border-top: 1px solid rgb(218, 218, 218);
+                    border-bottom: 1px solid rgb(218, 218, 218);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    i {
+                        font-size: 3rem;
+                        padding-right: 2rem;
+                    }
+
+                    p {
+                        font-weight: 300;
+                        font-size: 14px;
+                        line-height: 20px;
+                        text-align: left;
+                    }
+                }
+            }
+
+            .detail-info {
+                margin-top: 22px;
+                padding: 3rem;
+                background: rgb(250, 250, 250);
+                display: flex;
+                width: 100%;
+                text-transform: uppercase;
+                justify-content: space-between;
+                font-size: 1.5rem;
+                font-weight: 500;
+
+                span {
+                    letter-spacing: 0.86px;
+                    line-height: 18px;
+                }
+
+                p {
+                    border-left: 1px solid rgb(218, 218, 218);
+                    padding: 0px 15px;
+                    letter-spacing: 1px;
+                    line-height: 24px;
+                }
+            }
+
+            .detail-description {
+                margin: 22px 0px 0px;
+
+                .description {
+                    padding: 3rem 0;
+
+                    .description-title {
+                        border-top: 1px solid rgb(218, 218, 218);
+                        border-bottom: 1px solid rgb(218, 218, 218);
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        cursor: pointer;
+                        font-size: 12px;
+                        font-weight: 500;
+                        letter-spacing: 0.86px;
+                        padding: 14px;
+                        position: relative;
+                        text-transform: uppercase;
+                        display: flex;
+                        align-items: center;
+
+                        h2 {
+                            font-size: 12px;
+                            font-weight: 500;
+                            letter-spacing: 0.86px;
+                            line-height: 1.5;
+                        }
+                    }
+
+                    .description-body {
+                        padding-left: 8px;
+                        padding-right: 0;
+                        line-height: 1.5;
+                        padding: 12px 10px 12px 16px;
+                        font-weight: 300;
+                        font-size: 15px;
+
+                        p {
+                            padding-bottom: 2rem;
+                        }
+                    }
+                }
+
+            }
         }
+    }
+}
+
+#review {
+    .review-up {
+        .review-title {
+            text-align: center;
+            margin: 40px 0px;
+
+            h1 {
+                font-size: 24px;
+                font-weight: 600;
+            }
+        }
+
+        .review-up-body {
+            padding: 25px 0 22px;
+            margin: 0 10px;
+            border-top: 1px solid #e3e3e3;
+
+            .review-up-left {
+                float: left;
+                text-align: left;
+                position: relative;
+
+                .review-star {
+                    @include flexbox;
+
+                    i {
+                        font-size: 2rem;
+                        color: $color-brown;
+                    }
+
+                    span {
+                        font-size: 14px;
+                        line-height: 17px;
+                    }
+                }
+
+                .questions {
+                    margin: 8px;
+                    font-size: 15px;
+
+                    a {
+                        color: $color-brown;
+
+                        &:hover {
+                            color: #000000 !important;
+                        }
+
+                    }
+                }
+            }
+
+            .review-up-right {
+                @include flexbox;
+                border-left: 1px solid #e3e3e3;
+                padding-left: 1rem;
+
+                .review-up-right-star {
+                    color: $color-brown;
+                    font-size: 1.5rem;
+
+                    span {
+                        padding-left: 1rem;
+                    }
+                }
+            }
+        }
+
+        .review-down-body {
+            .review-items {
+                padding: 3rem 0 2rem 0;
+                border-bottom: 1px solid #e3e3e3;
+            }
+
+            .review-item {
+                .tab-review {
+                    cursor: pointer;
+                    float: left;
+                    margin: 0px 18px 4px 0px;
+                    font-weight: 100;
+                    color: #6B6D76;
+                }
+
+            }
+
+            .tab-review.active {
+                color: $color-brown;
+                border-bottom: 3px solid;
+                border-color: $color-brown;
+
+            }
+        }
+
+        .container.reviewes {
+            padding-bottom: 4rem;
+
+            .row {
+
+                .content-reviewes {
+                    position: relative;
+
+                    .content-review {
+                        display: none;
+                        position: relative;
+                        width: 100%;
+                        margin: 0 10px;
+                        border-top: 1px solid #e3e3e3;
+
+                        .content-review-body {
+                            padding: 25px 0 22px;
+                            border-bottom: 1px solid #e3e3e3;
+
+                            .name-date {
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                font-size: 12px;
+
+                                .name {
+                                    color: $color-brown;
+                                }
+
+                                .date {
+                                    color: #6A6C77;
+                                }
+                            }
+
+                            .content-stars {
+                                font-size: 1.5rem;
+                                color: $color-brown;
+                                padding: 2rem 0;
+                            }
+
+                            p {
+                                font-size: 1.5rem;
+                            }
+                        }
+
+                        .content-question-body {
+                            padding: 25px 0 22px;
+                            border-bottom: 1px solid #e3e3e3;
+
+                            .question {
+                                .question-user-name-date {
+                                    @include flexbox;
+
+                                    .question-user-name {
+                                        color: $color-brown;
+                                        font-size: 12px;
+                                    }
+
+                                    .question-user-date {
+                                        color: #6A6C77;
+                                        font-size: 12px;
+                                    }
+                                }
+
+                                p {
+                                    padding: 1rem 0;
+                                    font-size: 1.4rem;
+                                    color: #6A6C77;
+                                }
+                            }
+
+                            .answer {
+                                margin-left: 22px;
+                                padding: 25px 0;
+                                border-left: 2px solid $color-brown;
+
+                                .answer-admin-name-date {
+                                    @include flexbox;
+                                    padding-left: 1rem;
+                                    padding-bottom: 1rem;
+
+                                    .answer-admin-name {
+                                        color: $color-brown;
+                                        font-size: 12px;
+                                    }
+
+                                    .answer-admin-date {
+                                        color: #6A6C77;
+                                        font-size: 12px;
+                                    }
+                                }
+
+                                p {
+                                    padding-left: 1rem;
+                                    font-size: 14px;
+                                    color: #6A6C77;
+
+                                }
+                            }
+                        }
+
+                    }
+
+                    .content-review.active {
+                        display: block;
+                    }
+                }
+            }
+        }
+
     }
 }

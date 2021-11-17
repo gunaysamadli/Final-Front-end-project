@@ -6698,3 +6698,200 @@ aside {
       color: white; }
       #detail-home .detail-left .detail-wish .stock-btn:hover {
         background-color: #737373; }
+    #detail-home .detail-left .detail-wish .shipping {
+      padding: 3rem 0;
+      width: 100%; }
+      #detail-home .detail-left .detail-wish .shipping .shipping-info {
+        padding: 2rem 0;
+        border-top: 1px solid #dadada;
+        border-bottom: 1px solid #dadada;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        #detail-home .detail-left .detail-wish .shipping .shipping-info i {
+          font-size: 3rem;
+          padding-right: 2rem; }
+        #detail-home .detail-left .detail-wish .shipping .shipping-info p {
+          font-weight: 300;
+          font-size: 14px;
+          line-height: 20px;
+          text-align: left; }
+    #detail-home .detail-left .detail-wish .detail-info {
+      margin-top: 22px;
+      padding: 3rem;
+      background: #fafafa;
+      display: flex;
+      width: 100%;
+      text-transform: uppercase;
+      justify-content: space-between;
+      font-size: 1.5rem;
+      font-weight: 500; }
+      #detail-home .detail-left .detail-wish .detail-info span {
+        letter-spacing: 0.86px;
+        line-height: 18px; }
+      #detail-home .detail-left .detail-wish .detail-info p {
+        border-left: 1px solid #dadada;
+        padding: 0px 15px;
+        letter-spacing: 1px;
+        line-height: 24px; }
+    #detail-home .detail-left .detail-wish .detail-description {
+      margin: 22px 0px 0px; }
+      #detail-home .detail-left .detail-wish .detail-description .description {
+        padding: 3rem 0; }
+        #detail-home .detail-left .detail-wish .detail-description .description .description-title {
+          border-top: 1px solid #dadada;
+          border-bottom: 1px solid #dadada;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          cursor: pointer;
+          font-size: 12px;
+          font-weight: 500;
+          letter-spacing: 0.86px;
+          padding: 14px;
+          position: relative;
+          text-transform: uppercase;
+          display: flex;
+          align-items: center; }
+          #detail-home .detail-left .detail-wish .detail-description .description .description-title h2 {
+            font-size: 12px;
+            font-weight: 500;
+            letter-spacing: 0.86px;
+            line-height: 1.5; }
+        #detail-home .detail-left .detail-wish .detail-description .description .description-body {
+          padding-left: 8px;
+          padding-right: 0;
+          line-height: 1.5;
+          padding: 12px 10px 12px 16px;
+          font-weight: 300;
+          font-size: 15px; }
+          #detail-home .detail-left .detail-wish .detail-description .description .description-body p {
+            padding-bottom: 2rem; }
+
+#review .review-up .review-title {
+  text-align: center;
+  margin: 40px 0px; }
+  #review .review-up .review-title h1 {
+    font-size: 24px;
+    font-weight: 600; }
+
+#review .review-up .review-up-body {
+  padding: 25px 0 22px;
+  margin: 0 10px;
+  border-top: 1px solid #e3e3e3; }
+  #review .review-up .review-up-body .review-up-left {
+    float: left;
+    text-align: left;
+    position: relative; }
+    #review .review-up .review-up-body .review-up-left .review-star {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      #review .review-up .review-up-body .review-up-left .review-star i {
+        font-size: 2rem;
+        color: #B4876E; }
+      #review .review-up .review-up-body .review-up-left .review-star span {
+        font-size: 14px;
+        line-height: 17px; }
+    #review .review-up .review-up-body .review-up-left .questions {
+      margin: 8px;
+      font-size: 15px; }
+      #review .review-up .review-up-body .review-up-left .questions a {
+        color: #B4876E; }
+        #review .review-up .review-up-body .review-up-left .questions a:hover {
+          color: #000000 !important; }
+  #review .review-up .review-up-body .review-up-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-left: 1px solid #e3e3e3;
+    padding-left: 1rem; }
+    #review .review-up .review-up-body .review-up-right .review-up-right-star {
+      color: #B4876E;
+      font-size: 1.5rem; }
+      #review .review-up .review-up-body .review-up-right .review-up-right-star span {
+        padding-left: 1rem; }
+
+#review .review-up .review-down-body .review-items {
+  padding: 3rem 0 2rem 0;
+  border-bottom: 1px solid #e3e3e3; }
+
+#review .review-up .review-down-body .review-item .tab-review {
+  cursor: pointer;
+  float: left;
+  margin: 0px 18px 4px 0px;
+  font-weight: 100;
+  color: #6B6D76; }
+
+#review .review-up .review-down-body .tab-review.active {
+  color: #B4876E;
+  border-bottom: 3px solid;
+  border-color: #B4876E; }
+
+#review .review-up .container.reviewes {
+  padding-bottom: 4rem; }
+  #review .review-up .container.reviewes .row .content-reviewes {
+    position: relative; }
+    #review .review-up .container.reviewes .row .content-reviewes .content-review {
+      display: none;
+      position: relative;
+      width: 100%;
+      margin: 0 10px;
+      border-top: 1px solid #e3e3e3; }
+      #review .review-up .container.reviewes .row .content-reviewes .content-review .content-review-body {
+        padding: 25px 0 22px;
+        border-bottom: 1px solid #e3e3e3; }
+        #review .review-up .container.reviewes .row .content-reviewes .content-review .content-review-body .name-date {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          font-size: 12px; }
+          #review .review-up .container.reviewes .row .content-reviewes .content-review .content-review-body .name-date .name {
+            color: #B4876E; }
+          #review .review-up .container.reviewes .row .content-reviewes .content-review .content-review-body .name-date .date {
+            color: #6A6C77; }
+        #review .review-up .container.reviewes .row .content-reviewes .content-review .content-review-body .content-stars {
+          font-size: 1.5rem;
+          color: #B4876E;
+          padding: 2rem 0; }
+        #review .review-up .container.reviewes .row .content-reviewes .content-review .content-review-body p {
+          font-size: 1.5rem; }
+      #review .review-up .container.reviewes .row .content-reviewes .content-review .content-question-body {
+        padding: 25px 0 22px;
+        border-bottom: 1px solid #e3e3e3; }
+        #review .review-up .container.reviewes .row .content-reviewes .content-review .content-question-body .question .question-user-name-date {
+          display: flex;
+          justify-content: space-between;
+          align-items: center; }
+          #review .review-up .container.reviewes .row .content-reviewes .content-review .content-question-body .question .question-user-name-date .question-user-name {
+            color: #B4876E;
+            font-size: 12px; }
+          #review .review-up .container.reviewes .row .content-reviewes .content-review .content-question-body .question .question-user-name-date .question-user-date {
+            color: #6A6C77;
+            font-size: 12px; }
+        #review .review-up .container.reviewes .row .content-reviewes .content-review .content-question-body .question p {
+          padding: 1rem 0;
+          font-size: 1.4rem;
+          color: #6A6C77; }
+        #review .review-up .container.reviewes .row .content-reviewes .content-review .content-question-body .answer {
+          margin-left: 22px;
+          padding: 25px 0;
+          border-left: 2px solid #B4876E; }
+          #review .review-up .container.reviewes .row .content-reviewes .content-review .content-question-body .answer .answer-admin-name-date {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 1rem;
+            padding-bottom: 1rem; }
+            #review .review-up .container.reviewes .row .content-reviewes .content-review .content-question-body .answer .answer-admin-name-date .answer-admin-name {
+              color: #B4876E;
+              font-size: 12px; }
+            #review .review-up .container.reviewes .row .content-reviewes .content-review .content-question-body .answer .answer-admin-name-date .answer-admin-date {
+              color: #6A6C77;
+              font-size: 12px; }
+          #review .review-up .container.reviewes .row .content-reviewes .content-review .content-question-body .answer p {
+            padding-left: 1rem;
+            font-size: 14px;
+            color: #6A6C77; }
+    #review .review-up .container.reviewes .row .content-reviewes .content-review.active {
+      display: block; }
