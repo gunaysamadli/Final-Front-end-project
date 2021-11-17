@@ -3,6 +3,10 @@
     aside {
         position: sticky;
 
+        @media screen and (max-width:992px) {
+            display: none;
+        }
+
         .sidebar {
             padding-top: 3rem;
 
@@ -31,6 +35,8 @@
 
             }
         }
+
+
     }
 
 
