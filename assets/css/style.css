@@ -6895,3 +6895,14 @@ aside {
             color: #6A6C77; }
     #review .review-up .container.reviewes .row .content-reviewes .content-review.active {
       display: block; }
+
+#same-category h2 {
+  font-size: 21px;
+  text-align: center;
+  letter-spacing: 1px;
+  line-height: 21px;
+  margin-top: 100px !important;
+  margin-bottom: 55px !important; }
+
+#same-category img {
+  width: 100%; }
