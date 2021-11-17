@@ -3,10 +3,16 @@
         width: 65%;
         float: right;
 
+        @media screen and (max-width:992px) {
+            width: 100%;
+
+        }
+
         img {
             width: 100%;
             padding-bottom: 2rem;
         }
+
     }
 
     .detail-left {
@@ -16,12 +22,18 @@
         display: flex;
         justify-content: center;
 
+        @media screen and (max-width:992px) {
+            width: 100%;
+
+        }
+
         h1 {
             padding-left: 4px;
             font-weight: 400;
             margin: 0px 0px 0.25em;
             letter-spacing: 0.01em;
             font-size: 2.5rem;
+
         }
 
         .detail-wish {
@@ -238,10 +250,16 @@
             margin: 0 10px;
             border-top: 1px solid #e3e3e3;
 
+            @media screen and (max-width:576px) {
+                margin: 0;
+
+            }
+
             .review-up-left {
-                float: left;
                 text-align: left;
                 position: relative;
+
+
 
                 .review-star {
                     @include flexbox;
@@ -249,6 +267,10 @@
                     i {
                         font-size: 2rem;
                         color: $color-brown;
+
+                        @media screen and (max-width:576px) {
+                            font-size: 1rem;
+                        }
                     }
 
                     span {
@@ -281,9 +303,22 @@
                     color: $color-brown;
                     font-size: 1.5rem;
 
+                    @media screen and (max-width:576px) {
+                        font-size: 1rem;
+                    }
+
                     span {
                         padding-left: 1rem;
                     }
+                }
+
+                a {
+                    @media screen and (max-width:576px) {
+                        min-width: max-content;
+                        font-size: 1rem;
+                        padding: 1rem 2rem;
+                    }
+
                 }
             }
         }

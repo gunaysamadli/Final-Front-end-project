@@ -6615,6 +6615,9 @@ aside {
 #detail-home .detail-right {
   width: 65%;
   float: right; }
+  @media screen and (max-width: 992px) {
+    #detail-home .detail-right {
+      width: 100%; } }
   #detail-home .detail-right img {
     width: 100%;
     padding-bottom: 2rem; }
@@ -6625,6 +6628,9 @@ aside {
   padding-top: 3rem;
   display: flex;
   justify-content: center; }
+  @media screen and (max-width: 992px) {
+    #detail-home .detail-left {
+      width: 100%; } }
   #detail-home .detail-left h1 {
     padding-left: 4px;
     font-weight: 400;
@@ -6779,8 +6785,10 @@ aside {
   padding: 25px 0 22px;
   margin: 0 10px;
   border-top: 1px solid #e3e3e3; }
+  @media screen and (max-width: 576px) {
+    #review .review-up .review-up-body {
+      margin: 0; } }
   #review .review-up .review-up-body .review-up-left {
-    float: left;
     text-align: left;
     position: relative; }
     #review .review-up .review-up-body .review-up-left .review-star {
@@ -6790,6 +6798,9 @@ aside {
       #review .review-up .review-up-body .review-up-left .review-star i {
         font-size: 2rem;
         color: #B4876E; }
+        @media screen and (max-width: 576px) {
+          #review .review-up .review-up-body .review-up-left .review-star i {
+            font-size: 1rem; } }
       #review .review-up .review-up-body .review-up-left .review-star span {
         font-size: 14px;
         line-height: 17px; }
@@ -6809,8 +6820,16 @@ aside {
     #review .review-up .review-up-body .review-up-right .review-up-right-star {
       color: #B4876E;
       font-size: 1.5rem; }
+      @media screen and (max-width: 576px) {
+        #review .review-up .review-up-body .review-up-right .review-up-right-star {
+          font-size: 1rem; } }
       #review .review-up .review-up-body .review-up-right .review-up-right-star span {
         padding-left: 1rem; }
+    @media screen and (max-width: 576px) {
+      #review .review-up .review-up-body .review-up-right a {
+        min-width: max-content;
+        font-size: 1rem;
+        padding: 1rem 2rem; } }
 
 #review .review-up .review-down-body .review-items {
   padding: 3rem 0 2rem 0;
