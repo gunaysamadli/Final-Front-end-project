@@ -5969,6 +5969,73 @@ header {
   position: sticky;
   top: 0px;
   z-index: 2; }
+  header #basket {
+    z-index: 11;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    max-width: 450px;
+    height: 100%;
+    background-color: white;
+    border-left: 1px solid rgba(0, 0, 0, 0.5);
+    overflow: auto;
+    transition: opacity 0.3s ease 0s, transform 0.35s ease 0s;
+    transform: translateX(0 px);
+    opacity: 1;
+    pointer-events: all;
+    transform: translateX(500px); }
+    header #basket .basket {
+      height: 100%;
+      position: relative;
+      width: 100%; }
+      header #basket .basket .basket-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem;
+        border-bottom: 3px solid #B4876E; }
+        header #basket .basket .basket-header i {
+          font-size: 2rem; }
+        header #basket .basket .basket-header span {
+          font-size: 14px;
+          line-height: 14px; }
+      header #basket .basket .basket-body .basket-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem 1rem;
+        border-bottom: 1px solid #dadada; }
+        header #basket .basket .basket-body .basket-item img {
+          width: 100%; }
+        header #basket .basket .basket-body .basket-item .name-icon {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 0 1rem; }
+        header #basket .basket .basket-body .basket-item .count-price {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 3rem 1rem;
+          font-size: 1.5rem; }
+          header #basket .basket .basket-body .basket-item .count-price i {
+            padding: 0 1rem; }
+      header #basket .basket .basket-footer .basket-footer-content {
+        border-bottom: 1px solid #dadada;
+        padding: 2rem 1rem;
+        border-top: 1px solid;
+        font-size: 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center; }
+      header #basket .basket .basket-footer .checkout {
+        padding: 0 3rem; }
+        header #basket .basket .basket-footer .checkout a {
+          text-align: center;
+          margin: 2rem 0;
+          width: 100%;
+          font-size: 1.5rem; }
   header nav {
     border-bottom: 1px solid white;
     background-color: white;
@@ -6469,17 +6536,19 @@ main #brand {
     main #brand {
       padding: 5rem 0; } }
 
-aside {
+body {
+  overflow-x: hidden; }
+
+main aside {
   position: sticky;
-  float: left;
-  width: 20%;
-  padding-top: 4rem;
-  padding-left: 3rem; }
-  aside .sidebar .sidebar-item:not(:last-child) {
+  padding-left: 3rem;
+  top: 30%;
+  left: 0; }
+  main aside .sidebar .sidebar-item:not(:last-child) {
     border-bottom: 1px solid #cacaca; }
-  aside .sidebar .sidebar-item {
+  main aside .sidebar .sidebar-item {
     padding-top: 1rem; }
-    aside .sidebar .sidebar-item li {
+    main aside .sidebar .sidebar-item li {
       display: block;
       margin-bottom: 8px;
       font-size: 12px;
@@ -6488,18 +6557,18 @@ aside {
       line-height: 18px;
       font-weight: 300; }
 
-#shop-text .shop-texts {
+main #shop-text .shop-texts {
   display: flex;
   justify-content: space-between; }
-  #shop-text .shop-texts h1 {
+  main #shop-text .shop-texts h1 {
     font-weight: 500;
     line-height: 1.1;
     font-size: 3.2rem; }
-  #shop-text .shop-texts .filters {
+  main #shop-text .shop-texts .filters {
     display: flex;
     justify-content: space-between;
     align-items: center; }
-    #shop-text .shop-texts .filters .filter-item {
+    main #shop-text .shop-texts .filters .filter-item {
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -6509,13 +6578,13 @@ aside {
       cursor: pointer;
       font-size: 12px;
       margin: 0 2rem; }
-      #shop-text .shop-texts .filters .filter-item h3 {
+      main #shop-text .shop-texts .filters .filter-item h3 {
         font-weight: 500;
         text-transform: uppercase;
         letter-spacing: 0.85px;
         font-size: 12px; }
 
-#favory .favory-title {
+main #favory .favory-title {
   display: inline-block;
   background-color: #fff;
   text-transform: uppercase;
@@ -6526,9 +6595,9 @@ aside {
   font-weight: 500;
   line-height: 1.1;
   margin: 4rem 0; }
-  #favory .favory-title h2 {
+  main #favory .favory-title h2 {
     padding: 0 30px 0 16px; }
-  #favory .favory-title::before {
+  main #favory .favory-title::before {
     content: '';
     position: absolute;
     left: 15px;
@@ -6536,12 +6605,12 @@ aside {
     width: calc(100% - 30px);
     z-index: -1; }
 
-#favory .favory-item .card-image {
+main #favory .favory-item .card-image {
   position: relative; }
-  #favory .favory-item .card-image img {
+  main #favory .favory-item .card-image img {
     width: 100%;
     transition: opacity 0.25s ease, filter 0.25s ease; }
-  #favory .favory-item .card-image .hover-contents {
+  main #favory .favory-item .card-image .hover-contents {
     transition: opacity 0.25s ease, filter 0.25s ease;
     position: absolute;
     top: 0;
@@ -6549,7 +6618,7 @@ aside {
     right: 0;
     bottom: 0;
     opacity: 0; }
-    #favory .favory-item .card-image .hover-contents .hover-btns {
+    main #favory .favory-item .card-image .hover-contents .hover-btns {
       position: absolute;
       bottom: 16px;
       right: 16px;
@@ -6561,7 +6630,7 @@ aside {
       border-radius: 30px;
       letter-spacing: 1px;
       white-space: nowrap; }
-      #favory .favory-item .card-image .hover-contents .hover-btns .single-btn {
+      main #favory .favory-item .card-image .hover-contents .hover-btns .single-btn {
         font-size: 2rem;
         width: 46px;
         height: 46px;
@@ -6573,26 +6642,26 @@ aside {
         margin-bottom: 13px;
         transition: .5s;
         padding: 10px; }
-    #favory .favory-item .card-image .hover-contents:hover {
+    main #favory .favory-item .card-image .hover-contents:hover {
       opacity: 1; }
 
-#favory .fav-info {
+main #favory .fav-info {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 0; }
-  #favory .fav-info p {
+  main #favory .fav-info p {
     text-transform: uppercase;
     font-size: 15px;
     letter-spacing: 1px;
     line-height: 1;
     color: #807c7c; }
 
-#favory .fav-color .color-item {
+main #favory .fav-color .color-item {
   display: flex;
   flex-direction: row;
   align-items: center; }
-  #favory .fav-color .color-item img {
+  main #favory .fav-color .color-item img {
     width: 7%;
     border-width: 1px;
     border-color: #c1c1c1;
@@ -6603,9 +6672,9 @@ aside {
     margin: 5px 5px 0 0;
     border-radius: 10px;
     cursor: pointer; }
-    #favory .fav-color .color-item img:active {
+    main #favory .fav-color .color-item img:active {
       border: 2px solid firebrick !important; }
-  #favory .fav-color .color-item p {
+  main #favory .fav-color .color-item p {
     font-size: 12px;
     margin-top: 5px;
     line-height: 18px;

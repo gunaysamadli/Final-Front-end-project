@@ -3,6 +3,102 @@ header {
     top: 0px;
     z-index: 2;
 
+    #basket {
+        z-index: 11;
+        position: fixed;
+        right: 0;
+        top: 0;
+        width: 100%;
+        max-width: 450px;
+        height: 100%;
+        background-color: rgb(255, 255, 255);
+        border-left: 1px solid rgba(0, 0, 0, 0.5);
+        overflow: auto;
+        transition: opacity 0.3s ease 0s, transform 0.35s ease 0s;
+        transform: translateX(0 px);
+        opacity: 1;
+        pointer-events: all;
+        transform: translateX(500px);
+
+        .basket {
+            height: 100%;
+            position: relative;
+            width: 100%;
+
+
+
+            .basket-header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 2rem;
+                border-bottom: 3px solid $color-brown;
+
+                i {
+                    font-size: 2rem;
+                }
+
+                span {
+                    font-size: 14px;
+                    line-height: 14px;
+                }
+            }
+
+            .basket-body {
+
+                .basket-item {
+                    @include flexbox;
+                    padding: 2rem 1rem;
+                    border-bottom: 1px solid rgb(218, 218, 218);
+
+
+                    img {
+                        width: 100%;
+                    }
+
+                    .name-icon {
+                        @include flexbox;
+                        padding: 0 1rem;
+                    }
+
+                    .count-price {
+                        @include flexbox;
+                        padding: 3rem 1rem;
+                        font-size: 1.5rem;
+
+                        i {
+                            padding: 0 1rem;
+                        }
+
+                    }
+                }
+
+            }
+
+            .basket-footer {
+                .basket-footer-content {
+                    border-bottom: 1px solid rgb(218, 218, 218);
+                    padding: 2rem 1rem;
+                    border-top: 1px solid;
+                    font-size: 2rem;
+                    @include flexbox;
+                }
+
+                .checkout {
+                    padding: 0 3rem;
+
+                    a {
+                        text-align: center;
+                        margin: 2rem 0;
+                        width: 100%;
+                        font-size: 1.5rem;
+                    }
+                }
+
+            }
+        }
+    }
+
 
     nav {
         border-bottom: 1px solid $color-secondary;

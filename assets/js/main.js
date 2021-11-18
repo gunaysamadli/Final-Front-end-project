@@ -122,3 +122,10 @@ tabReviews.forEach(tabREw => {
         targetContent.classList.add("active")
     }
 })
+
+const basketIcon = document.getElementById("basket-icon");
+basketIcon.addEventListener("click", function (e) {
+    e.preventDefault();
+    const basket = document.getElementById("basket");
+    basket.style.transform = "translateX(10px)"
+})
