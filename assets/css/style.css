@@ -7436,3 +7436,59 @@ aside {
       display: flex;
       justify-content: space-between;
       align-items: center; }
+
+#sign h1 {
+  text-align: center;
+  font-size: 3.2rem;
+  padding: 3rem 0; }
+
+#sign h4 {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.3; }
+
+#sign .sign {
+  padding: 2rem 3rem;
+  text-align: center; }
+
+#sign .sign-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+
+#sign form .name-surname {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  @media screen and (max-width: 576px) {
+    #sign form .name-surname {
+      display: block; } }
+
+#sign form input,
+#sign form select {
+  padding: 1rem 2rem;
+  border-radius: 1px;
+  border: 1px solid #737373;
+  box-shadow: none; }
+  #sign form input:focus-visible,
+  #sign form select:focus-visible {
+    outline: none;
+    border: 3px solid firebrick; }
+
+#sign form select {
+  padding: 1rem 2rem; }
+
+#sign form .fieldset {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem 0; }
+
+#sign .regis {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-top: 3rem;
+  background-color: black;
+  color: white; }
+  #sign .regis:hover {
+    background-color: #737373; }

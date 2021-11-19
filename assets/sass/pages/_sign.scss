@@ -1,0 +1,75 @@
+#sign {
+    h1 {
+        text-align: center;
+        font-size: 3.2rem;
+        padding: 3rem 0;
+    }
+
+    h4 {
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 1.3;
+    }
+
+    .sign {
+        padding: 2rem 3rem;
+        text-align: center
+    }
+
+    .sign-right {
+        @include flexbox(flex, center, center);
+        flex-direction: column
+    }
+
+    form {
+        .name-surname {
+            @include flexbox;
+
+            @media screen and (max-width:576px) {
+
+                display: block;
+            }
+
+        }
+
+        input,
+        select {
+            padding: 1rem 2rem;
+            border-radius: 1px;
+            border: 1px solid rgb(115, 115, 115);
+            box-shadow: none;
+
+            &:focus-visible {
+                outline: none;
+                border: 3px solid $color-red;
+            }
+        }
+
+        select {
+            padding: 1rem 2rem;
+        }
+
+        .fieldset {
+            display: flex;
+            flex-direction: column;
+            padding: 1.5rem 0;
+
+
+        }
+
+
+    }
+
+    .regis {
+        font-size: 1.5rem;
+        font-weight: 400;
+        margin-top: 3rem;
+        background-color: $color-primary;
+        color: $color-secondary;
+
+        &:hover {
+            background-color: #737373;
+        }
+    }
+
+}
