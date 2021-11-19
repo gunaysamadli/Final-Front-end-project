@@ -1,0 +1,121 @@
+#register {
+    .register-col {
+        margin: 0 auto;
+
+        h1 {
+            text-align: center;
+            font-size: 3.2rem;
+            padding: 5rem 0;
+        }
+
+        .user-col {
+            padding: 0 10rem;
+
+            @media screen and (max-width:768px) {
+                padding: 0;
+            }
+
+            @media screen and (max-width:576px) {
+                padding: 0 1rem;
+            }
+
+            h1 {
+                text-align: center;
+                font-size: 3.2rem;
+                padding: 5rem 0;
+            }
+        }
+
+        form {
+            .name-surname {
+                @include flexbox;
+
+                @media screen and (max-width:576px) {
+
+                    display: block;
+                }
+
+            }
+
+            label {
+                color: rgb(115, 115, 115);
+                font-weight: 300;
+                font-size: 1.7rem;
+                padding-bottom: 0.6rem;
+            }
+
+            input,
+            select {
+                padding: 1rem 2rem;
+                border-radius: 1px;
+                border: 1px solid rgb(115, 115, 115);
+                box-shadow: none;
+
+                &:focus-visible {
+                    outline: none;
+                    border: 3px solid $color-red;
+                }
+            }
+
+            select {
+                padding: 1rem 2rem;
+            }
+
+            .fieldset {
+                display: flex;
+                flex-direction: column;
+                padding: 8px 0px;
+
+
+            }
+
+            .regis {
+                width: 100%;
+                font-size: 1.5rem;
+                font-weight: 400;
+                margin-top: 3rem;
+                background-color: $color-primary;
+                color: $color-secondary;
+
+                &:hover {
+                    background-color: #737373;
+                }
+            }
+
+        }
+
+        .user-order {
+            padding-top: 6rem;
+
+            @media screen and (max-width:992px) {
+                display: none;
+            }
+
+            .order-item {
+                border-bottom: 1px solid rgb(218, 218, 218);
+                padding: 2rem 0;
+
+                img {
+                    width: 100%;
+                }
+
+                .order-item-info {
+                    font-size: 1.5rem;
+                    @include flexbox;
+
+                    span {
+                        padding: 0 1rem;
+                    }
+                }
+            }
+
+            .total-price {
+                padding-top: 2rem;
+                font-size: 2rem;
+                @include flexbox;
+            }
+
+        }
+    }
+
+}

@@ -7305,12 +7305,14 @@ aside {
   font-size: 1.7rem;
   padding-bottom: 0.6rem; }
 
-#checkout form input {
+#checkout form input,
+#checkout form select {
   padding: 1rem 2rem;
   border-radius: 1px;
   border: 1px solid #737373;
   box-shadow: none; }
-  #checkout form input:focus-visible {
+  #checkout form input:focus-visible,
+  #checkout form select:focus-visible {
     outline: none;
     border: 3px solid firebrick; }
 
@@ -7355,3 +7357,82 @@ aside {
     display: flex;
     justify-content: space-between;
     align-items: center; }
+
+#register .register-col {
+  margin: 0 auto; }
+  #register .register-col h1 {
+    text-align: center;
+    font-size: 3.2rem;
+    padding: 5rem 0; }
+  #register .register-col .user-col {
+    padding: 0 10rem; }
+    @media screen and (max-width: 768px) {
+      #register .register-col .user-col {
+        padding: 0; } }
+    @media screen and (max-width: 576px) {
+      #register .register-col .user-col {
+        padding: 0 1rem; } }
+    #register .register-col .user-col h1 {
+      text-align: center;
+      font-size: 3.2rem;
+      padding: 5rem 0; }
+  #register .register-col form .name-surname {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    @media screen and (max-width: 576px) {
+      #register .register-col form .name-surname {
+        display: block; } }
+  #register .register-col form label {
+    color: #737373;
+    font-weight: 300;
+    font-size: 1.7rem;
+    padding-bottom: 0.6rem; }
+  #register .register-col form input,
+  #register .register-col form select {
+    padding: 1rem 2rem;
+    border-radius: 1px;
+    border: 1px solid #737373;
+    box-shadow: none; }
+    #register .register-col form input:focus-visible,
+    #register .register-col form select:focus-visible {
+      outline: none;
+      border: 3px solid firebrick; }
+  #register .register-col form select {
+    padding: 1rem 2rem; }
+  #register .register-col form .fieldset {
+    display: flex;
+    flex-direction: column;
+    padding: 8px 0px; }
+  #register .register-col form .regis {
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-top: 3rem;
+    background-color: black;
+    color: white; }
+    #register .register-col form .regis:hover {
+      background-color: #737373; }
+  #register .register-col .user-order {
+    padding-top: 6rem; }
+    @media screen and (max-width: 992px) {
+      #register .register-col .user-order {
+        display: none; } }
+    #register .register-col .user-order .order-item {
+      border-bottom: 1px solid #dadada;
+      padding: 2rem 0; }
+      #register .register-col .user-order .order-item img {
+        width: 100%; }
+      #register .register-col .user-order .order-item .order-item-info {
+        font-size: 1.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center; }
+        #register .register-col .user-order .order-item .order-item-info span {
+          padding: 0 1rem; }
+    #register .register-col .user-order .total-price {
+      padding-top: 2rem;
+      font-size: 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
