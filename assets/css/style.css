@@ -6595,53 +6595,48 @@ aside {
   margin: 4rem 0; }
   #favory .favory-title h2 {
     padding: 0 30px 0 16px; }
-  #favory .favory-title::before {
-    content: '';
-    position: absolute;
-    left: 15px;
-    border-top: 1px solid #eaeaea;
-    width: calc(100% - 30px);
-    z-index: -1; }
 
-#favory .favory-item .card-image {
-  position: relative; }
-  #favory .favory-item .card-image img {
-    width: 100%;
-    transition: opacity 0.25s ease, filter 0.25s ease; }
-  #favory .favory-item .card-image .hover-contents {
-    transition: opacity 0.25s ease, filter 0.25s ease;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    opacity: 0; }
-    #favory .favory-item .card-image .hover-contents .hover-btns {
+#favory .favory-item {
+  padding-top: 2rem; }
+  #favory .favory-item .card-image {
+    position: relative; }
+    #favory .favory-item .card-image img {
+      width: 100%;
+      transition: opacity 0.25s ease, filter 0.25s ease; }
+    #favory .favory-item .card-image .hover-contents {
+      transition: opacity 0.25s ease, filter 0.25s ease;
       position: absolute;
-      bottom: 16px;
-      right: 16px;
-      pointer-events: none;
-      font-size: 8px;
-      line-height: 10px;
-      padding: 10px 20px 8px;
-      text-transform: uppercase;
-      border-radius: 30px;
-      letter-spacing: 1px;
-      white-space: nowrap; }
-      #favory .favory-item .card-image .hover-contents .hover-btns .single-btn {
-        font-size: 2rem;
-        width: 46px;
-        height: 46px;
-        line-height: 29px;
-        background-color: white;
-        border-radius: 50%;
-        text-align: center;
-        display: block;
-        margin-bottom: 13px;
-        transition: .5s;
-        padding: 10px; }
-    #favory .favory-item .card-image .hover-contents:hover {
-      opacity: 1; }
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      opacity: 0; }
+      #favory .favory-item .card-image .hover-contents .hover-btns {
+        position: absolute;
+        bottom: 16px;
+        right: 16px;
+        pointer-events: none;
+        font-size: 8px;
+        line-height: 10px;
+        padding: 10px 20px 8px;
+        text-transform: uppercase;
+        border-radius: 30px;
+        letter-spacing: 1px;
+        white-space: nowrap; }
+        #favory .favory-item .card-image .hover-contents .hover-btns .single-btn {
+          font-size: 2rem;
+          width: 46px;
+          height: 46px;
+          line-height: 29px;
+          background-color: white;
+          border-radius: 50%;
+          text-align: center;
+          display: block;
+          margin-bottom: 13px;
+          transition: .5s;
+          padding: 10px; }
+      #favory .favory-item .card-image .hover-contents:hover {
+        opacity: 1; }
 
 #favory .fav-info {
   display: flex;
@@ -6660,16 +6655,17 @@ aside {
   flex-direction: row;
   align-items: center; }
   #favory .fav-color .color-item img {
-    width: 7%;
-    border-width: 1px;
-    border-color: #c1c1c1;
-    border-style: solid;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     margin: 5px 5px 0 0;
-    border-radius: 10px;
-    cursor: pointer; }
+    display: inline-block;
+    font-weight: 300;
+    padding: 3px;
+    cursor: pointer;
+    border-radius: 50px;
+    border-width: 1px;
+    border-style: solid;
+    line-height: 1;
+    border-color: #adadad !important;
+    width: 10%; }
     #favory .fav-color .color-item img:active {
       border: 2px solid firebrick !important; }
   #favory .fav-color .color-item p {
@@ -7196,8 +7192,84 @@ aside {
             transition: width .2s ease-in-out;
             transform: translate3d(0, 0, 0);
             width: 100%; }
+  @media screen and (max-width: 992px) {
+    .left-side {
+      display: none; } }
 
-.company-info {
+#info .company-info {
   padding-top: 6rem; }
-  .company-info img {
+  #info .company-info img {
     width: 100%; }
+
+@media screen and (max-width: 576px) {
+  #info {
+    display: none; } }
+
+#favory .favory-item {
+  padding-top: 2rem; }
+  #favory .favory-item .card-image {
+    position: relative; }
+    #favory .favory-item .card-image img {
+      width: 100%;
+      transition: opacity 0.25s ease, filter 0.25s ease; }
+    #favory .favory-item .card-image .hover-contents-company {
+      transition: opacity 0.25s ease, filter 0.25s ease;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 1%;
+      opacity: 1; }
+      #favory .favory-item .card-image .hover-contents-company .company-date {
+        color: white;
+        font-size: 2rem;
+        padding-left: 2rem;
+        font-weight: bold; }
+        #favory .favory-item .card-image .hover-contents-company .company-date .countdown {
+          display: flex; }
+          #favory .favory-item .card-image .hover-contents-company .company-date .countdown span {
+            padding-right: 0.5rem; }
+      #favory .favory-item .card-image .hover-contents-company .hover-btns {
+        position: absolute;
+        bottom: 16px;
+        right: 16px;
+        pointer-events: none;
+        font-size: 8px;
+        line-height: 10px;
+        padding: 10px 20px 8px;
+        text-transform: uppercase;
+        border-radius: 30px;
+        letter-spacing: 1px;
+        white-space: nowrap; }
+        #favory .favory-item .card-image .hover-contents-company .hover-btns .single-btn {
+          font-size: 2rem;
+          width: 46px;
+          height: 46px;
+          line-height: 29px;
+          background-color: white;
+          border-radius: 50%;
+          text-align: center;
+          display: block;
+          margin-bottom: 13px;
+          transition: .5s;
+          padding: 10px; }
+      #favory .favory-item .card-image .hover-contents-company:hover {
+        opacity: 1; }
+
+#dropdown {
+  display: none; }
+  @media screen and (max-width: 992px) {
+    #dropdown {
+      display: block; } }
+  #dropdown .company-category .company-category-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    #dropdown .company-category .company-category-head h5 {
+      font-size: 3rem; }
+    #dropdown .company-category .company-category-head img {
+      width: 15px;
+      height: 15px; }
+  #dropdown .company-category ul li {
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    font-weight: 200; }

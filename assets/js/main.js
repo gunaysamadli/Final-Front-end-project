@@ -231,3 +231,20 @@ function updateCartTotal() {
     document.getElementsByClassName("total")[0].innerText = total;
 
 }
+
+
+//Dropdown
+
+$(document).ready(function () {
+    $('.company-category-head').on('click', function (e) {
+        e.preventDefault();
+        if ($(this).next('.drop-menu').css('display') == 'none') {
+            $(this).find('img').css('transform', 'rotate(180deg)');
+        }
+        else {
+            $(this).find('img').css('transform', 'rotate(0deg)');
+        }
+
+        $(this).next('.drop-menu').slideToggle();
+    })
+});

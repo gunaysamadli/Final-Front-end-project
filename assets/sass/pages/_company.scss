@@ -49,12 +49,128 @@
 
         }
     }
+
+    @media screen and (max-width:992px) {
+        display: none;
+    }
 }
 
-.company-info {
-    padding-top: 6rem;
+#info {
+    .company-info {
+        padding-top: 6rem;
 
-    img {
-        width: 100%;
+        img {
+            width: 100%;
+        }
+    }
+
+    @media screen and (max-width:576px) {
+        display: none;
+    }
+}
+
+
+#favory {
+    .favory-item {
+        padding-top: 2rem;
+
+        .card-image {
+            position: relative;
+
+            img {
+                width: 100%;
+                transition: opacity 0.25s ease, filter 0.25s ease;
+
+            }
+
+            .hover-contents-company {
+                transition: opacity 0.25s ease, filter 0.25s ease;
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 1%;
+                opacity: 1;
+
+                .company-date {
+                    color: $color-secondary;
+                    font-size: 2rem;
+                    padding-left: 2rem;
+                    font-weight: bold;
+
+                    .countdown {
+                        display: flex;
+
+                        span {
+                            padding-right: 0.5rem;
+                        }
+                    }
+                }
+
+                .hover-btns {
+                    position: absolute;
+                    bottom: 16px;
+                    right: 16px;
+                    pointer-events: none;
+                    font-size: 8px;
+                    line-height: 10px;
+                    padding: 10px 20px 8px;
+                    text-transform: uppercase;
+                    border-radius: 30px;
+                    letter-spacing: 1px;
+                    white-space: nowrap;
+
+                    .single-btn {
+                        font-size: 2rem;
+                        width: 46px;
+                        height: 46px;
+                        line-height: 29px;
+                        background-color: $color-secondary;
+                        border-radius: 50%;
+                        text-align: center;
+                        display: block;
+                        margin-bottom: 13px;
+                        transition: .5s;
+                        padding: 10px;
+                    }
+
+                }
+
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+#dropdown {
+    display: none;
+
+    @media screen and (max-width:992px) {
+        display: block;
+    }
+
+    .company-category {
+
+        .company-category-head {
+            @include flexbox;
+
+            h5 {
+                font-size: 3rem;
+            }
+
+            img {
+                width: 15px;
+                height: 15px;
+            }
+        }
+
+        ul {
+            li {
+                padding: 1rem 2rem;
+                font-size: 2rem;
+                font-weight: 200;
+            }
+        }
     }
 }
