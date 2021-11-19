@@ -6000,26 +6000,26 @@ header {
         header #basket .basket .basket-header span {
           font-size: 14px;
           line-height: 14px; }
-      header #basket .basket .basket-body .basket-item {
+      header #basket .basket .basket-body .basket-item-content {
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 2rem 1rem;
         border-bottom: 1px solid #dadada; }
-        header #basket .basket .basket-body .basket-item img {
+        header #basket .basket .basket-body .basket-item-content img {
           width: 100%; }
-        header #basket .basket .basket-body .basket-item .name-icon {
+        header #basket .basket .basket-body .basket-item-content .name-icon {
           display: flex;
           justify-content: space-between;
           align-items: center;
           padding: 0 1rem; }
-        header #basket .basket .basket-body .basket-item .count-price {
+        header #basket .basket .basket-body .basket-item-content .count-price {
           display: flex;
           justify-content: space-between;
           align-items: center;
           padding: 3rem 1rem;
           font-size: 1.5rem; }
-          header #basket .basket .basket-body .basket-item .count-price i {
+          header #basket .basket .basket-body .basket-item-content .count-price i {
             padding: 0 1rem; }
       header #basket .basket .basket-footer .basket-footer-content {
         border-bottom: 1px solid #dadada;
@@ -6539,16 +6539,14 @@ main #brand {
 body {
   overflow-x: hidden; }
 
-main aside {
+aside {
   position: sticky;
   padding-left: 3rem;
   top: 30%;
   left: 0; }
-  main aside .sidebar .sidebar-item:not(:last-child) {
-    border-bottom: 1px solid #cacaca; }
-  main aside .sidebar .sidebar-item {
+  aside .sidebar .sidebar-item {
     padding-top: 1rem; }
-    main aside .sidebar .sidebar-item li {
+    aside .sidebar .sidebar-item li {
       display: block;
       margin-bottom: 8px;
       font-size: 12px;
@@ -6557,18 +6555,18 @@ main aside {
       line-height: 18px;
       font-weight: 300; }
 
-main #shop-text .shop-texts {
+#shop-text .shop-texts {
   display: flex;
   justify-content: space-between; }
-  main #shop-text .shop-texts h1 {
+  #shop-text .shop-texts h1 {
     font-weight: 500;
     line-height: 1.1;
     font-size: 3.2rem; }
-  main #shop-text .shop-texts .filters {
+  #shop-text .shop-texts .filters {
     display: flex;
     justify-content: space-between;
     align-items: center; }
-    main #shop-text .shop-texts .filters .filter-item {
+    #shop-text .shop-texts .filters .filter-item {
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -6578,13 +6576,13 @@ main #shop-text .shop-texts {
       cursor: pointer;
       font-size: 12px;
       margin: 0 2rem; }
-      main #shop-text .shop-texts .filters .filter-item h3 {
+      #shop-text .shop-texts .filters .filter-item h3 {
         font-weight: 500;
         text-transform: uppercase;
         letter-spacing: 0.85px;
         font-size: 12px; }
 
-main #favory .favory-title {
+#favory .favory-title {
   display: inline-block;
   background-color: #fff;
   text-transform: uppercase;
@@ -6595,9 +6593,9 @@ main #favory .favory-title {
   font-weight: 500;
   line-height: 1.1;
   margin: 4rem 0; }
-  main #favory .favory-title h2 {
+  #favory .favory-title h2 {
     padding: 0 30px 0 16px; }
-  main #favory .favory-title::before {
+  #favory .favory-title::before {
     content: '';
     position: absolute;
     left: 15px;
@@ -6605,12 +6603,12 @@ main #favory .favory-title {
     width: calc(100% - 30px);
     z-index: -1; }
 
-main #favory .favory-item .card-image {
+#favory .favory-item .card-image {
   position: relative; }
-  main #favory .favory-item .card-image img {
+  #favory .favory-item .card-image img {
     width: 100%;
     transition: opacity 0.25s ease, filter 0.25s ease; }
-  main #favory .favory-item .card-image .hover-contents {
+  #favory .favory-item .card-image .hover-contents {
     transition: opacity 0.25s ease, filter 0.25s ease;
     position: absolute;
     top: 0;
@@ -6618,7 +6616,7 @@ main #favory .favory-item .card-image {
     right: 0;
     bottom: 0;
     opacity: 0; }
-    main #favory .favory-item .card-image .hover-contents .hover-btns {
+    #favory .favory-item .card-image .hover-contents .hover-btns {
       position: absolute;
       bottom: 16px;
       right: 16px;
@@ -6630,7 +6628,7 @@ main #favory .favory-item .card-image {
       border-radius: 30px;
       letter-spacing: 1px;
       white-space: nowrap; }
-      main #favory .favory-item .card-image .hover-contents .hover-btns .single-btn {
+      #favory .favory-item .card-image .hover-contents .hover-btns .single-btn {
         font-size: 2rem;
         width: 46px;
         height: 46px;
@@ -6642,26 +6640,26 @@ main #favory .favory-item .card-image {
         margin-bottom: 13px;
         transition: .5s;
         padding: 10px; }
-    main #favory .favory-item .card-image .hover-contents:hover {
+    #favory .favory-item .card-image .hover-contents:hover {
       opacity: 1; }
 
-main #favory .fav-info {
+#favory .fav-info {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 0; }
-  main #favory .fav-info p {
+  #favory .fav-info p {
     text-transform: uppercase;
     font-size: 15px;
     letter-spacing: 1px;
     line-height: 1;
     color: #807c7c; }
 
-main #favory .fav-color .color-item {
+#favory .fav-color .color-item {
   display: flex;
   flex-direction: row;
   align-items: center; }
-  main #favory .fav-color .color-item img {
+  #favory .fav-color .color-item img {
     width: 7%;
     border-width: 1px;
     border-color: #c1c1c1;
@@ -6672,9 +6670,9 @@ main #favory .fav-color .color-item {
     margin: 5px 5px 0 0;
     border-radius: 10px;
     cursor: pointer; }
-    main #favory .fav-color .color-item img:active {
+    #favory .fav-color .color-item img:active {
       border: 2px solid firebrick !important; }
-  main #favory .fav-color .color-item p {
+  #favory .fav-color .color-item p {
     font-size: 12px;
     margin-top: 5px;
     line-height: 18px;
@@ -7048,31 +7046,30 @@ main #favory .fav-color .color-item {
     margin: 1rem 0;
     color: #6A6C77; }
 
-#profile aside {
-  position: sticky; }
-  @media screen and (max-width: 992px) {
-    #profile aside {
-      display: none; } }
-  #profile aside .sidebar {
-    padding-top: 3rem; }
-    #profile aside .sidebar .sidebar-item {
+@media screen and (max-width: 992px) {
+  .profile-left {
+    display: none; } }
+
+.profile-left .sidebar {
+  padding-top: 3rem; }
+  .profile-left .sidebar .sidebar-item {
+    background-color: #fafafa;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px; }
+    .profile-left .sidebar .sidebar-item li {
+      text-transform: uppercase;
+      border: none;
+      font-size: 1.3rem;
+      line-height: normal;
+      letter-spacing: 1.5px;
+      padding: 7.5px 10px;
+      padding-bottom: 1.2rem;
+      text-align: center;
       background-color: #fafafa;
-      padding: 1.5rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 2px; }
-      #profile aside .sidebar .sidebar-item li {
-        text-transform: uppercase;
-        border: none;
-        font-size: 1.3rem;
-        line-height: normal;
-        letter-spacing: 1.5px;
-        padding: 7.5px 10px;
-        padding-bottom: 1.2rem;
-        text-align: center;
-        background-color: #fafafa;
-        cursor: pointer; }
+      cursor: pointer; }
 
 #profile h1 {
   font-size: 36px;
@@ -7104,21 +7101,21 @@ main #favory .fav-color .color-item {
 #profile .user-profile-data {
   margin-bottom: 3rem; }
 
-#profile aside {
+#profile .profile-left {
   position: sticky; }
   @media screen and (max-width: 992px) {
-    #profile aside {
+    #profile .profile-left {
       display: none; } }
-  #profile aside .sidebar {
+  #profile .profile-left .sidebar {
     padding-top: 3rem; }
-    #profile aside .sidebar .sidebar-item {
+    #profile .profile-left .sidebar .sidebar-item {
       background-color: #fafafa;
       padding: 1.5rem;
       display: flex;
       align-items: center;
       justify-content: center;
       border-radius: 2px; }
-      #profile aside .sidebar .sidebar-item li {
+      #profile .profile-left .sidebar .sidebar-item li {
         text-transform: uppercase;
         border: none;
         font-size: 1.3rem;
@@ -7163,3 +7160,44 @@ main #favory .fav-color .color-item {
       border-color: #acacac;
       background-color: #fff;
       outline: none; }
+
+.left-side {
+  padding-left: 3rem;
+  top: 30%;
+  left: 0; }
+  .left-side .sidebar-company .sidebar-item {
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+    box-shadow: 10px 10px 8px 10px #cacaca; }
+    .left-side .sidebar-company .sidebar-item li {
+      margin-top: 1rem;
+      margin-bottom: 21px;
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      line-height: 18px;
+      font-weight: 300; }
+      .left-side .sidebar-company .sidebar-item li a {
+        position: relative; }
+        .left-side .sidebar-company .sidebar-item li a:hover {
+          outline: 0;
+          transition: background .3s ease-in-out, border-color .3s ease-in-out, color .3s ease-in-out; }
+          .left-side .sidebar-company .sidebar-item li a:hover::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -3px;
+            width: 0;
+            height: 1px;
+            background: #737373;
+            transition: width .2s ease-in-out;
+            transform: translate3d(0, 0, 0);
+            width: 100%; }
+
+.company-info {
+  padding-top: 6rem; }
+  .company-info img {
+    width: 100%; }

@@ -1,42 +1,42 @@
-#profile {
-    aside {
-        position: sticky;
-
-        @media screen and (max-width:992px) {
-            display: none;
-        }
-
-        .sidebar {
-            padding-top: 3rem;
-
-            .sidebar-item:not(:last-child) {}
-
-            .sidebar-item {
-                background-color: #fafafa;
-                padding: 1.5rem;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                border-radius: 2px;
-
-                li {
-                    text-transform: uppercase;
-                    border: none;
-                    font-size: 1.3rem;
-                    line-height: normal;
-                    letter-spacing: 1.5px;
-                    padding: 7.5px 10px;
-                    padding-bottom: 1.2rem;
-                    text-align: center;
-                    background-color: #fafafa;
-                    cursor: pointer;
-                }
-
-            }
-        }
-
-
+.profile-left {
+    @media screen and (max-width:992px) {
+        display: none;
     }
+
+    .sidebar {
+        padding-top: 3rem;
+
+        .sidebar-item:not(:last-child) {}
+
+        .sidebar-item {
+            background-color: #fafafa;
+            padding: 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 2px;
+
+            li {
+                text-transform: uppercase;
+                border: none;
+                font-size: 1.3rem;
+                line-height: normal;
+                letter-spacing: 1.5px;
+                padding: 7.5px 10px;
+                padding-bottom: 1.2rem;
+                text-align: center;
+                background-color: #fafafa;
+                cursor: pointer;
+            }
+
+        }
+    }
+
+
+}
+
+#profile {
+
 
     h1 {
         font-size: 36px;
