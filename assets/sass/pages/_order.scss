@@ -1,0 +1,41 @@
+.order-container {
+    padding-bottom: 4rem;
+
+    .col-order {
+        background-color: #fafafa;
+        border-radius: 2px;
+        padding: 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 2px;
+
+    }
+
+    .orders {
+        .table-responsive {
+            table {
+                width: 100%;
+            }
+
+            th {
+                text-align: left;
+                padding: 1rem;
+                font-size: 17px;
+
+                @media screen and (max-width:768px) {
+                    font-size: 10px;
+                }
+            }
+
+            td {
+                padding: 1rem;
+                font-size: 17px;
+
+                @media screen and (max-width:768px) {
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+}

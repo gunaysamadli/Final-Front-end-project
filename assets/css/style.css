@@ -7492,3 +7492,29 @@ aside {
   color: white; }
   #sign .regis:hover {
     background-color: #737373; }
+
+.order-container {
+  padding-bottom: 4rem; }
+  .order-container .col-order {
+    background-color: #fafafa;
+    border-radius: 2px;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px; }
+  .order-container .orders .table-responsive table {
+    width: 100%; }
+  .order-container .orders .table-responsive th {
+    text-align: left;
+    padding: 1rem;
+    font-size: 17px; }
+    @media screen and (max-width: 768px) {
+      .order-container .orders .table-responsive th {
+        font-size: 10px; } }
+  .order-container .orders .table-responsive td {
+    padding: 1rem;
+    font-size: 17px; }
+    @media screen and (max-width: 768px) {
+      .order-container .orders .table-responsive td {
+        font-size: 10px; } }
