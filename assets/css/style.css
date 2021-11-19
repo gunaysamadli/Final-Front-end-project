@@ -6582,6 +6582,10 @@ aside {
         letter-spacing: 0.85px;
         font-size: 12px; }
 
+@media screen and (max-width: 768px) {
+  #shop-text {
+    display: none; } }
+
 #favory .favory-title {
   display: inline-block;
   background-color: #fff;
