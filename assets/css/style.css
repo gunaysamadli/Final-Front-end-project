@@ -7277,3 +7277,81 @@ aside {
     padding: 1rem 2rem;
     font-size: 2rem;
     font-weight: 200; }
+
+#checkout .user-col {
+  padding: 0 10rem; }
+  @media screen and (max-width: 768px) {
+    #checkout .user-col {
+      padding: 0; } }
+  @media screen and (max-width: 576px) {
+    #checkout .user-col {
+      padding: 0 1rem; } }
+  #checkout .user-col h1 {
+    text-align: center;
+    font-size: 3.2rem;
+    padding: 5rem 0; }
+
+#checkout form .name-surname {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  @media screen and (max-width: 576px) {
+    #checkout form .name-surname {
+      display: block; } }
+
+#checkout form label {
+  color: #737373;
+  font-weight: 300;
+  font-size: 1.7rem;
+  padding-bottom: 0.6rem; }
+
+#checkout form input {
+  padding: 1rem 2rem;
+  border-radius: 1px;
+  border: 1px solid #737373;
+  box-shadow: none; }
+  #checkout form input:focus-visible {
+    outline: none;
+    border: 3px solid firebrick; }
+
+#checkout form select {
+  padding: 1rem 2rem; }
+
+#checkout form .fieldset {
+  display: flex;
+  flex-direction: column;
+  padding: 8px 0px; }
+
+#checkout form .order {
+  width: 100%;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-top: 3rem;
+  background-color: black;
+  color: white; }
+  #checkout form .order:hover {
+    background-color: #737373; }
+
+#checkout .user-order {
+  padding-top: 6rem; }
+  @media screen and (max-width: 992px) {
+    #checkout .user-order {
+      display: none; } }
+  #checkout .user-order .order-item {
+    border-bottom: 1px solid #dadada;
+    padding: 2rem 0; }
+    #checkout .user-order .order-item img {
+      width: 100%; }
+    #checkout .user-order .order-item .order-item-info {
+      font-size: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      #checkout .user-order .order-item .order-item-info span {
+        padding: 0 1rem; }
+  #checkout .user-order .total-price {
+    padding-top: 2rem;
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
