@@ -39,14 +39,26 @@ main {
     }
 
     #category {
+        .slick-track {
+            width: max-content;
+        }
+
         .category-info {
             @include flexbox;
             padding: 3rem 0;
+
+            @media screen and (max-width:576px) {
+                padding: 3rem 1rem;
+            }
 
             h2 {
                 font-weight: 500;
                 line-height: 1.1;
                 font-size: 3.2rem;
+
+                @media screen and (max-width:576px) {
+                    font-size: 2.4rem;
+                }
             }
 
             a {
@@ -69,6 +81,11 @@ main {
                 object-fit: cover;
                 object-position: center center;
 
+                @media screen and (max-width:576px) {
+                    padding-right: 0.5rem;
+
+                }
+
                 &:hover {
                     opacity: 0.7;
                 }
@@ -82,10 +99,44 @@ main {
             }
         }
 
-        .slick-next {
+        .slick-prev {
+            cursor: pointer;
             position: absolute;
-            top: 0;
-            right: 0;
+            top: -26px;
+            right: 56px;
+            font-size: 0;
+            background-color: $color-secondary;
+            border: none;
+
+            &::before {
+                content: '<';
+                font-size: 22px;
+                line-height: 1;
+                opacity: .75;
+            }
+        }
+
+        .slick-next {
+            cursor: pointer;
+            position: absolute;
+            right: 23px;
+            top: -26px;
+            font-size: 0;
+            background-color: $color-secondary;
+            border: none;
+
+            &::before {
+                content: '>';
+                font-size: 22px;
+                line-height: 1;
+                opacity: .75;
+            }
+        }
+
+        .slick-dots {
+            display: none !important;
+
+
         }
     }
 

@@ -265,3 +265,7 @@ SearchBarX.addEventListener("click", function (e) {
     const search = document.getElementById("search");
     search.style.display = "none"
 })
+
+
+
+
