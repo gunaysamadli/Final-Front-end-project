@@ -6072,6 +6072,9 @@ header {
             width: 2rem;
             height: 2rem; } }
         header nav .nav-items li a {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
           font-weight: 300;
           letter-spacing: 1px;
           text-decoration: none;
@@ -6080,6 +6083,8 @@ header {
           white-space: nowrap;
           line-height: 1.5;
           font-size: 1.2rem; }
+          header nav .nav-items li a span {
+            padding-left: 8px; }
           header nav .nav-items li a:hover {
             color: #807c7c;
             outline: none; }
@@ -6103,6 +6108,36 @@ header {
   header .custom-responsive-nav.active {
     left: 0;
     width: 100%; }
+
+#search {
+  display: none; }
+  #search .search-input-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    #search .search-input-button .search-input {
+      border-top: none;
+      border-right: none;
+      border-left: none;
+      border-image: initial;
+      border-bottom: 1px solid #d9d9d9;
+      font-size: 20px;
+      height: 48px;
+      padding: 5px 40px 5px 5px;
+      width: 100%;
+      border-radius: 0px; }
+      #search .search-input-button .search-input:focus-visible {
+        outline: none;
+        border: 3px solid firebrick; }
+    #search .search-input-button .search-button {
+      background: transparent;
+      border: none;
+      height: 50px;
+      width: 40px; }
+  #search span {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px; }
 
 @media only screen and (max-width: 992px) {
   header .navbar .nav-item {

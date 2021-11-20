@@ -57,17 +57,15 @@
                                 <li>
 
                                 </li>
-                                <li>
+                                <li class="search-bar">
                                     <a href="">
-                                        <svg class="search" width="10" height="10" xmlns="http://www.w3.org/2000/svg"
+                                        <svg class="search" width="15" height="15" xmlns="http://www.w3.org/2000/svg"
                                             viewBox="0 0 512 512">
                                             <path
                                                 d="M213.194 34.713c98.705 0 179 81.461 179 181.575 0 100.113-80.295 181.574-179 181.574-98.681 0-178.977-81.46-178.977-181.574 0-100.114 80.296-181.575 178.977-181.575m0 397.863c54.497 0 104.111-21.013 141.864-55.264L487.797 512 512 487.446l-133.241-135.15c29.746-37.19 47.653-84.493 47.653-136.008C426.412 97.036 330.74 0 213.194 0 95.648 0 0 97.036 0 216.288c0 119.275 95.648 216.288 213.194 216.288"
                                                 fill-rule="evenodd"></path>
                                         </svg>
-                                    </a>
-                                    <a class="nav-item" href="">
-                                        Search
+                                        <span>Search</span>
                                     </a>
                                 </li>
                                 <li class="nav-item"><a href=""><i class="far fa-heart"></i></a></li>
@@ -128,6 +126,34 @@
         </nav>
     </header>
     <main>
+        <!--Search-->
+        <section id="search">
+            <div class="search">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="search-input-button">
+                                <input placeholder="Find what you're looking for" class="search-input" value=""
+                                    aria-label="search">
+                                <button class="search-button">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                        <g fill="#000" fill-rule="nonzero">
+                                            <path d="M2.343 15.071L.93 13.657 13.657.929l1.414 1.414z">
+                                            </path>
+                                            <path d="M.929 2.343L2.343.93l12.728 12.728-1.414 1.414z">
+                                            </path>
+                                        </g>
+                                    </svg>
+                                    <span class="sr-only" uptsign="apr-0203">close
+                                        overlay</span>
+                                </button>
+                            </div>
+                            <span>Search any products and/or materials</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!--Info-->
         <section id="info">
             <div class="container-fluid">
