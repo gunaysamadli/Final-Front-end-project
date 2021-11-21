@@ -126,25 +126,25 @@ tabReviews.forEach(tabREw => {
 
 // Basket
 
-// const basketIcon = document.getElementById("basket-icon");
-// const BasketItemParent = document.querySelectorAll(".basket-item")
-// basketIcon.addEventListener("click", function (e) {
-//     e.preventDefault();
-//     const basket = document.getElementById("basket");
-//     basket.style.transform = "translateX(10px)"
-// })
+const basketIcon = document.getElementById("basket-icon");
+const BasketItemParent = document.querySelectorAll(".basket-item")
+basketIcon.addEventListener("click", function (e) {
+    e.preventDefault();
+    const basket = document.getElementById("basket");
+    basket.style.transform = "translateX(10px)"
+})
 
-// var removeItemFromBasket = document.querySelectorAll('#removeitem');
-// for (let i = 0; i < removeItemFromBasket.length; i++) {
-//     var button = removeItemFromBasket[i]
-//     button.addEventListener("click", function (e) {
-//         e.preventDefault()
-//         BasketItemParent[i].remove()
-//         updateCartTotal()
+var removeItemFromBasket = document.querySelectorAll('#removeitem');
+for (let i = 0; i < removeItemFromBasket.length; i++) {
+    var button = removeItemFromBasket[i]
+    button.addEventListener("click", function (e) {
+        e.preventDefault()
+        BasketItemParent[i].remove()
+        updateCartTotal()
 
-//     })
+    })
 
-// }
+}
 
 // var quantityInputs = document.getElementsByClassName("card-count");
 // for (let i = 0; i < quantityInputs.length; i++) {
