@@ -1,53 +1,59 @@
-.left-side {
+.company-left {
 
-    padding-left: 3rem;
+    padding-left: 0;
     top: 30%;
     left: 0;
 
     .sidebar-company {
 
+        .sidebar-items {
+            padding-bottom: 3rem;
 
-        .sidebar-item {
-            padding: 1.5rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 2px;
-            box-shadow: 10px 10px 8px 10px #cacaca;
+            .sidebar-item {
+                padding: 1.5rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 2px;
+                box-shadow: 0 10px 8px 10px #cacaca;
 
-            li {
-                margin-top: 1rem;
-                margin-bottom: 21px;
-                font-size: 14px;
-                text-transform: uppercase;
-                letter-spacing: 1px;
-                line-height: 18px;
-                font-weight: 300;
+                li {
+                    margin-top: 1rem;
+                    margin-bottom: 21px;
+                    font-size: 14px;
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                    line-height: 18px;
+                    font-weight: 300;
 
-                a {
-                    position: relative;
+                    a {
+                        position: relative;
 
-                    &:hover {
-                        outline: 0;
-                        transition: background .3s ease-in-out, border-color .3s ease-in-out, color .3s ease-in-out;
+                        &:hover {
+                            outline: 0;
+                            transition: background .3s ease-in-out, border-color .3s ease-in-out, color .3s ease-in-out;
 
-                        &::after {
-                            content: '';
-                            position: absolute;
-                            left: 0;
-                            bottom: -3px;
-                            width: 0;
-                            height: 1px;
-                            background: $color-gray;
-                            transition: width .2s ease-in-out;
-                            transform: translate3d(0, 0, 0);
-                            width: 100%;
+                            &::after {
+                                content: '';
+                                position: absolute;
+                                left: 0;
+                                bottom: -3px;
+                                width: 0;
+                                height: 1px;
+                                background: $color-gray;
+                                transition: width .2s ease-in-out;
+                                transform: translate3d(0, 0, 0);
+                                width: 100%;
+                            }
                         }
                     }
                 }
+
             }
 
         }
+
+
     }
 
     @media screen and (max-width:992px) {
