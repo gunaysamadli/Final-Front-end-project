@@ -251,6 +251,21 @@ $(document).ready(function () {
 });
 
 
+//Filter
+$(document).ready(function () {
+    $('.filter-open').on('click', function (e) {
+        e.preventDefault();
+        if ($('#filter').css('display') == 'none') {
+            $(".filter-open").removeClass('.fas fa-plus').addClass('.fas fa-minus');
+        }
+        else {
+            $(".filter-open").removeClass('.fas fa-minus').addClass('.fas fa-plus');
+        }
+        $('#filter').slideToggle();
+    })
+});
+
+
 //Search
 const SearchBar = document.querySelector(".search-bar");
 SearchBar.addEventListener("click", function (e) {
@@ -265,7 +280,4 @@ SearchBarX.addEventListener("click", function (e) {
     const search = document.getElementById("search");
     search.style.display = "none"
 })
-
-
-
 

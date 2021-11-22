@@ -6647,17 +6647,90 @@ aside {
       padding: 8px 0;
       border-bottom: 1px solid #000000;
       cursor: pointer;
-      font-size: 12px;
       margin: 0 2rem; }
       #shop-text .shop-texts .filters .filter-item h3 {
-        font-weight: 500;
         text-transform: uppercase;
         letter-spacing: 0.85px;
         font-size: 12px; }
+      #shop-text .shop-texts .filters .filter-item i {
+        font-size: 18px; }
 
 @media screen and (max-width: 768px) {
   #shop-text {
     display: none; } }
+
+#filter {
+  display: none; }
+  #filter .filter {
+    padding: 48px 40px 30px;
+    background: #fafafa;
+    margin-top: 20px;
+    overflow: auto; }
+    #filter .filter .filter-item h2 {
+      margin: 0 0 20px;
+      font-size: 1.5rem;
+      letter-spacing: 0.85px;
+      font-weight: 500;
+      line-height: 1.1; }
+    #filter .filter .form-checkbox-column .label-container {
+      text-transform: uppercase;
+      display: block;
+      position: relative;
+      padding-left: 35px;
+      margin-bottom: 12px;
+      cursor: pointer;
+      font-size: 15px;
+      line-height: 18px;
+      font-weight: 300;
+      user-select: none; }
+      #filter .filter .form-checkbox-column .label-container input {
+        position: absolute;
+        opacity: 0;
+        height: 0;
+        width: 0; }
+        #filter .filter .form-checkbox-column .label-container input:checked ~ .checkmark {
+          background: #000; }
+      #filter .filter .form-checkbox-column .label-container .checkmark {
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 18px;
+        width: 18px;
+        background: #fff;
+        border: 1px solid black; }
+        #filter .filter .form-checkbox-column .label-container .checkmark::after {
+          content: '';
+          position: absolute;
+          left: 3px;
+          top: 8px;
+          background: #fff;
+          width: 2px;
+          height: 2px;
+          transform: rotate(28deg);
+          box-shadow: 2px 0 0 #fff, 4px 0 0 #fff, 4px -2px 0 #fff, 4px -4px 0 #fff, 4px -6px 0 #fff, 4px -8px 0 #fff; }
+    #filter .filter .filter-end {
+      align-self: flex-end; }
+      #filter .filter .filter-end .filter-button {
+        display: flex;
+        justify-content: space-between;
+        align-items: center; }
+        #filter .filter .filter-end .filter-button p {
+          margin: 0;
+          font-size: 14px;
+          text-align: center;
+          text-transform: uppercase;
+          font-weight: 500;
+          text-decoration: underline;
+          cursor: pointer; }
+        #filter .filter .filter-end .filter-button button {
+          font-size: 14px;
+          background-color: #000;
+          color: white; }
+          #filter .filter .filter-end .filter-button button:hover {
+            background-color: white;
+            color: #000;
+            border: 1px solid #000; }
 
 #favory .favory-title {
   display: inline-block;
