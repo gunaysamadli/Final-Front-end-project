@@ -139,20 +139,6 @@ header {
                     }
                 }
 
-                .search {
-                    @media screen and (max-width:992px) {
-                        width: 3rem;
-                        height: 3rem;
-                    }
-
-                    @media screen and (max-width:768px) {
-                        width: 2rem;
-                        height: 2rem;
-                    }
-
-
-                }
-
                 a {
                     @include flexbox;
                     font-weight: 300;
@@ -184,6 +170,57 @@ header {
 
     }
 
+    #search {
+        display: none;
+        position: sticky;
+        top: 0px;
+        z-index: 2;
+        background-color: $color-secondary;
+        height: 70vh;
+
+        .search-input-button {
+            @include flexbox;
+
+            .search-input {
+                border-top: none;
+                border-right: none;
+                border-left: none;
+                border-image: initial;
+                border-bottom: 1px solid rgb(217, 217, 217);
+                font-size: 20px;
+                height: 48px;
+                padding: 5px 40px 5px 5px;
+                width: 100%;
+                border-radius: 0px;
+
+                &:focus-visible {
+                    outline: none;
+                    border: 3px solid $color-red;
+                }
+            }
+
+            .search-button {
+                background: transparent;
+                border: none;
+                height: 50px;
+                width: 40px;
+            }
+        }
+
+        span {
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 24px;
+        }
+
+        button {
+            cursor: pointer;
+        }
+    }
+
+
+
+
     .openMenu {
         display: none;
         padding-left: 16px;
@@ -214,44 +251,7 @@ header {
 
 }
 
-#search {
-    display: none;
 
-    .search-input-button {
-        @include flexbox;
-
-        .search-input {
-            border-top: none;
-            border-right: none;
-            border-left: none;
-            border-image: initial;
-            border-bottom: 1px solid rgb(217, 217, 217);
-            font-size: 20px;
-            height: 48px;
-            padding: 5px 40px 5px 5px;
-            width: 100%;
-            border-radius: 0px;
-
-            &:focus-visible {
-                outline: none;
-                border: 3px solid $color-red;
-            }
-        }
-
-        .search-button {
-            background: transparent;
-            border: none;
-            height: 50px;
-            width: 40px;
-        }
-    }
-
-    span {
-        font-size: 14px;
-        font-weight: 300;
-        line-height: 24px;
-    }
-}
 
 @media only screen and (max-width:992px) {
     header {

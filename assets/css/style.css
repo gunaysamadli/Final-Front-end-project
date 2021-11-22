@@ -6063,14 +6063,6 @@ header {
         @media screen and (max-width: 450px) {
           header nav .nav-items li .mejuri {
             width: 10rem; } }
-        @media screen and (max-width: 992px) {
-          header nav .nav-items li .search {
-            width: 3rem;
-            height: 3rem; } }
-        @media screen and (max-width: 768px) {
-          header nav .nav-items li .search {
-            width: 2rem;
-            height: 2rem; } }
         header nav .nav-items li a {
           display: flex;
           justify-content: space-between;
@@ -6090,6 +6082,42 @@ header {
             outline: none; }
           header nav .nav-items li a i {
             font-size: 2rem; }
+  header #search {
+    display: none;
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+    background-color: white;
+    height: 70vh; }
+    header #search .search-input-button {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      header #search .search-input-button .search-input {
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        border-image: initial;
+        border-bottom: 1px solid #d9d9d9;
+        font-size: 20px;
+        height: 48px;
+        padding: 5px 40px 5px 5px;
+        width: 100%;
+        border-radius: 0px; }
+        header #search .search-input-button .search-input:focus-visible {
+          outline: none;
+          border: 3px solid firebrick; }
+      header #search .search-input-button .search-button {
+        background: transparent;
+        border: none;
+        height: 50px;
+        width: 40px; }
+    header #search span {
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 24px; }
+    header #search button {
+      cursor: pointer; }
   header .openMenu {
     display: none;
     padding-left: 16px;
@@ -6108,36 +6136,6 @@ header {
   header .custom-responsive-nav.active {
     left: 0;
     width: 100%; }
-
-#search {
-  display: none; }
-  #search .search-input-button {
-    display: flex;
-    justify-content: space-between;
-    align-items: center; }
-    #search .search-input-button .search-input {
-      border-top: none;
-      border-right: none;
-      border-left: none;
-      border-image: initial;
-      border-bottom: 1px solid #d9d9d9;
-      font-size: 20px;
-      height: 48px;
-      padding: 5px 40px 5px 5px;
-      width: 100%;
-      border-radius: 0px; }
-      #search .search-input-button .search-input:focus-visible {
-        outline: none;
-        border: 3px solid firebrick; }
-    #search .search-input-button .search-button {
-      background: transparent;
-      border: none;
-      height: 50px;
-      width: 40px; }
-  #search span {
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 24px; }
 
 @media only screen and (max-width: 992px) {
   header .navbar .nav-item {
@@ -6776,6 +6774,7 @@ aside {
         letter-spacing: 1px;
         white-space: nowrap; }
         #favory .favory-item .card-image .hover-contents .hover-btns .single-btn {
+          cursor: pointer;
           font-size: 2rem;
           width: 46px;
           height: 46px;
@@ -6787,6 +6786,8 @@ aside {
           margin-bottom: 13px;
           transition: .5s;
           padding: 10px; }
+          #favory .favory-item .card-image .hover-contents .hover-btns .single-btn i:hover {
+            color: rebeccapurple; }
       #favory .favory-item .card-image .hover-contents:hover {
         opacity: 1; }
 
@@ -7286,12 +7287,16 @@ aside {
 #profile form {
   display: flex;
   flex-direction: column;
-  padding-left: 10rem; }
+  width: 60%; }
+  @media screen and (max-width: 992px) {
+    #profile form {
+      width: 100%; } }
   @media screen and (max-width: 576px) {
     #profile form {
       padding-left: 1rem; } }
   #profile form .form-info {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     margin-bottom: 3rem;
     font-size: 1.5rem; }
@@ -7299,14 +7304,24 @@ aside {
       padding-right: 3rem; }
     #profile form .form-info input {
       border: 1px solid #807c7c;
-      padding: 1rem 2rem; }
+      padding: 6px 12px;
+      font-size: 14px;
+      width: 60%;
+      border-radius: 1px;
+      border: 1px solid #737373;
+      box-shadow: none; }
+      #profile form .form-info input:focus-visible {
+        outline: none;
+        border: 3px solid firebrick; }
   #profile form button {
     font-size: 1rem;
-    max-width: max-content; }
+    max-width: max-content;
+    color: white;
+    background-color: #000; }
     #profile form button:hover {
-      color: #545454 !important;
-      border-color: #acacac;
-      background-color: #fff;
+      color: #000;
+      background-color: white;
+      border: 1px solid #000;
       outline: none; }
 
 .company-left {

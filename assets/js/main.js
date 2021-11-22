@@ -146,20 +146,20 @@ for (let i = 0; i < removeItemFromBasket.length; i++) {
 
 }
 
-// var quantityInputs = document.getElementsByClassName("card-count");
-// for (let i = 0; i < quantityInputs.length; i++) {
-//     var input = quantityInputs[i];
-//     input.addEventListener("change", quantityChanged)
-// }
+var quantityInputs = document.getElementsByClassName("card-count");
+for (let i = 0; i < quantityInputs.length; i++) {
+    var input = quantityInputs[i];
+    input.addEventListener("change", quantityChanged)
+}
 
-// function quantityChanged(e) {
-//     e.preventDefault();
-//     var input = e.target
-//     if (isNaN(input.value) || input.value <= 0) {
-//         input.value = 1;
-//     }
-//     updateCartTotal()
-// }
+function quantityChanged(e) {
+    e.preventDefault();
+    var input = e.target
+    if (isNaN(input.value) || input.value <= 0) {
+        input.value = 1;
+    }
+    updateCartTotal()
+}
 
 
 // var AddToCardButtons = document.querySelectorAll(".add-basket")
