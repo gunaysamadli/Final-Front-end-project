@@ -77,17 +77,34 @@
 
 
 #favory {
+    .favory-title {
+        @include flexbox;
+
+        .time {
+            @include flexbox;
+
+            li {
+                text-align: center;
+                padding: 10px 20px;
+                background-color: #f0f1f2;
+                font-size: 10px;
+                color: #282828;
+                position: relative;
+                border-right: 1px solid $color-secondary;
+
+                p {
+                    font-size: 14px;
+                    padding-bottom: 5px;
+                }
+            }
+        }
+    }
+
     .favory-item {
         padding-top: 2rem;
 
         .card-image {
             position: relative;
-
-            img {
-                width: 100%;
-                transition: opacity 0.25s ease, filter 0.25s ease;
-
-            }
 
             .hover-contents-company {
                 transition: opacity 0.25s ease, filter 0.25s ease;
@@ -96,9 +113,10 @@
                 right: 0;
                 bottom: 1%;
                 opacity: 1;
+                width: max-content;
 
                 .company-date {
-                    color: $color-secondary;
+                    color: $color-red;
                     font-size: 2rem;
                     padding-left: 2rem;
                     font-weight: bold;
@@ -112,42 +130,87 @@
                     }
                 }
 
-                .hover-btns {
-                    position: absolute;
-                    bottom: 16px;
-                    right: 16px;
-                    pointer-events: none;
-                    font-size: 8px;
-                    line-height: 10px;
-                    padding: 10px 20px 8px;
-                    text-transform: uppercase;
-                    border-radius: 30px;
-                    letter-spacing: 1px;
-                    white-space: nowrap;
 
-                    .single-btn {
-                        font-size: 2rem;
-                        width: 46px;
-                        height: 46px;
-                        line-height: 29px;
-                        background-color: $color-secondary;
-                        border-radius: 50%;
-                        text-align: center;
-                        display: block;
-                        margin-bottom: 13px;
-                        transition: .5s;
-                        padding: 10px;
+            }
+
+            &:hover .hover-btns {
+                opacity: 1;
+                visibility: visible;
+                transition: .5s;
+                transform: translateX(-50%);
+            }
+
+            img {
+                width: auto;
+                max-width: 100%;
+                transition: opacity 0.25s ease, filter 0.25s ease;
+            }
+
+            .img-product {
+                position: relative;
+
+                .img-responsive {
+                    opacity: 1;
+
+                    &:hover {
+                        opacity: 0;
+                    }
+                }
+
+                .img-responsive-hov {
+                    transition: opacity 0.25s ease, filter 0.25s ease;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    opacity: 0;
+
+                    &:hover {
+                        opacity: 1;
+                    }
+                }
+            }
+
+
+            .hover-btns {
+                position: absolute;
+                top: 60%;
+                left: 80%;
+                display: block;
+                opacity: 0;
+                visibility: hidden;
+                transition: all .3s linear;
+
+
+                .single-btn {
+                    cursor: pointer;
+                    font-size: 2rem;
+                    width: 46px;
+                    height: 46px;
+                    line-height: 29px;
+                    background-color: $color-secondary;
+                    border-radius: 50%;
+                    text-align: center;
+                    display: block;
+                    margin-bottom: 13px;
+                    transition: .5s;
+                    padding: 10px;
+
+                    &:hover {
+                        color: $color-brown;
                     }
 
                 }
 
-                &:hover {
-                    opacity: 1;
-                }
             }
+
         }
     }
+
+
 }
+
 
 #dropdown {
     display: none;

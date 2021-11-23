@@ -65,7 +65,12 @@
                                         </svg>
                                     </a>
                                 </li>
-                                <li class="nav-item"><a href="./wish-list.html"><i class="far fa-heart"></i></a></li>
+                                <li class="nav-item">
+                                    <a href="./wish-list.html">
+                                        <i class="far fa-heart"></i>
+                                    </a>
+                                    <div class="fav-number-sum">3</div>
+                                </li>
                                 <li class="nav-item"><a href="./sign.html">Sign In</a></li>
                                 <li>
                                     <a id="basket-icon" href="">
@@ -76,6 +81,7 @@
                                             </path>
                                         </svg>
                                     </a>
+                                    <div class="basket-number-sum">3</div>
                                 </li>
                                 <div id="basket">
                                     <div class="basket">
@@ -170,7 +176,7 @@
                                                         </span>
                                                     </div>
                                                     <div class="checkout">
-                                                        <a class="button button-secondary" href="">
+                                                        <a href="checkout.html" class="button button-secondary" href="">
                                                             Continue to Checkout
                                                         </a>
                                                     </div>
@@ -315,47 +321,44 @@
             </section>
             <!--Personilazed Company-->
             <section id="favory">
-                <div class="favory-title">
-                    <h2>Personalized Company</h2>
+                <div class="container">
+                    <div class="row">
+                        <div class="favory-title">
+                            <h2>Personalized Company</h2>
+                            <ul class="time">
+                                <li>
+                                    <p class="hour">5</p>saat
+                                </li>
+                                <li>
+                                    <p class="minute">42</p>dəqiqə
+                                </li>
+                                <li>
+                                    <p class="second">36</p>saniyə
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-md-4 favs">
                             <div class="favory-item">
                                 <div class="card-image">
-                                    <a>
-                                        <img class="images" src="./assets/images/person-1.jpg" alt="">
-                                    </a>
-                                    <div class="hover-contents">
-                                        <a class="hover-image" tabindex="0">
-                                            <img src="./assets/images/person-hov-1.jpg" alt="">
+                                    <div class="img-product">
+                                        <a href="./detail.html">
+                                            <img src="./assets/images/person-1.jpg" class="img-responsive">
+                                            <img src="./assets/images/person-hov-1.jpg" class="img-responsive-hov">
                                         </a>
-                                        <div class="hover-contents-company">
-                                            <div class="company-date">
-                                                <span class="dates">5 Noyabr - 29 Noyabr</span>
-                                                <div class="countdown" data-date="2021-11-29 23:45:00" data-days="gün"
-                                                    data-hours="saat" data-minutes="dəq">
-                                                    <div class="time days flip"><span class="count">10</span><span
-                                                            class="label">gün</span></div>
-                                                    <div class="time hours flip"><span class="count">07</span><span
-                                                            class="label">saat</span></div>
-                                                    <div class="time minutes flip"><span class="count">28</span><span
-                                                            class="label">dəq</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
                                         <div class="hover-btns">
                                             <a class="single-btn add-basket">
                                                 <i class="fas fa-shopping-basket"></i>
                                             </a>
-                                            <a href="wishlist.html" class="single-btn" tabindex="0">
-                                                <i class="fas fa-heart"></i>
+                                            <a href="wishlist.html" class="single-btn">
+                                                <i class="far fa-heart"></i>
                                             </a>
                                         </div>
                                     </div>
                                 </div>
-
                             </div>
                             <div class="fav-info">
                                 <a href="">
@@ -377,35 +380,17 @@
                         <div class="col-md-4 favs">
                             <div class="favory-item">
                                 <div class="card-image">
-                                    <a href="">
-                                        <img class="images" src="./assets/images/person-2.jpg" alt="">
-                                    </a>
-                                    <div class="hover-contents">
-                                        <a href="product-details.html" class="hover-image" tabindex="0">
-                                            <img src="./assets/images/person-hov-2.jpg" alt="">
+                                    <div class="img-product">
+                                        <a href="./detail.html">
+                                            <img src="./assets/images/person-2.jpg" class="img-responsive">
+                                            <img src="./assets/images/person-hov-2.jpg" class="img-responsive-hov">
                                         </a>
-                                        <div class="hover-contents-company">
-                                            <div class="company-date">
-                                                <span class="dates">5 Noyabr - 29 Noyabr</span>
-                                                <div class="countdown" data-date="2021-11-29 23:45:00" data-days="gün"
-                                                    data-hours="saat" data-minutes="dəq">
-                                                    <div class="time days flip"><span class="count">10</span><span
-                                                            class="label">gün</span></div>
-                                                    <div class="time hours flip"><span class="count">07</span><span
-                                                            class="label">saat</span></div>
-                                                    <div class="time minutes flip"><span class="count">28</span><span
-                                                            class="label">dəq</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
                                         <div class="hover-btns">
-                                            <a class="single-btn add-basket" tabindex="0">
+                                            <a class="single-btn add-basket">
                                                 <i class="fas fa-shopping-basket"></i>
                                             </a>
-
-                                            <a href="wishlist.html" class="single-btn" tabindex="0">
-                                                <i class="fas fa-heart"></i>
+                                            <a href="wishlist.html" class="single-btn">
+                                                <i class="far fa-heart"></i>
                                             </a>
                                         </div>
                                     </div>
@@ -430,34 +415,17 @@
                         <div class="col-md-4">
                             <div class="favory-item">
                                 <div class="card-image">
-                                    <a href="">
-                                        <img src="./assets/images/person-3.jpg" alt="">
-                                    </a>
-                                    <div class="hover-contents">
-                                        <a href="product-details.html" class="hover-image" tabindex="0">
-                                            <img src="./assets/images/person-hov-3.jpg" alt="">
+                                    <div class="img-product">
+                                        <a href="./detail.html">
+                                            <img src="./assets/images/person-3.jpg" class="img-responsive">
+                                            <img src="./assets/images/person-hov-3.jpg" class="img-responsive-hov">
                                         </a>
-                                        <div class="hover-contents-company">
-                                            <div class="company-date">
-                                                <span class="dates">5 Noyabr - 29 Noyabr</span>
-                                                <div class="countdown" data-date="2021-11-29 23:45:00" data-days="gün"
-                                                    data-hours="saat" data-minutes="dəq">
-                                                    <div class="time days flip"><span class="count">10</span><span
-                                                            class="label">gün</span></div>
-                                                    <div class="time hours flip"><span class="count">07</span><span
-                                                            class="label">saat</span></div>
-                                                    <div class="time minutes flip"><span class="count">28</span><span
-                                                            class="label">dəq</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
                                         <div class="hover-btns">
-                                            <a class="single-btn add-basket" tabindex="0">
+                                            <a class="single-btn add-basket">
                                                 <i class="fas fa-shopping-basket"></i>
                                             </a>
-                                            <a href="wishlist.html" class="single-btn" tabindex="0">
-                                                <i class="fas fa-heart"></i>
+                                            <a href="wishlist.html" class="single-btn">
+                                                <i class="far fa-heart"></i>
                                             </a>
                                         </div>
                                     </div>
@@ -483,34 +451,17 @@
                         <div class="col-md-4">
                             <div class="favory-item">
                                 <div class="card-image">
-                                    <a href="">
-                                        <img src="./assets/images/person-3.jpg" alt="">
-                                    </a>
-                                    <div class="hover-contents">
-                                        <a href="product-details.html" class="hover-image" tabindex="0">
-                                            <img src="./assets/images/person-hov-3.jpg" alt="">
+                                    <div class="img-product">
+                                        <a href="./detail.html">
+                                            <img src="./assets/images/person-3.jpg" class="img-responsive">
+                                            <img src="./assets/images/person-hov-3.jpg" class="img-responsive-hov">
                                         </a>
-                                        <div class="hover-contents-company">
-                                            <div class="company-date">
-                                                <span class="dates">5 Noyabr - 29 Noyabr</span>
-                                                <div class="countdown" data-date="2021-11-29 23:45:00" data-days="gün"
-                                                    data-hours="saat" data-minutes="dəq">
-                                                    <div class="time days flip"><span class="count">10</span><span
-                                                            class="label">gün</span></div>
-                                                    <div class="time hours flip"><span class="count">07</span><span
-                                                            class="label">saat</span></div>
-                                                    <div class="time minutes flip"><span class="count">28</span><span
-                                                            class="label">dəq</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
                                         <div class="hover-btns">
-                                            <a class="single-btn add-basket" tabindex="0">
+                                            <a class="single-btn add-basket">
                                                 <i class="fas fa-shopping-basket"></i>
                                             </a>
-                                            <a href="wishlist.html" class="single-btn" tabindex="0">
-                                                <i class="fas fa-heart"></i>
+                                            <a href="wishlist.html" class="single-btn">
+                                                <i class="far fa-heart"></i>
                                             </a>
                                         </div>
                                     </div>
@@ -536,34 +487,17 @@
                         <div class="col-md-4">
                             <div class="favory-item">
                                 <div class="card-image">
-                                    <a href="">
-                                        <img src="./assets/images/person-3.jpg" alt="">
-                                    </a>
-                                    <div class="hover-contents">
-                                        <a href="product-details.html" class="hover-image" tabindex="0">
-                                            <img src="./assets/images/person-hov-3.jpg" alt="">
+                                    <div class="img-product">
+                                        <a href="./detail.html">
+                                            <img src="./assets/images/person-3.jpg" class="img-responsive">
+                                            <img src="./assets/images/person-hov-3.jpg" class="img-responsive-hov">
                                         </a>
-                                        <div class="hover-contents-company">
-                                            <div class="company-date">
-                                                <span class="dates">5 Noyabr - 29 Noyabr</span>
-                                                <div class="countdown" data-date="2021-11-29 23:45:00" data-days="gün"
-                                                    data-hours="saat" data-minutes="dəq">
-                                                    <div class="time days flip"><span class="count">10</span><span
-                                                            class="label">gün</span></div>
-                                                    <div class="time hours flip"><span class="count">07</span><span
-                                                            class="label">saat</span></div>
-                                                    <div class="time minutes flip"><span class="count">28</span><span
-                                                            class="label">dəq</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
                                         <div class="hover-btns">
-                                            <a class="single-btn add-basket" tabindex="0">
+                                            <a class="single-btn add-basket">
                                                 <i class="fas fa-shopping-basket"></i>
                                             </a>
-                                            <a href="wishlist.html" class="single-btn" tabindex="0">
-                                                <i class="fas fa-heart"></i>
+                                            <a href="wishlist.html" class="single-btn">
+                                                <i class="far fa-heart"></i>
                                             </a>
                                         </div>
                                     </div>
@@ -591,42 +525,40 @@
             </section>
             <!--Silver Company-->
             <section id="favory">
-                <div class="favory-title">
-                    <h2>Silver Company</h2>
+                <div class="container">
+                    <div class="row">
+                        <div class="favory-title">
+                            <h2>Silver Company</h2>
+                            <ul class="time">
+                                <li>
+                                    <p class="hour">5</p>saat
+                                </li>
+                                <li>
+                                    <p class="minute">42</p>dəqiqə
+                                </li>
+                                <li>
+                                    <p class="second">36</p>saniyə
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-md-4">
                             <div class="favory-item">
                                 <div class="card-image">
-                                    <a href="">
-                                        <img src="./assets/images/silver-1.jpg" alt="">
-                                    </a>
-                                    <div class="hover-contents">
-                                        <a href="product-details.html" class="hover-image" tabindex="0">
-                                            <img src="./assets/images/silver-hov-1.jpg" alt="">
+                                    <div class="img-product">
+                                        <a href="./detail.html">
+                                            <img src="./assets/images/silver-1.jpg" class="img-responsive">
+                                            <img src="./assets/images/silver-hov-1.jpg" class="img-responsive-hov">
                                         </a>
-                                        <div class="hover-contents-company">
-                                            <div class="company-date">
-                                                <span class="dates">5 Noyabr - 29 Noyabr</span>
-                                                <div class="countdown" data-date="2021-11-29 23:45:00" data-days="gün"
-                                                    data-hours="saat" data-minutes="dəq">
-                                                    <div class="time days flip"><span class="count">10</span><span
-                                                            class="label">gün</span></div>
-                                                    <div class="time hours flip"><span class="count">07</span><span
-                                                            class="label">saat</span></div>
-                                                    <div class="time minutes flip"><span class="count">28</span><span
-                                                            class="label">dəq</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
                                         <div class="hover-btns">
                                             <a class="single-btn add-basket">
                                                 <i class="fas fa-shopping-basket"></i>
                                             </a>
-                                            <a href="wishlist.html" class="single-btn" tabindex="0">
-                                                <i class="fas fa-heart"></i>
+                                            <a href="wishlist.html" class="single-btn">
+                                                <i class="far fa-heart"></i>
                                             </a>
                                         </div>
                                     </div>
@@ -652,107 +584,74 @@
                         <div class="col-md-4">
                             <div class="favory-item">
                                 <div class="card-image">
-                                    <a href="">
-                                        <img src="./assets/images/silver-2.jpg" alt="">
-                                    </a>
-                                    <div class="hover-contents">
-                                        <a href="product-details.html" class="hover-image" tabindex="0">
-                                            <img src="./assets/images/silver-hov-2.jpg" alt="">
+                                    <div class="img-product">
+                                        <a href="./detail.html">
+                                            <img src="./assets/images/silver-2.jpg" class="img-responsive">
+                                            <img src="./assets/images/silver-hov-2.jpg" class="img-responsive-hov">
                                         </a>
-                                        <div class="hover-contents-company">
-                                            <div class="company-date">
-                                                <span class="dates">5 Noyabr - 29 Noyabr</span>
-                                                <div class="countdown" data-date="2021-11-29 23:45:00" data-days="gün"
-                                                    data-hours="saat" data-minutes="dəq">
-                                                    <div class="time days flip"><span class="count">10</span><span
-                                                            class="label">gün</span></div>
-                                                    <div class="time hours flip"><span class="count">07</span><span
-                                                            class="label">saat</span></div>
-                                                    <div class="time minutes flip"><span class="count">28</span><span
-                                                            class="label">dəq</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
                                         <div class="hover-btns">
-                                            <a class="single-btn add-basket" tabindex="0">
+                                            <a class="single-btn add-basket">
                                                 <i class="fas fa-shopping-basket"></i>
                                             </a>
-                                            <a href="wishlist.html" class="single-btn" tabindex="0">
-                                                <i class="fas fa-heart"></i>
+                                            <a href="wishlist.html" class="single-btn">
+                                                <i class="far fa-heart"></i>
                                             </a>
                                         </div>
+
                                     </div>
                                 </div>
                             </div>
                             <div class="fav-info">
                                 <a href="">
-                                    <h2 class="basket-head">Single Colored Mini Hoop</h2>
+                                    <h2 class="basket-head">Single Mini Hoop</h2>
                                 </a>
                                 <p>
                                     <span>$</span>
-                                    60
+                                    30
                                 </p>
                             </div>
                             <div class="fav-color">
                                 <div class="color-item">
-                                    <img src="./assets/images/color/gold-white.svg" alt="">
-                                    <img src="./assets/images/color/gold-blue.svg" alt="">
-                                    <img src="./assets/images/color/gold-green.svg" alt="">
-                                    <p>14k Yellow Gold, Blue Sapphire</p>
+                                    <img src="./assets/images/color/gold.svg" alt="">
+                                    <img src="./assets/images/color/silver.svg" alt="">
+                                    <p>14k Yellow Gold</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="favory-item">
                                 <div class="card-image">
-                                    <a href="">
-                                        <img src="./assets/images/silver-3.jpg" alt="">
-                                    </a>
-                                    <div class="hover-contents">
-                                        <a class="hover-image" tabindex="0">
-                                            <img src="./assets/images/silver-hov-3.jpg" alt="">
+                                    <div class="img-product">
+                                        <a href="./detail.html">
+                                            <img src="./assets/images/silver-3.jpg" class="img-responsive">
+                                            <img src="./assets/images/silver-hov-3.jpg" class="img-responsive-hov">
                                         </a>
-                                        <div class="hover-contents-company">
-                                            <div class="company-date">
-                                                <span class="dates">5 Noyabr - 29 Noyabr</span>
-                                                <div class="countdown" data-date="2021-11-29 23:45:00" data-days="gün"
-                                                    data-hours="saat" data-minutes="dəq">
-                                                    <div class="time days flip"><span class="count">10</span><span
-                                                            class="label">gün</span></div>
-                                                    <div class="time hours flip"><span class="count">07</span><span
-                                                            class="label">saat</span></div>
-                                                    <div class="time minutes flip"><span class="count">28</span><span
-                                                            class="label">dəq</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
                                         <div class="hover-btns">
-                                            <a class="single-btn add-basket" tabindex="0">
+                                            <a class="single-btn add-basket">
                                                 <i class="fas fa-shopping-basket"></i>
                                             </a>
-                                            <a href="wishlist.html" class="single-btn" tabindex="0">
-                                                <i class="fas fa-heart"></i>
+                                            <a href="wishlist.html" class="single-btn">
+                                                <i class="far fa-heart"></i>
                                             </a>
                                         </div>
+
                                     </div>
                                 </div>
                             </div>
                             <div class="fav-info">
                                 <a href="">
-                                    <h2 class="basket-head">Single Diamonds Line Mini Hoop</h2>
+                                    <h2 class="basket-head">Single Mini Hoop</h2>
                                 </a>
                                 <p>
                                     <span>$</span>
-                                    195
+                                    30
                                 </p>
                             </div>
                             <div class="fav-color">
                                 <div class="color-item">
-                                    <img src="./assets/images/color/gold-white.svg" alt="">
-                                    <img src="./assets/images/color/silver-white.svg" alt="">
-                                    <p>14k Yellow Gold, Diamond</p>
+                                    <img src="./assets/images/color/gold.svg" alt="">
+                                    <img src="./assets/images/color/silver.svg" alt="">
+                                    <p>14k Yellow Gold</p>
                                 </div>
                             </div>
                         </div>
@@ -761,44 +660,43 @@
             </section>
             <!--Company Under 150-->
             <section id="favory">
-                <div class="favory-title">
-                    <h2>Company Under 150</h2>
+                <div class="container">
+                    <div class="row">
+                        <div class="favory-title">
+                            <h2>Company Under 150</h2>
+                            <ul class="time">
+                                <li>
+                                    <p class="hour">5</p>saat
+                                </li>
+                                <li>
+                                    <p class="minute">42</p>dəqiqə
+                                </li>
+                                <li>
+                                    <p class="second">36</p>saniyə
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-md-4">
                             <div class="favory-item">
                                 <div class="card-image">
-                                    <a href="">
-                                        <img src="./assets/images/silver-1.jpg" alt="">
-                                    </a>
-                                    <div class="hover-contents">
-                                        <a href="product-details.html" class="hover-image" tabindex="0">
-                                            <img src="./assets/images/silver-hov-1.jpg" alt="">
+                                    <div class="img-product">
+                                        <a href="./detail.html">
+                                            <img src="./assets/images/silver-1.jpg" class="img-responsive">
+                                            <img src="./assets/images/silver-hov-1.jpg" class="img-responsive-hov">
                                         </a>
-                                        <div class="hover-contents-company">
-                                            <div class="company-date">
-                                                <span class="dates">5 Noyabr - 29 Noyabr</span>
-                                                <div class="countdown" data-date="2021-11-29 23:45:00" data-days="gün"
-                                                    data-hours="saat" data-minutes="dəq">
-                                                    <div class="time days flip"><span class="count">10</span><span
-                                                            class="label">gün</span></div>
-                                                    <div class="time hours flip"><span class="count">07</span><span
-                                                            class="label">saat</span></div>
-                                                    <div class="time minutes flip"><span class="count">28</span><span
-                                                            class="label">dəq</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
                                         <div class="hover-btns">
                                             <a class="single-btn add-basket">
                                                 <i class="fas fa-shopping-basket"></i>
                                             </a>
-                                            <a href="wishlist.html" class="single-btn" tabindex="0">
-                                                <i class="fas fa-heart"></i>
+                                            <a href="wishlist.html" class="single-btn">
+                                                <i class="far fa-heart"></i>
                                             </a>
                                         </div>
+
                                     </div>
                                 </div>
                             </div>
@@ -822,107 +720,74 @@
                         <div class="col-md-4">
                             <div class="favory-item">
                                 <div class="card-image">
-                                    <a href="">
-                                        <img src="./assets/images/silver-2.jpg" alt="">
-                                    </a>
-                                    <div class="hover-contents">
-                                        <a href="product-details.html" class="hover-image" tabindex="0">
-                                            <img src="./assets/images/silver-hov-2.jpg" alt="">
+                                    <div class="img-product">
+                                        <a href="./detail.html">
+                                            <img src="./assets/images/silver-2.jpg" class="img-responsive">
+                                            <img src="./assets/images/silver-hov-2.jpg" class="img-responsive-hov">
                                         </a>
-                                        <div class="hover-contents-company">
-                                            <div class="company-date">
-                                                <span class="dates">5 Noyabr - 29 Noyabr</span>
-                                                <div class="countdown" data-date="2021-11-29 23:45:00" data-days="gün"
-                                                    data-hours="saat" data-minutes="dəq">
-                                                    <div class="time days flip"><span class="count">10</span><span
-                                                            class="label">gün</span></div>
-                                                    <div class="time hours flip"><span class="count">07</span><span
-                                                            class="label">saat</span></div>
-                                                    <div class="time minutes flip"><span class="count">28</span><span
-                                                            class="label">dəq</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
                                         <div class="hover-btns">
-                                            <a class="single-btn add-basket" tabindex="0">
+                                            <a class="single-btn add-basket">
                                                 <i class="fas fa-shopping-basket"></i>
                                             </a>
-                                            <a href="wishlist.html" class="single-btn" tabindex="0">
-                                                <i class="fas fa-heart"></i>
+                                            <a href="wishlist.html" class="single-btn">
+                                                <i class="far fa-heart"></i>
                                             </a>
                                         </div>
+
                                     </div>
                                 </div>
                             </div>
                             <div class="fav-info">
                                 <a href="">
-                                    <h2 class="basket-head">Single Colored Mini Hoop</h2>
+                                    <h2 class="basket-head">Single Mini Hoop</h2>
                                 </a>
                                 <p>
                                     <span>$</span>
-                                    60
+                                    30
                                 </p>
                             </div>
                             <div class="fav-color">
                                 <div class="color-item">
-                                    <img src="./assets/images/color/gold-white.svg" alt="">
-                                    <img src="./assets/images/color/gold-blue.svg" alt="">
-                                    <img src="./assets/images/color/gold-green.svg" alt="">
-                                    <p>14k Yellow Gold, Blue Sapphire</p>
+                                    <img src="./assets/images/color/gold.svg" alt="">
+                                    <img src="./assets/images/color/silver.svg" alt="">
+                                    <p>14k Yellow Gold</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="favory-item">
                                 <div class="card-image">
-                                    <a href="">
-                                        <img src="./assets/images/silver-3.jpg" alt="">
-                                    </a>
-                                    <div class="hover-contents">
-                                        <a class="hover-image" tabindex="0">
-                                            <img src="./assets/images/silver-hov-3.jpg" alt="">
+                                    <div class="img-product">
+                                        <a href="./detail.html">
+                                            <img src="./assets/images/silver-3.jpg" class="img-responsive">
+                                            <img src="./assets/images/silver-hov-3.jpg" class="img-responsive-hov">
                                         </a>
-                                        <div class="hover-contents-company">
-                                            <div class="company-date">
-                                                <span class="dates">5 Noyabr - 29 Noyabr</span>
-                                                <div class="countdown" data-date="2021-11-29 23:45:00" data-days="gün"
-                                                    data-hours="saat" data-minutes="dəq">
-                                                    <div class="time days flip"><span class="count">10</span><span
-                                                            class="label">gün</span></div>
-                                                    <div class="time hours flip"><span class="count">07</span><span
-                                                            class="label">saat</span></div>
-                                                    <div class="time minutes flip"><span class="count">28</span><span
-                                                            class="label">dəq</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
                                         <div class="hover-btns">
-                                            <a class="single-btn add-basket" tabindex="0">
+                                            <a class="single-btn add-basket">
                                                 <i class="fas fa-shopping-basket"></i>
                                             </a>
-                                            <a href="wishlist.html" class="single-btn" tabindex="0">
-                                                <i class="fas fa-heart"></i>
+                                            <a href="wishlist.html" class="single-btn">
+                                                <i class="far fa-heart"></i>
                                             </a>
                                         </div>
+
                                     </div>
                                 </div>
                             </div>
                             <div class="fav-info">
                                 <a href="">
-                                    <h2 class="basket-head">Single Diamonds Line Mini Hoop</h2>
+                                    <h2 class="basket-head">Single Mini Hoop</h2>
                                 </a>
                                 <p>
                                     <span>$</span>
-                                    195
+                                    30
                                 </p>
                             </div>
                             <div class="fav-color">
                                 <div class="color-item">
-                                    <img src="./assets/images/color/gold-white.svg" alt="">
-                                    <img src="./assets/images/color/silver-white.svg" alt="">
-                                    <p>14k Yellow Gold, Diamond</p>
+                                    <img src="./assets/images/color/gold.svg" alt="">
+                                    <img src="./assets/images/color/silver.svg" alt="">
+                                    <p>14k Yellow Gold</p>
                                 </div>
                             </div>
                         </div>
@@ -931,44 +796,43 @@
             </section>
             <!--Company Under 250-->
             <section id="favory">
-                <div class="favory-title">
-                    <h2>Company Under 250</h2>
+                <div class="container">
+                    <div class="row">
+                        <div class="favory-title">
+                            <h2>Company Under 250</h2>
+                            <ul class="time">
+                                <li>
+                                    <p class="hour">5</p>saat
+                                </li>
+                                <li>
+                                    <p class="minute">42</p>dəqiqə
+                                </li>
+                                <li>
+                                    <p class="second">36</p>saniyə
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-md-4">
                             <div class="favory-item">
                                 <div class="card-image">
-                                    <a href="">
-                                        <img src="./assets/images/silver-1.jpg" alt="">
-                                    </a>
-                                    <div class="hover-contents">
-                                        <a href="product-details.html" class="hover-image" tabindex="0">
-                                            <img src="./assets/images/silver-hov-1.jpg" alt="">
+                                    <div class="img-product">
+                                        <a href="./detail.html">
+                                            <img src="./assets/images/silver-1.jpg" class="img-responsive">
+                                            <img src="./assets/images/silver-hov-1.jpg" class="img-responsive-hov">
                                         </a>
-                                        <div class="hover-contents-company">
-                                            <div class="company-date">
-                                                <span class="dates">5 Noyabr - 29 Noyabr</span>
-                                                <div class="countdown" data-date="2021-11-29 23:45:00" data-days="gün"
-                                                    data-hours="saat" data-minutes="dəq">
-                                                    <div class="time days flip"><span class="count">10</span><span
-                                                            class="label">gün</span></div>
-                                                    <div class="time hours flip"><span class="count">07</span><span
-                                                            class="label">saat</span></div>
-                                                    <div class="time minutes flip"><span class="count">28</span><span
-                                                            class="label">dəq</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
                                         <div class="hover-btns">
                                             <a class="single-btn add-basket">
                                                 <i class="fas fa-shopping-basket"></i>
                                             </a>
-                                            <a href="wishlist.html" class="single-btn" tabindex="0">
-                                                <i class="fas fa-heart"></i>
+                                            <a href="wishlist.html" class="single-btn">
+                                                <i class="far fa-heart"></i>
                                             </a>
                                         </div>
+
                                     </div>
                                 </div>
                             </div>
@@ -992,107 +856,74 @@
                         <div class="col-md-4">
                             <div class="favory-item">
                                 <div class="card-image">
-                                    <a href="">
-                                        <img src="./assets/images/silver-2.jpg" alt="">
-                                    </a>
-                                    <div class="hover-contents">
-                                        <a href="product-details.html" class="hover-image" tabindex="0">
-                                            <img src="./assets/images/silver-hov-2.jpg" alt="">
+                                    <div class="img-product">
+                                        <a href="./detail.html">
+                                            <img src="./assets/images/silver-2.jpg" class="img-responsive">
+                                            <img src="./assets/images/silver-hov-2.jpg" class="img-responsive-hov">
                                         </a>
-                                        <div class="hover-contents-company">
-                                            <div class="company-date">
-                                                <span class="dates">5 Noyabr - 29 Noyabr</span>
-                                                <div class="countdown" data-date="2021-11-29 23:45:00" data-days="gün"
-                                                    data-hours="saat" data-minutes="dəq">
-                                                    <div class="time days flip"><span class="count">10</span><span
-                                                            class="label">gün</span></div>
-                                                    <div class="time hours flip"><span class="count">07</span><span
-                                                            class="label">saat</span></div>
-                                                    <div class="time minutes flip"><span class="count">28</span><span
-                                                            class="label">dəq</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
                                         <div class="hover-btns">
-                                            <a class="single-btn add-basket" tabindex="0">
+                                            <a class="single-btn add-basket">
                                                 <i class="fas fa-shopping-basket"></i>
                                             </a>
-                                            <a href="wishlist.html" class="single-btn" tabindex="0">
-                                                <i class="fas fa-heart"></i>
+                                            <a href="wishlist.html" class="single-btn">
+                                                <i class="far fa-heart"></i>
                                             </a>
                                         </div>
+
                                     </div>
                                 </div>
                             </div>
                             <div class="fav-info">
                                 <a href="">
-                                    <h2 class="basket-head">Single Colored Mini Hoop</h2>
+                                    <h2 class="basket-head">Single Mini Hoop</h2>
                                 </a>
                                 <p>
                                     <span>$</span>
-                                    60
+                                    30
                                 </p>
                             </div>
                             <div class="fav-color">
                                 <div class="color-item">
-                                    <img src="./assets/images/color/gold-white.svg" alt="">
-                                    <img src="./assets/images/color/gold-blue.svg" alt="">
-                                    <img src="./assets/images/color/gold-green.svg" alt="">
-                                    <p>14k Yellow Gold, Blue Sapphire</p>
+                                    <img src="./assets/images/color/gold.svg" alt="">
+                                    <img src="./assets/images/color/silver.svg" alt="">
+                                    <p>14k Yellow Gold</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="favory-item">
                                 <div class="card-image">
-                                    <a href="">
-                                        <img src="./assets/images/silver-3.jpg" alt="">
-                                    </a>
-                                    <div class="hover-contents">
-                                        <a class="hover-image" tabindex="0">
-                                            <img src="./assets/images/silver-hov-3.jpg" alt="">
+                                    <div class="img-product">
+                                        <a href="./detail.html">
+                                            <img src="./assets/images/silver-3.jpg" class="img-responsive">
+                                            <img src="./assets/images/silver-hov-3.jpg" class="img-responsive-hov">
                                         </a>
-                                        <div class="hover-contents-company">
-                                            <div class="company-date">
-                                                <span class="dates">5 Noyabr - 29 Noyabr</span>
-                                                <div class="countdown" data-date="2021-11-29 23:45:00" data-days="gün"
-                                                    data-hours="saat" data-minutes="dəq">
-                                                    <div class="time days flip"><span class="count">10</span><span
-                                                            class="label">gün</span></div>
-                                                    <div class="time hours flip"><span class="count">07</span><span
-                                                            class="label">saat</span></div>
-                                                    <div class="time minutes flip"><span class="count">28</span><span
-                                                            class="label">dəq</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
                                         <div class="hover-btns">
-                                            <a class="single-btn add-basket" tabindex="0">
+                                            <a class="single-btn add-basket">
                                                 <i class="fas fa-shopping-basket"></i>
                                             </a>
-                                            <a href="wishlist.html" class="single-btn" tabindex="0">
-                                                <i class="fas fa-heart"></i>
+                                            <a href="wishlist.html" class="single-btn">
+                                                <i class="far fa-heart"></i>
                                             </a>
                                         </div>
+
                                     </div>
                                 </div>
                             </div>
                             <div class="fav-info">
                                 <a href="">
-                                    <h2 class="basket-head">Single Diamonds Line Mini Hoop</h2>
+                                    <h2 class="basket-head">Single Mini Hoop</h2>
                                 </a>
                                 <p>
                                     <span>$</span>
-                                    195
+                                    30
                                 </p>
                             </div>
                             <div class="fav-color">
                                 <div class="color-item">
-                                    <img src="./assets/images/color/gold-white.svg" alt="">
-                                    <img src="./assets/images/color/silver-white.svg" alt="">
-                                    <p>14k Yellow Gold, Diamond</p>
+                                    <img src="./assets/images/color/gold.svg" alt="">
+                                    <img src="./assets/images/color/silver.svg" alt="">
+                                    <p>14k Yellow Gold</p>
                                 </div>
                             </div>
                         </div>
@@ -1101,44 +932,44 @@
             </section>
             <!--Company Under 500-->
             <section id="favory">
-                <div class="favory-title">
-                    <h2>Company Under 500</h2>
+                <div class="container">
+                    <div class="row">
+                        <div class="favory-title">
+                            <h2>Company Under 500</h2>
+                            <ul class="time">
+                                <li>
+                                    <p class="hour">5</p>saat
+                                </li>
+                                <li>
+                                    <p class="minute">42</p>dəqiqə
+                                </li>
+                                <li>
+                                    <p class="second">36</p>saniyə
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
                 </div>
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-md-4">
                             <div class="favory-item">
                                 <div class="card-image">
-                                    <a href="">
-                                        <img src="./assets/images/silver-1.jpg" alt="">
-                                    </a>
-                                    <div class="hover-contents">
-                                        <a href="product-details.html" class="hover-image" tabindex="0">
-                                            <img src="./assets/images/silver-hov-1.jpg" alt="">
+                                    <div class="img-product">
+                                        <a href="./detail.html">
+                                            <img src="./assets/images/silver-1.jpg" class="img-responsive">
+                                            <img src="./assets/images/silver-hov-1.jpg" class="img-responsive-hov">
                                         </a>
-                                        <div class="hover-contents-company">
-                                            <div class="company-date">
-                                                <span class="dates">5 Noyabr - 29 Noyabr</span>
-                                                <div class="countdown" data-date="2021-11-29 23:45:00" data-days="gün"
-                                                    data-hours="saat" data-minutes="dəq">
-                                                    <div class="time days flip"><span class="count">10</span><span
-                                                            class="label">gün</span></div>
-                                                    <div class="time hours flip"><span class="count">07</span><span
-                                                            class="label">saat</span></div>
-                                                    <div class="time minutes flip"><span class="count">28</span><span
-                                                            class="label">dəq</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
                                         <div class="hover-btns">
                                             <a class="single-btn add-basket">
                                                 <i class="fas fa-shopping-basket"></i>
                                             </a>
-                                            <a href="wishlist.html" class="single-btn" tabindex="0">
-                                                <i class="fas fa-heart"></i>
+                                            <a href="wishlist.html" class="single-btn">
+                                                <i class="far fa-heart"></i>
                                             </a>
                                         </div>
+
                                     </div>
                                 </div>
                             </div>
@@ -1162,107 +993,74 @@
                         <div class="col-md-4">
                             <div class="favory-item">
                                 <div class="card-image">
-                                    <a href="">
-                                        <img src="./assets/images/silver-2.jpg" alt="">
-                                    </a>
-                                    <div class="hover-contents">
-                                        <a href="product-details.html" class="hover-image" tabindex="0">
-                                            <img src="./assets/images/silver-hov-2.jpg" alt="">
+                                    <div class="img-product">
+                                        <a href="./detail.html">
+                                            <img src="./assets/images/silver-2.jpg" class="img-responsive">
+                                            <img src="./assets/images/silver-hov-2.jpg" class="img-responsive-hov">
                                         </a>
-                                        <div class="hover-contents-company">
-                                            <div class="company-date">
-                                                <span class="dates">5 Noyabr - 29 Noyabr</span>
-                                                <div class="countdown" data-date="2021-11-29 23:45:00" data-days="gün"
-                                                    data-hours="saat" data-minutes="dəq">
-                                                    <div class="time days flip"><span class="count">10</span><span
-                                                            class="label">gün</span></div>
-                                                    <div class="time hours flip"><span class="count">07</span><span
-                                                            class="label">saat</span></div>
-                                                    <div class="time minutes flip"><span class="count">28</span><span
-                                                            class="label">dəq</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
                                         <div class="hover-btns">
-                                            <a class="single-btn add-basket" tabindex="0">
+                                            <a class="single-btn add-basket">
                                                 <i class="fas fa-shopping-basket"></i>
                                             </a>
-                                            <a href="wishlist.html" class="single-btn" tabindex="0">
-                                                <i class="fas fa-heart"></i>
+                                            <a href="wishlist.html" class="single-btn">
+                                                <i class="far fa-heart"></i>
                                             </a>
                                         </div>
+
                                     </div>
                                 </div>
                             </div>
                             <div class="fav-info">
                                 <a href="">
-                                    <h2 class="basket-head">Single Colored Mini Hoop</h2>
+                                    <h2 class="basket-head">Single Mini Hoop</h2>
                                 </a>
                                 <p>
                                     <span>$</span>
-                                    60
+                                    30
                                 </p>
                             </div>
                             <div class="fav-color">
                                 <div class="color-item">
-                                    <img src="./assets/images/color/gold-white.svg" alt="">
-                                    <img src="./assets/images/color/gold-blue.svg" alt="">
-                                    <img src="./assets/images/color/gold-green.svg" alt="">
-                                    <p>14k Yellow Gold, Blue Sapphire</p>
+                                    <img src="./assets/images/color/gold.svg" alt="">
+                                    <img src="./assets/images/color/silver.svg" alt="">
+                                    <p>14k Yellow Gold</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="favory-item">
                                 <div class="card-image">
-                                    <a href="">
-                                        <img src="./assets/images/silver-3.jpg" alt="">
-                                    </a>
-                                    <div class="hover-contents">
-                                        <a class="hover-image" tabindex="0">
-                                            <img src="./assets/images/silver-hov-3.jpg" alt="">
+                                    <div class="img-product">
+                                        <a href="./detail.html">
+                                            <img src="./assets/images/silver-3.jpg" class="img-responsive">
+                                            <img src="./assets/images/silver-hov-3.jpg" class="img-responsive-hov">
                                         </a>
-                                        <div class="hover-contents-company">
-                                            <div class="company-date">
-                                                <span class="dates">5 Noyabr - 29 Noyabr</span>
-                                                <div class="countdown" data-date="2021-11-29 23:45:00" data-days="gün"
-                                                    data-hours="saat" data-minutes="dəq">
-                                                    <div class="time days flip"><span class="count">10</span><span
-                                                            class="label">gün</span></div>
-                                                    <div class="time hours flip"><span class="count">07</span><span
-                                                            class="label">saat</span></div>
-                                                    <div class="time minutes flip"><span class="count">28</span><span
-                                                            class="label">dəq</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
                                         <div class="hover-btns">
-                                            <a class="single-btn add-basket" tabindex="0">
+                                            <a class="single-btn add-basket">
                                                 <i class="fas fa-shopping-basket"></i>
                                             </a>
-                                            <a href="wishlist.html" class="single-btn" tabindex="0">
-                                                <i class="fas fa-heart"></i>
+                                            <a href="wishlist.html" class="single-btn">
+                                                <i class="far fa-heart"></i>
                                             </a>
                                         </div>
+
                                     </div>
                                 </div>
                             </div>
                             <div class="fav-info">
                                 <a href="">
-                                    <h2 class="basket-head">Single Diamonds Line Mini Hoop</h2>
+                                    <h2 class="basket-head">Single Mini Hoop</h2>
                                 </a>
                                 <p>
                                     <span>$</span>
-                                    195
+                                    30
                                 </p>
                             </div>
                             <div class="fav-color">
                                 <div class="color-item">
-                                    <img src="./assets/images/color/gold-white.svg" alt="">
-                                    <img src="./assets/images/color/silver-white.svg" alt="">
-                                    <p>14k Yellow Gold, Diamond</p>
+                                    <img src="./assets/images/color/gold.svg" alt="">
+                                    <img src="./assets/images/color/silver.svg" alt="">
+                                    <p>14k Yellow Gold</p>
                                 </div>
                             </div>
                         </div>
@@ -1271,44 +1069,43 @@
             </section>
             <!--Company Over 500-->
             <section id="favory">
-                <div class="favory-title">
-                    <h2>Company Over 500</h2>
+                <div class="container">
+                    <div class="row">
+                        <div class="favory-title">
+                            <h2>Company Over 500</h2>
+                            <ul class="time">
+                                <li>
+                                    <p class="hour">5</p>saat
+                                </li>
+                                <li>
+                                    <p class="minute">42</p>dəqiqə
+                                </li>
+                                <li>
+                                    <p class="second">36</p>saniyə
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-md-4">
                             <div class="favory-item">
                                 <div class="card-image">
-                                    <a href="">
-                                        <img src="./assets/images/silver-1.jpg" alt="">
-                                    </a>
-                                    <div class="hover-contents">
-                                        <a href="product-details.html" class="hover-image" tabindex="0">
-                                            <img src="./assets/images/silver-hov-1.jpg" alt="">
+                                    <div class="img-product">
+                                        <a href="./detail.html">
+                                            <img src="./assets/images/silver-1.jpg" class="img-responsive">
+                                            <img src="./assets/images/silver-hov-1.jpg" class="img-responsive-hov">
                                         </a>
-                                        <div class="hover-contents-company">
-                                            <div class="company-date">
-                                                <span class="dates">5 Noyabr - 29 Noyabr</span>
-                                                <div class="countdown" data-date="2021-11-29 23:45:00" data-days="gün"
-                                                    data-hours="saat" data-minutes="dəq">
-                                                    <div class="time days flip"><span class="count">10</span><span
-                                                            class="label">gün</span></div>
-                                                    <div class="time hours flip"><span class="count">07</span><span
-                                                            class="label">saat</span></div>
-                                                    <div class="time minutes flip"><span class="count">28</span><span
-                                                            class="label">dəq</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
                                         <div class="hover-btns">
                                             <a class="single-btn add-basket">
                                                 <i class="fas fa-shopping-basket"></i>
                                             </a>
-                                            <a href="wishlist.html" class="single-btn" tabindex="0">
-                                                <i class="fas fa-heart"></i>
+                                            <a href="wishlist.html" class="single-btn">
+                                                <i class="far fa-heart"></i>
                                             </a>
                                         </div>
+
                                     </div>
                                 </div>
                             </div>
@@ -1332,107 +1129,74 @@
                         <div class="col-md-4">
                             <div class="favory-item">
                                 <div class="card-image">
-                                    <a href="">
-                                        <img src="./assets/images/silver-2.jpg" alt="">
-                                    </a>
-                                    <div class="hover-contents">
-                                        <a href="product-details.html" class="hover-image" tabindex="0">
-                                            <img src="./assets/images/silver-hov-2.jpg" alt="">
+                                    <div class="img-product">
+                                        <a href="./detail.html">
+                                            <img src="./assets/images/silver-2.jpg" class="img-responsive">
+                                            <img src="./assets/images/silver-hov-2.jpg" class="img-responsive-hov">
                                         </a>
-                                        <div class="hover-contents-company">
-                                            <div class="company-date">
-                                                <span class="dates">5 Noyabr - 29 Noyabr</span>
-                                                <div class="countdown" data-date="2021-11-29 23:45:00" data-days="gün"
-                                                    data-hours="saat" data-minutes="dəq">
-                                                    <div class="time days flip"><span class="count">10</span><span
-                                                            class="label">gün</span></div>
-                                                    <div class="time hours flip"><span class="count">07</span><span
-                                                            class="label">saat</span></div>
-                                                    <div class="time minutes flip"><span class="count">28</span><span
-                                                            class="label">dəq</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
                                         <div class="hover-btns">
-                                            <a class="single-btn add-basket" tabindex="0">
+                                            <a class="single-btn add-basket">
                                                 <i class="fas fa-shopping-basket"></i>
                                             </a>
-                                            <a href="wishlist.html" class="single-btn" tabindex="0">
-                                                <i class="fas fa-heart"></i>
+                                            <a href="wishlist.html" class="single-btn">
+                                                <i class="far fa-heart"></i>
                                             </a>
                                         </div>
+
                                     </div>
                                 </div>
                             </div>
                             <div class="fav-info">
                                 <a href="">
-                                    <h2 class="basket-head">Single Colored Mini Hoop</h2>
+                                    <h2 class="basket-head">Single Mini Hoop</h2>
                                 </a>
                                 <p>
                                     <span>$</span>
-                                    60
+                                    30
                                 </p>
                             </div>
                             <div class="fav-color">
                                 <div class="color-item">
-                                    <img src="./assets/images/color/gold-white.svg" alt="">
-                                    <img src="./assets/images/color/gold-blue.svg" alt="">
-                                    <img src="./assets/images/color/gold-green.svg" alt="">
-                                    <p>14k Yellow Gold, Blue Sapphire</p>
+                                    <img src="./assets/images/color/gold.svg" alt="">
+                                    <img src="./assets/images/color/silver.svg" alt="">
+                                    <p>14k Yellow Gold</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="favory-item">
                                 <div class="card-image">
-                                    <a href="">
-                                        <img src="./assets/images/silver-3.jpg" alt="">
-                                    </a>
-                                    <div class="hover-contents">
-                                        <a class="hover-image" tabindex="0">
-                                            <img src="./assets/images/silver-hov-3.jpg" alt="">
+                                    <div class="img-product">
+                                        <a href="./detail.html">
+                                            <img src="./assets/images/silver-3.jpg" class="img-responsive">
+                                            <img src="./assets/images/silver-hov-3.jpg" class="img-responsive-hov">
                                         </a>
-                                        <div class="hover-contents-company">
-                                            <div class="company-date">
-                                                <span class="dates">5 Noyabr - 29 Noyabr</span>
-                                                <div class="countdown" data-date="2021-11-29 23:45:00" data-days="gün"
-                                                    data-hours="saat" data-minutes="dəq">
-                                                    <div class="time days flip"><span class="count">10</span><span
-                                                            class="label">gün</span></div>
-                                                    <div class="time hours flip"><span class="count">07</span><span
-                                                            class="label">saat</span></div>
-                                                    <div class="time minutes flip"><span class="count">28</span><span
-                                                            class="label">dəq</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
                                         <div class="hover-btns">
-                                            <a class="single-btn add-basket" tabindex="0">
+                                            <a class="single-btn add-basket">
                                                 <i class="fas fa-shopping-basket"></i>
                                             </a>
-                                            <a href="wishlist.html" class="single-btn" tabindex="0">
-                                                <i class="fas fa-heart"></i>
+                                            <a href="wishlist.html" class="single-btn">
+                                                <i class="far fa-heart"></i>
                                             </a>
                                         </div>
+
                                     </div>
                                 </div>
                             </div>
                             <div class="fav-info">
                                 <a href="">
-                                    <h2 class="basket-head">Single Diamonds Line Mini Hoop</h2>
+                                    <h2 class="basket-head">Single Mini Hoop</h2>
                                 </a>
                                 <p>
                                     <span>$</span>
-                                    195
+                                    30
                                 </p>
                             </div>
                             <div class="fav-color">
                                 <div class="color-item">
-                                    <img src="./assets/images/color/gold-white.svg" alt="">
-                                    <img src="./assets/images/color/silver-white.svg" alt="">
-                                    <p>14k Yellow Gold, Diamond</p>
+                                    <img src="./assets/images/color/gold.svg" alt="">
+                                    <img src="./assets/images/color/silver.svg" alt="">
+                                    <p>14k Yellow Gold</p>
                                 </div>
                             </div>
                         </div>
@@ -1441,44 +1205,43 @@
             </section>
             <!--Company For Him -->
             <section id="favory">
-                <div class="favory-title">
-                    <h2>Company For Him</h2>
+                <div class="container">
+                    <div class="row">
+                        <div class="favory-title">
+                            <h2>Company For Him</h2>
+                            <ul class="time">
+                                <li>
+                                    <p class="hour">5</p>saat
+                                </li>
+                                <li>
+                                    <p class="minute">42</p>dəqiqə
+                                </li>
+                                <li>
+                                    <p class="second">36</p>saniyə
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-md-4">
                             <div class="favory-item">
                                 <div class="card-image">
-                                    <a href="">
-                                        <img src="./assets/images/him-1.jpg" alt="">
-                                    </a>
-                                    <div class="hover-contents">
-                                        <a href="product-details.html" class="hover-image" tabindex="0">
-                                            <img src="./assets/images/him-hov-1.jpg" alt="">
+                                    <div class="img-product">
+                                        <a href="./detail.html">
+                                            <img src="./assets/images/him-1.jpg" class="img-responsive">
+                                            <img src="./assets/images/him-hov-1.jpg" class="img-responsive-hov">
                                         </a>
-                                        <div class="hover-contents-company">
-                                            <div class="company-date">
-                                                <span class="dates">5 Noyabr - 29 Noyabr</span>
-                                                <div class="countdown" data-date="2021-11-29 23:45:00" data-days="gün"
-                                                    data-hours="saat" data-minutes="dəq">
-                                                    <div class="time days flip"><span class="count">10</span><span
-                                                            class="label">gün</span></div>
-                                                    <div class="time hours flip"><span class="count">07</span><span
-                                                            class="label">saat</span></div>
-                                                    <div class="time minutes flip"><span class="count">28</span><span
-                                                            class="label">dəq</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
                                         <div class="hover-btns">
                                             <a class="single-btn add-basket">
                                                 <i class="fas fa-shopping-basket"></i>
                                             </a>
-                                            <a href="wishlist.html" class="single-btn" tabindex="0">
-                                                <i class="fas fa-heart"></i>
+                                            <a href="wishlist.html" class="single-btn">
+                                                <i class="far fa-heart"></i>
                                             </a>
                                         </div>
+
                                     </div>
                                 </div>
                             </div>
@@ -1502,88 +1265,54 @@
                         <div class="col-md-4">
                             <div class="favory-item">
                                 <div class="card-image">
-                                    <a href="">
-                                        <img src="./assets/images/him-2.jpg" alt="">
-                                    </a>
-                                    <div class="hover-contents">
-                                        <a href="product-details.html" class="hover-image" tabindex="0">
-                                            <img src="./assets/images/him-hov-2.jpg" alt="">
+                                    <div class="img-product">
+                                        <a href="./detail.html">
+                                            <img src="./assets/images/him-2.jpg" class="img-responsive">
+                                            <img src="./assets/images/him-hov-2.jpg" class="img-responsive-hov">
                                         </a>
-                                        <div class="hover-contents-company">
-                                            <div class="company-date">
-                                                <span class="dates">5 Noyabr - 29 Noyabr</span>
-                                                <div class="countdown" data-date="2021-11-29 23:45:00" data-days="gün"
-                                                    data-hours="saat" data-minutes="dəq">
-                                                    <div class="time days flip"><span class="count">10</span><span
-                                                            class="label">gün</span></div>
-                                                    <div class="time hours flip"><span class="count">07</span><span
-                                                            class="label">saat</span></div>
-                                                    <div class="time minutes flip"><span class="count">28</span><span
-                                                            class="label">dəq</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
                                         <div class="hover-btns">
-                                            <a class="single-btn add-basket" tabindex="0">
+                                            <a class="single-btn add-basket">
                                                 <i class="fas fa-shopping-basket"></i>
                                             </a>
-                                            <a href="wishlist.html" class="single-btn" tabindex="0">
-                                                <i class="fas fa-heart"></i>
+                                            <a href="wishlist.html" class="single-btn">
+                                                <i class="far fa-heart"></i>
                                             </a>
                                         </div>
+
                                     </div>
                                 </div>
                             </div>
                             <div class="fav-info">
                                 <a href="">
-                                    <h2 class="basket-head">Single Colored Mini Hoop</h2>
+                                    <h2 class="basket-head">Single Mini Hoop</h2>
                                 </a>
                                 <p>
                                     <span>$</span>
-                                    60
+                                    30
                                 </p>
                             </div>
                             <div class="fav-color">
                                 <div class="color-item">
-                                    <img src="./assets/images/color/gold-white.svg" alt="">
-                                    <img src="./assets/images/color/gold-blue.svg" alt="">
-                                    <img src="./assets/images/color/gold-green.svg" alt="">
-                                    <p>14k Yellow Gold, Blue Sapphire</p>
+                                    <img src="./assets/images/color/gold.svg" alt="">
+                                    <img src="./assets/images/color/silver.svg" alt="">
+                                    <p>14k Yellow Gold</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="favory-item">
                                 <div class="card-image">
-                                    <a href="">
-                                        <img src="./assets/images/him-3.jpg" alt="">
-                                    </a>
-                                    <div class="hover-contents">
-                                        <a class="hover-image" tabindex="0">
-                                            <img src="./assets/images/him-hov-3.jpg" alt="">
+                                    <div class="img-product">
+                                        <a href="./detail.html">
+                                            <img src="./assets/images/him-3.jpg" class="img-responsive">
+                                            <img src="./assets/images/him-hov-3.jpg" class="img-responsive-hov">
                                         </a>
-                                        <div class="hover-contents-company">
-                                            <div class="company-date">
-                                                <span class="dates">5 Noyabr - 29 Noyabr</span>
-                                                <div class="countdown" data-date="2021-11-29 23:45:00" data-days="gün"
-                                                    data-hours="saat" data-minutes="dəq">
-                                                    <div class="time days flip"><span class="count">10</span><span
-                                                            class="label">gün</span></div>
-                                                    <div class="time hours flip"><span class="count">07</span><span
-                                                            class="label">saat</span></div>
-                                                    <div class="time minutes flip"><span class="count">28</span><span
-                                                            class="label">dəq</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
                                         <div class="hover-btns">
-                                            <a class="single-btn add-basket" tabindex="0">
+                                            <a class="single-btn add-basket">
                                                 <i class="fas fa-shopping-basket"></i>
                                             </a>
-                                            <a href="wishlist.html" class="single-btn" tabindex="0">
-                                                <i class="fas fa-heart"></i>
+                                            <a class="single-btn">
+                                                <i class="far fa-heart"></i>
                                             </a>
                                         </div>
                                     </div>
@@ -1591,18 +1320,18 @@
                             </div>
                             <div class="fav-info">
                                 <a href="">
-                                    <h2 class="basket-head">Single Diamonds Line Mini Hoop</h2>
+                                    <h2 class="basket-head">Single Mini Hoop</h2>
                                 </a>
                                 <p>
                                     <span>$</span>
-                                    195
+                                    30
                                 </p>
                             </div>
                             <div class="fav-color">
                                 <div class="color-item">
-                                    <img src="./assets/images/color/gold-white.svg" alt="">
-                                    <img src="./assets/images/color/silver-white.svg" alt="">
-                                    <p>14k Yellow Gold, Diamond</p>
+                                    <img src="./assets/images/color/gold.svg" alt="">
+                                    <img src="./assets/images/color/silver.svg" alt="">
+                                    <p>14k Yellow Gold</p>
                                 </div>
                             </div>
                         </div>

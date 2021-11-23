@@ -6006,6 +6006,10 @@ header {
         align-items: center;
         padding: 2rem 1rem;
         border-bottom: 1px solid #dadada; }
+        header #basket .basket .basket-body .basket-item-content button {
+          border: none;
+          background: none;
+          cursor: pointer; }
         header #basket .basket .basket-body .basket-item-content img {
           width: 100%; }
         header #basket .basket .basket-body .basket-item-content .name-icon {
@@ -6018,8 +6022,8 @@ header {
           justify-content: space-between;
           align-items: center;
           padding: 3rem 1rem;
-          font-size: 1.5rem; }
-          header #basket .basket .basket-body .basket-item-content .count-price i {
+          font-size: 2rem; }
+          header #basket .basket .basket-body .basket-item-content .count-price .count button i {
             padding: 0 1rem; }
       header #basket .basket .basket-footer .basket-footer-content {
         border-bottom: 1px solid #dadada;
@@ -6082,6 +6086,32 @@ header {
             outline: none; }
           header nav .nav-items li a i {
             font-size: 2rem; }
+      header nav .nav-items .basket-number-sum {
+        color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 38px;
+        right: 13px;
+        width: 20px;
+        height: 20px;
+        border-radius: 100%;
+        background-color: #dadada;
+        font-size: 12px; }
+      header nav .nav-items .fav-number-sum {
+        color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 35px;
+        right: 24%;
+        width: 20px;
+        height: 20px;
+        border-radius: 100%;
+        background-color: #dadada;
+        font-size: 12px; }
   header #search {
     display: none;
     position: sticky;
@@ -6747,49 +6777,58 @@ aside {
     padding: 0 30px 0 16px; }
 
 #favory .favory-item {
-  padding-top: 2rem; }
+  padding-top: 2rem;
+  position: relative; }
   #favory .favory-item .card-image {
     position: relative; }
+    #favory .favory-item .card-image:hover .hover-btns {
+      opacity: 1;
+      visibility: visible;
+      transition: .5s;
+      transform: translateX(-50%); }
     #favory .favory-item .card-image img {
-      width: 100%;
+      width: auto;
+      max-width: 100%;
       transition: opacity 0.25s ease, filter 0.25s ease; }
-    #favory .favory-item .card-image .hover-contents {
-      transition: opacity 0.25s ease, filter 0.25s ease;
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      opacity: 0; }
-      #favory .favory-item .card-image .hover-contents .hover-btns {
-        position: absolute;
-        bottom: 16px;
-        right: 16px;
-        pointer-events: none;
-        font-size: 8px;
-        line-height: 10px;
-        padding: 10px 20px 8px;
-        text-transform: uppercase;
-        border-radius: 30px;
-        letter-spacing: 1px;
-        white-space: nowrap; }
-        #favory .favory-item .card-image .hover-contents .hover-btns .single-btn {
-          cursor: pointer;
-          font-size: 2rem;
-          width: 46px;
-          height: 46px;
-          line-height: 29px;
-          background-color: white;
-          border-radius: 50%;
-          text-align: center;
-          display: block;
-          margin-bottom: 13px;
-          transition: .5s;
-          padding: 10px; }
-          #favory .favory-item .card-image .hover-contents .hover-btns .single-btn i:hover {
-            color: rebeccapurple; }
-      #favory .favory-item .card-image .hover-contents:hover {
+    #favory .favory-item .card-image .img-product {
+      position: relative; }
+      #favory .favory-item .card-image .img-product .img-responsive {
         opacity: 1; }
+        #favory .favory-item .card-image .img-product .img-responsive:hover {
+          opacity: 0; }
+      #favory .favory-item .card-image .img-product .img-responsive-hov {
+        transition: opacity 0.25s ease, filter 0.25s ease;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        opacity: 0; }
+        #favory .favory-item .card-image .img-product .img-responsive-hov:hover {
+          opacity: 1; }
+    #favory .favory-item .card-image .hover-btns {
+      position: absolute;
+      top: 60%;
+      left: 80%;
+      display: block;
+      opacity: 0;
+      visibility: hidden;
+      transition: all .3s linear; }
+      #favory .favory-item .card-image .hover-btns .single-btn {
+        cursor: pointer;
+        font-size: 2rem;
+        width: 46px;
+        height: 46px;
+        line-height: 29px;
+        background-color: white;
+        border-radius: 50%;
+        text-align: center;
+        display: block;
+        margin-bottom: 13px;
+        transition: .5s;
+        padding: 10px; }
+        #favory .favory-item .card-image .hover-btns .single-btn i:hover {
+          color: #B4876E; }
 
 #favory .fav-info {
   display: flex;
@@ -7374,22 +7413,40 @@ aside {
   #info {
     display: none; } }
 
+#favory .favory-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  #favory .favory-title .time {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    #favory .favory-title .time li {
+      text-align: center;
+      padding: 10px 20px;
+      background-color: #f0f1f2;
+      font-size: 10px;
+      color: #282828;
+      position: relative;
+      border-right: 1px solid white; }
+      #favory .favory-title .time li p {
+        font-size: 14px;
+        padding-bottom: 5px; }
+
 #favory .favory-item {
   padding-top: 2rem; }
   #favory .favory-item .card-image {
     position: relative; }
-    #favory .favory-item .card-image img {
-      width: 100%;
-      transition: opacity 0.25s ease, filter 0.25s ease; }
     #favory .favory-item .card-image .hover-contents-company {
       transition: opacity 0.25s ease, filter 0.25s ease;
       position: absolute;
       left: 0;
       right: 0;
       bottom: 1%;
-      opacity: 1; }
+      opacity: 1;
+      width: max-content; }
       #favory .favory-item .card-image .hover-contents-company .company-date {
-        color: white;
+        color: firebrick;
         font-size: 2rem;
         padding-left: 2rem;
         font-weight: bold; }
@@ -7397,32 +7454,54 @@ aside {
           display: flex; }
           #favory .favory-item .card-image .hover-contents-company .company-date .countdown span {
             padding-right: 0.5rem; }
-      #favory .favory-item .card-image .hover-contents-company .hover-btns {
-        position: absolute;
-        bottom: 16px;
-        right: 16px;
-        pointer-events: none;
-        font-size: 8px;
-        line-height: 10px;
-        padding: 10px 20px 8px;
-        text-transform: uppercase;
-        border-radius: 30px;
-        letter-spacing: 1px;
-        white-space: nowrap; }
-        #favory .favory-item .card-image .hover-contents-company .hover-btns .single-btn {
-          font-size: 2rem;
-          width: 46px;
-          height: 46px;
-          line-height: 29px;
-          background-color: white;
-          border-radius: 50%;
-          text-align: center;
-          display: block;
-          margin-bottom: 13px;
-          transition: .5s;
-          padding: 10px; }
-      #favory .favory-item .card-image .hover-contents-company:hover {
+    #favory .favory-item .card-image:hover .hover-btns {
+      opacity: 1;
+      visibility: visible;
+      transition: .5s;
+      transform: translateX(-50%); }
+    #favory .favory-item .card-image img {
+      width: auto;
+      max-width: 100%;
+      transition: opacity 0.25s ease, filter 0.25s ease; }
+    #favory .favory-item .card-image .img-product {
+      position: relative; }
+      #favory .favory-item .card-image .img-product .img-responsive {
         opacity: 1; }
+        #favory .favory-item .card-image .img-product .img-responsive:hover {
+          opacity: 0; }
+      #favory .favory-item .card-image .img-product .img-responsive-hov {
+        transition: opacity 0.25s ease, filter 0.25s ease;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        opacity: 0; }
+        #favory .favory-item .card-image .img-product .img-responsive-hov:hover {
+          opacity: 1; }
+    #favory .favory-item .card-image .hover-btns {
+      position: absolute;
+      top: 60%;
+      left: 80%;
+      display: block;
+      opacity: 0;
+      visibility: hidden;
+      transition: all .3s linear; }
+      #favory .favory-item .card-image .hover-btns .single-btn {
+        cursor: pointer;
+        font-size: 2rem;
+        width: 46px;
+        height: 46px;
+        line-height: 29px;
+        background-color: white;
+        border-radius: 50%;
+        text-align: center;
+        display: block;
+        margin-bottom: 13px;
+        transition: .5s;
+        padding: 10px; }
+        #favory .favory-item .card-image .hover-btns .single-btn:hover {
+          color: #B4876E; }
 
 #dropdown {
   display: none; }

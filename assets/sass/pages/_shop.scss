@@ -204,67 +204,86 @@ aside {
 
     .favory-item {
         padding-top: 2rem;
+        position: relative;
+
 
         .card-image {
             position: relative;
 
-            img {
-                width: 100%;
-                transition: opacity 0.25s ease, filter 0.25s ease;
-
+            &:hover .hover-btns {
+                opacity: 1;
+                visibility: visible;
+                transition: .5s;
+                transform: translateX(-50%);
             }
 
-            .hover-contents {
+            img {
+                width: auto;
+                max-width: 100%;
                 transition: opacity 0.25s ease, filter 0.25s ease;
-                position: absolute;
-                top: 0;
-                left: 0;
-                right: 0;
-                bottom: 0;
-                opacity: 0;
+            }
 
-                .hover-btns {
+            .img-product {
+                position: relative;
+
+                .img-responsive {
+                    opacity: 1;
+
+                    &:hover {
+                        opacity: 0;
+                    }
+                }
+
+                .img-responsive-hov {
+                    transition: opacity 0.25s ease, filter 0.25s ease;
                     position: absolute;
-                    bottom: 16px;
-                    right: 16px;
-                    pointer-events: none;
-                    font-size: 8px;
-                    line-height: 10px;
-                    padding: 10px 20px 8px;
-                    text-transform: uppercase;
-                    border-radius: 30px;
-                    letter-spacing: 1px;
-                    white-space: nowrap;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    opacity: 0;
 
-                    .single-btn {
-                        cursor: pointer;
-                        font-size: 2rem;
-                        width: 46px;
-                        height: 46px;
-                        line-height: 29px;
-                        background-color: $color-secondary;
-                        border-radius: 50%;
-                        text-align: center;
-                        display: block;
-                        margin-bottom: 13px;
-                        transition: .5s;
-                        padding: 10px;
+                    &:hover {
+                        opacity: 1;
+                    }
+                }
+            }
 
-                        i {
-                            &:hover {
-                                color: rebeccapurple;
-                            }
+
+            .hover-btns {
+                position: absolute;
+                top: 60%;
+                left: 80%;
+                display: block;
+                opacity: 0;
+                visibility: hidden;
+                transition: all .3s linear;
+
+
+                .single-btn {
+                    cursor: pointer;
+                    font-size: 2rem;
+                    width: 46px;
+                    height: 46px;
+                    line-height: 29px;
+                    background-color: $color-secondary;
+                    border-radius: 50%;
+                    text-align: center;
+                    display: block;
+                    margin-bottom: 13px;
+                    transition: .5s;
+                    padding: 10px;
+
+                    i {
+                        &:hover {
+                            color: $color-brown;
                         }
-
-
                     }
 
                 }
 
-                &:hover {
-                    opacity: 1;
-                }
             }
+
         }
     }
 
