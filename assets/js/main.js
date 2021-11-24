@@ -317,6 +317,32 @@ tabColors.forEach(tabREw => {
 })
 
 
+// Filter Color Detail Page
+
+const tabDetail = Array.from(document.querySelectorAll(" .tab-color-detail"));
+const tabContentsColor = Array.from(document.querySelectorAll(".content-detail-colors .content-detail-color"));
+
+const clearActivesFromDetail = function () {
+    tabDetail.forEach(tabBrand => {
+        tabBrand.classList.remove("active");
+    });
+    tabContentsColor.forEach(tabContent => {
+        tabContent.classList.remove("active");
+    });
+}
+
+
+
+tabDetail.forEach(tabBrand => {
+    tabBrand.onclick = function () {
+        clearActivesFromDetail();
+        const targetId = tabBrand.getAttribute("data-target");
+        const targetContent = document.getElementById(targetId);
+        tabBrand.classList.add("active");
+        targetContent.classList.add("active")
+    }
+})
+
 
 //Timer
 // const countdown = () => {

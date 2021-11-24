@@ -13,6 +13,74 @@
             padding-bottom: 2rem;
         }
 
+
+    }
+
+
+    .detail-color {
+        margin-top: 5px;
+
+        p {
+            font-weight: 300;
+            font-size: 14px;
+            cursor: pointer;
+            line-height: 1.5;
+            padding: 1rem 0px;
+        }
+
+        .color-items {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+
+
+            .tab-color-detail {
+                cursor: pointer;
+
+                img {
+                    margin: 5px 5px 0 0;
+                    display: inline-block;
+                    padding: 3px;
+                    cursor: pointer;
+                    border-radius: 50px;
+                    border-width: 1px;
+                    border-style: solid;
+                    line-height: 1;
+                    border-width: 1px;
+                    height: 3rem;
+                    width: 3rem;
+                    border-color: #c1c1c1;
+
+                    &:active {
+                        border: 2px solid $color-red !important;
+                    }
+                }
+
+            }
+
+            .tab-color.active {
+                background-color: transparent;
+
+            }
+        }
+
+    }
+
+    .content-detail-colors {
+        position: relative;
+
+        .content-detail-color {
+            display: none;
+            position: relative;
+            width: 100%;
+
+
+        }
+
+        .content-detail-color.active {
+            display: block;
+        }
     }
 
     .detail-left {
@@ -65,42 +133,7 @@
                 }
             }
 
-            .detail-color {
-                display: flex;
-                justify-content: center;
-                flex-direction: column;
-                align-items: center;
 
-                p {
-                    padding: 1rem 0;
-                    font-weight: 300;
-                    font-size: 14px;
-                    cursor: pointer;
-                    line-height: 1.5;
-                }
-
-                .color-item {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-
-                    img {
-                        display: inline-block;
-                        font-weight: 300;
-                        padding: 5px;
-                        cursor: pointer;
-                        border-radius: 50px;
-                        margin: 0px 3.5px;
-                        border-width: 1px;
-                        border-style: solid;
-                        border-image: initial;
-                        line-height: 1;
-                        border-color: rgb(173, 173, 173) !important;
-                        width: 8%;
-                    }
-
-                }
-            }
 
             .stock {
                 background-color: rgb(250, 247, 240);

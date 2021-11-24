@@ -6929,6 +6929,48 @@ aside {
     width: 100%;
     padding-bottom: 2rem; }
 
+#detail-home .detail-color {
+  margin-top: 5px; }
+  #detail-home .detail-color p {
+    font-weight: 300;
+    font-size: 14px;
+    cursor: pointer;
+    line-height: 1.5;
+    padding: 1rem 0px; }
+  #detail-home .detail-color .color-items {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; }
+    #detail-home .detail-color .color-items .tab-color-detail {
+      cursor: pointer; }
+      #detail-home .detail-color .color-items .tab-color-detail img {
+        margin: 5px 5px 0 0;
+        display: inline-block;
+        padding: 3px;
+        cursor: pointer;
+        border-radius: 50px;
+        border-width: 1px;
+        border-style: solid;
+        line-height: 1;
+        border-width: 1px;
+        height: 3rem;
+        width: 3rem;
+        border-color: #c1c1c1; }
+        #detail-home .detail-color .color-items .tab-color-detail img:active {
+          border: 2px solid firebrick !important; }
+    #detail-home .detail-color .color-items .tab-color.active {
+      background-color: transparent; }
+
+#detail-home .content-detail-colors {
+  position: relative; }
+  #detail-home .content-detail-colors .content-detail-color {
+    display: none;
+    position: relative;
+    width: 100%; }
+  #detail-home .content-detail-colors .content-detail-color.active {
+    display: block; }
+
 #detail-home .detail-left {
   width: 35%;
   float: left;
@@ -6962,34 +7004,6 @@ aside {
         color: #5b5b5b;
         font-size: 14px;
         font-weight: 400; }
-    #detail-home .detail-left .detail-wish .detail-color {
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      align-items: center; }
-      #detail-home .detail-left .detail-wish .detail-color p {
-        padding: 1rem 0;
-        font-weight: 300;
-        font-size: 14px;
-        cursor: pointer;
-        line-height: 1.5; }
-      #detail-home .detail-left .detail-wish .detail-color .color-item {
-        display: flex;
-        justify-content: center;
-        align-items: center; }
-        #detail-home .detail-left .detail-wish .detail-color .color-item img {
-          display: inline-block;
-          font-weight: 300;
-          padding: 5px;
-          cursor: pointer;
-          border-radius: 50px;
-          margin: 0px 3.5px;
-          border-width: 1px;
-          border-style: solid;
-          border-image: initial;
-          line-height: 1;
-          border-color: #adadad !important;
-          width: 8%; }
     #detail-home .detail-left .detail-wish .stock {
       background-color: #faf7f0;
       display: flex;
