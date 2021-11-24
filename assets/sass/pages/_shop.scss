@@ -202,135 +202,179 @@ aside {
 
     }
 
-    .favory-item {
-        padding-top: 2rem;
-        position: relative;
-
-
-        .card-image {
+    .col-md-4 {
+        .favory-item {
+            padding-top: 2rem;
             position: relative;
 
-            &:hover .hover-btns {
-                opacity: 1;
-                visibility: visible;
-                transition: .5s;
-                transform: translateX(-50%);
-            }
 
-            img {
-                width: auto;
-                max-width: 100%;
-                transition: opacity 0.25s ease, filter 0.25s ease;
-            }
-
-            .img-product {
+            .card-image {
                 position: relative;
 
-                .img-responsive {
+                &:hover .hover-btns {
                     opacity: 1;
+                    visibility: visible;
+                    transition: .5s;
+                    transform: translateX(-50%);
+                }
 
-                    &:hover {
+                img {
+                    width: auto;
+                    max-width: 100%;
+                    transition: opacity 0.25s ease, filter 0.25s ease;
+                }
+
+                .img-product {
+                    position: relative;
+
+                    .img-responsive {
+                        opacity: 1;
+
+                        &:hover {
+                            opacity: 0;
+                        }
+                    }
+
+                    .img-responsive-hov {
+                        transition: opacity 0.25s ease, filter 0.25s ease;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
                         opacity: 0;
+
+                        &:hover {
+                            opacity: 1;
+                        }
                     }
                 }
 
-                .img-responsive-hov {
-                    transition: opacity 0.25s ease, filter 0.25s ease;
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    right: 0;
-                    bottom: 0;
-                    opacity: 0;
 
-                    &:hover {
-                        opacity: 1;
+                .hover-btns {
+                    position: absolute;
+                    top: 50%;
+                    left: 80%;
+                    display: block;
+                    opacity: 0;
+                    visibility: hidden;
+                    transition: all .3s linear;
+
+
+                    .single-btn {
+                        cursor: pointer;
+                        font-size: 2rem;
+                        width: 46px;
+                        height: 46px;
+                        line-height: 29px;
+                        background-color: $color-secondary;
+                        border-radius: 50%;
+                        text-align: center;
+                        display: block;
+                        margin-bottom: 13px;
+                        transition: .5s;
+                        padding: 10px;
+
+                        i {
+                            &:hover {
+                                color: $color-brown;
+                            }
+                        }
+
                     }
+
+                }
+
+            }
+        }
+
+        .fav-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+
+            p {
+                text-transform: uppercase;
+                font-size: 15px;
+                letter-spacing: 1px;
+                line-height: 1;
+                color: $color-primary-hover;
+            }
+        }
+
+
+
+        .brand-colors {
+            @include flexbox(flex, center, center);
+
+            @media screen and (max-width:768px) {
+                .brand-item:nth-last-child(-n+2) {
+                    display: none;
                 }
             }
+        }
 
+        .fav-color {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-top: 5px;
+            padding-bottom: 40px;
 
-            .hover-btns {
-                position: absolute;
-                top: 60%;
-                left: 80%;
-                display: block;
-                opacity: 0;
-                visibility: hidden;
-                transition: all .3s linear;
+            .color-items {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
 
-
-                .single-btn {
+                .tab-color {
                     cursor: pointer;
-                    font-size: 2rem;
-                    width: 46px;
-                    height: 46px;
-                    line-height: 29px;
-                    background-color: $color-secondary;
-                    border-radius: 50%;
-                    text-align: center;
-                    display: block;
-                    margin-bottom: 13px;
-                    transition: .5s;
-                    padding: 10px;
 
-                    i {
-                        &:hover {
-                            color: $color-brown;
+                    img {
+                        margin: 5px 5px 0 0;
+                        display: inline-block;
+                        padding: 3px;
+                        cursor: pointer;
+                        border-radius: 50px;
+                        border-width: 1px;
+                        border-style: solid;
+                        line-height: 1;
+                        border-width: 1px;
+                        height: 22px;
+                        width: 22px;
+                        border-color: #c1c1c1;
+
+                        &:active {
+                            border: 2px solid $color-red !important;
                         }
                     }
 
                 }
 
-            }
+                .tab-color.active {
+                    background-color: transparent;
 
-        }
-    }
-
-    .fav-info {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 1rem 0;
-
-        p {
-            text-transform: uppercase;
-            font-size: 15px;
-            letter-spacing: 1px;
-            line-height: 1;
-            color: $color-primary-hover;
-        }
-    }
-
-    .fav-color {
-        .color-item {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-
-            img {
-                margin: 5px 5px 0 0;
-                display: inline-block;
-                font-weight: 300;
-                padding: 3px;
-                cursor: pointer;
-                border-radius: 50px;
-                border-width: 1px;
-                border-style: solid;
-                line-height: 1;
-                border-color: #adadad !important;
-                width: 10%;
-
-                &:active {
-                    border: 2px solid $color-red !important;
                 }
             }
 
-            p {
-                font-size: 12px;
-                margin-top: 5px;
-                line-height: 18px;
-                color: $color-primary-hover;
+        }
+
+        .img-product {
+            @include flexbox(flex, center, center);
+            padding-bottom: 4rem;
+
+            .content-colors {
+                position: relative;
+
+                .content-color {
+                    display: none;
+                    position: relative;
+                    width: 100%;
+                }
+
+                .content-color.active {
+                    display: block;
+                }
             }
         }
     }

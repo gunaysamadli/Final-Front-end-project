@@ -80,21 +80,28 @@
     .favory-title {
         @include flexbox;
 
-        .time {
-            @include flexbox;
+        .coming-soon {
 
-            li {
-                text-align: center;
-                padding: 10px 20px;
-                background-color: #f0f1f2;
-                font-size: 10px;
-                color: #282828;
-                position: relative;
-                border-right: 1px solid $color-secondary;
+            .countdown {
+                @include flexbox;
 
-                p {
-                    font-size: 14px;
-                    padding-bottom: 5px;
+                .time {
+                    @include flexbox;
+                    flex-direction: column;
+                    text-align: center;
+                    padding: 10px 20px;
+                    background-color: #f0f1f2;
+                    font-size: 10px;
+                    color: #282828;
+                    position: relative;
+                    border-right: 1px solid $color-secondary;
+
+                    .day,
+                    .hour,
+                    .minute,
+                    .second {
+                        font-size: 3rem
+                    }
                 }
             }
         }
