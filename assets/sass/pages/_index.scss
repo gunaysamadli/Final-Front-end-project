@@ -141,6 +141,8 @@ main {
     }
 
     #company {
+
+
         h2 {
             white-space: nowrap;
         }
@@ -149,6 +151,13 @@ main {
 
             .countdown {
                 @include flexbox;
+                padding-right: 2rem;
+
+                @media screen and (max-width:576px) {
+                    padding: 0;
+                }
+
+
 
                 .time {
                     @include flexbox;
@@ -165,7 +174,7 @@ main {
                     .hour,
                     .minute,
                     .second {
-                        font-size: 3rem
+                        font-size: 2rem;
                     }
                 }
             }
@@ -175,6 +184,10 @@ main {
             @include flexbox;
             padding: 3rem 0;
 
+            @media screen and (max-width:768px) {
+                flex-direction: column;
+            }
+
             @media screen and (max-width:576px) {
                 padding: 2rem;
             }
@@ -183,6 +196,10 @@ main {
                 font-weight: 500;
                 line-height: 1.1;
                 font-size: 3.2rem;
+
+                @media screen and (max-width:768px) {
+                    padding-bottom: 1.5rem;
+                }
             }
 
             a {

@@ -1,4 +1,9 @@
+.left-aside {
+    padding-left: 0;
+}
+
 .profile-left {
+
     @media screen and (max-width:992px) {
         display: none;
     }

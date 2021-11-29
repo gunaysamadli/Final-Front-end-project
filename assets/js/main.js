@@ -1,3 +1,5 @@
+
+
 //Slider
 $('.slider').slick({
     dots: false,
@@ -315,6 +317,8 @@ tabColors.forEach(tabREw => {
         targetContent.classList.add("active")
     }
 })
+
+
 
 
 // Filter Color Detail Page

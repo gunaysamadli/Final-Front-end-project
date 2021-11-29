@@ -121,10 +121,13 @@
                                                                             </div>
                                                                             <div class="count-price">
                                                                                 <div class="count">
-                                                                                    <i class="fas fa-minus"></i>
-                                                                                    <input class="card-count" value="2"
-                                                                                        type="number">
-                                                                                    <i class="fas fa-plus"></i>
+                                                                                    <button>
+                                                                                        <i class="fas fa-minus"></i>
+                                                                                    </button>
+                                                                                    <span>2</span>
+                                                                                    <button>
+                                                                                        <i class="fas fa-plus"></i>
+                                                                                    </button>
                                                                                 </div>
                                                                                 <div>
                                                                                     <span class="price">$40</span>
@@ -150,10 +153,13 @@
                                                                             </div>
                                                                             <div class="count-price">
                                                                                 <div class="count">
-                                                                                    <i class="fas fa-minus"></i>
-                                                                                    <input class="card-count" value="2"
-                                                                                        type="number">
-                                                                                    <i class="fas fa-plus"></i>
+                                                                                    <button>
+                                                                                        <i class="fas fa-minus"></i>
+                                                                                    </button>
+                                                                                    <span>2</span>
+                                                                                    <button>
+                                                                                        <i class="fas fa-plus"></i>
+                                                                                    </button>
                                                                                 </div>
                                                                                 <div>
                                                                                     <span class="price">$40</span>
@@ -176,7 +182,7 @@
                                                         </span>
                                                     </div>
                                                     <div class="checkout">
-                                                        <a href="checkout.html" class="button button-secondary" href="">
+                                                        <a class="button button-secondary" href="">
                                                             Continue to Checkout
                                                         </a>
                                                     </div>
@@ -321,32 +327,8 @@
             </section>
             <!--Personilazed Company-->
             <section id="favory">
-                <div class="container">
-                    <div class="row">
-                        <div class="favory-title">
-                            <h2>Personalized Company</h2>
-                            <div class="coming-soon">
-                                <div class="countdown">
-                                    <div class="container-day time">
-                                        <h3 class="day">Time</h3>
-                                        <h3>Day</h3>
-                                    </div>
-                                    <div class="container-hour time">
-                                        <h3 class="hour">Time</h3>
-                                        <h3>Hour</h3>
-                                    </div>
-                                    <div class="container-minute time">
-                                        <h3 class="minute">Time</h3>
-                                        <h3>Minute</h3>
-                                    </div>
-                                    <div class="container-second time">
-                                        <h3 class="second">Time</h3>
-                                        <h3>Second</h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="favory-title">
+                    <h2>PERSONALIZED COMPANY</h2>
                 </div>
                 <div class="container-fluid">
                     <div class="row">
@@ -354,18 +336,23 @@
                             <div class="favory-item">
                                 <div class="card-image">
                                     <div class="img-product">
-                                        <a href="./detail.html">
-                                            <img src="./assets/images/person-1.jpg" class="img-responsive">
-                                            <img src="./assets/images/person-hov-1.jpg" class="img-responsive-hov">
-                                        </a>
-                                        <div class="hover-btns">
-                                            <a class="single-btn add-basket">
-                                                <i class="fas fa-shopping-basket"></i>
-                                            </a>
-                                            <a href="wishlist.html" class="single-btn">
-                                                <i class="far fa-heart"></i>
-                                            </a>
+                                        <div class="content-colors" id="7">
+                                            <div class="content-color active" id="color-gold">
+                                                <a href="./detail.html">
+                                                    <img src="./assets/images/person-1.jpg" class="img-responsive">
+                                                    <img src="./assets/images/person-hov-1.jpg"
+                                                        class="img-responsive-hov">
+                                                </a>
+                                            </div>
                                         </div>
+                                    </div>
+                                    <div class="hover-btns">
+                                        <a class="single-btn add-basket">
+                                            <i class="fas fa-shopping-basket"></i>
+                                        </a>
+                                        <a href="wishlist.html" class="single-btn">
+                                            <i class="far fa-heart"></i>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -379,29 +366,44 @@
                                 </p>
                             </div>
                             <div class="fav-color">
-                                <div class="color-item">
-                                    <img src="./assets/images/color/gold.svg" alt="">
-                                    <p>14k Yellow Gold</p>
+                                <div class="color-items" data-id="7">
+                                    <div class="color-item">
+                                        <a class="tab-color active" data-target="color-gold">
+                                            <img src="./assets/images/color/gold.svg" alt="">
+                                        </a>
+                                    </div>
                                 </div>
+                                <p>14k Yellow Gold</p>
                             </div>
-
                         </div>
                         <div class="col-md-4 favs">
                             <div class="favory-item">
                                 <div class="card-image">
                                     <div class="img-product">
-                                        <a href="./detail.html">
-                                            <img src="./assets/images/person-2.jpg" class="img-responsive">
-                                            <img src="./assets/images/person-hov-2.jpg" class="img-responsive-hov">
-                                        </a>
-                                        <div class="hover-btns">
-                                            <a class="single-btn add-basket">
-                                                <i class="fas fa-shopping-basket"></i>
-                                            </a>
-                                            <a href="wishlist.html" class="single-btn">
-                                                <i class="far fa-heart"></i>
-                                            </a>
+                                        <div class="content-colors" id="9">
+                                            <div class="content-color active" id="color-gold">
+                                                <a href="./detail.html">
+                                                    <img src="./assets/images/silver-2.jpg" class="img-responsive">
+                                                    <img src="./assets/images/silver-hov-2.jpg"
+                                                        class="img-responsive-hov">
+                                                </a>
+                                            </div>
+                                            <div class="content-color" id="color-silver">
+                                                <a href="./detail.html">
+                                                    <img src="./assets/images/silver-1.jpg" class="img-responsive">
+                                                    <img src="./assets/images/silver-hov-1.jpg"
+                                                        class="img-responsive-hov">
+                                                </a>
+                                            </div>
                                         </div>
+                                    </div>
+                                    <div class="hover-btns">
+                                        <a class="single-btn add-basket">
+                                            <i class="fas fa-shopping-basket"></i>
+                                        </a>
+                                        <a href="wishlist.html" class="single-btn">
+                                            <i class="far fa-heart"></i>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -415,28 +417,41 @@
                                 </p>
                             </div>
                             <div class="fav-color">
-                                <div class="color-item">
-                                    <img src="./assets/images/color/gold.svg" alt="">
-                                    <p>14k Yellow Gold</p>
+                                <div class="color-items" data-id="9">
+                                    <div class="color-item">
+                                        <a class="tab-color active" data-target="color-gold">
+                                            <img src="./assets/images/color/gold.svg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="color-item">
+                                        <a class="tab-color" data-target="color-silver">
+                                            <img src="./assets/images/color/silver.svg" alt="">
+                                        </a>
+                                    </div>
                                 </div>
+                                <p>14k Yellow Gold</p>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="favory-item">
                                 <div class="card-image">
                                     <div class="img-product">
-                                        <a href="./detail.html">
-                                            <img src="./assets/images/person-3.jpg" class="img-responsive">
-                                            <img src="./assets/images/person-hov-3.jpg" class="img-responsive-hov">
-                                        </a>
-                                        <div class="hover-btns">
-                                            <a class="single-btn add-basket">
-                                                <i class="fas fa-shopping-basket"></i>
-                                            </a>
-                                            <a href="wishlist.html" class="single-btn">
-                                                <i class="far fa-heart"></i>
-                                            </a>
+                                        <div class="content-colors" id="6">
+                                            <div class="content-color active" id="color-gold">
+                                                <a href="./detail.html">
+                                                    <img src="./assets/images/fav-3.jpg" class="img-responsive">
+                                                    <img src="./assets/images/fav-hov-3.jpg" class="img-responsive-hov">
+                                                </a>
+                                            </div>
                                         </div>
+                                    </div>
+                                    <div class="hover-btns">
+                                        <a class="single-btn add-basket">
+                                            <i class="fas fa-shopping-basket"></i>
+                                        </a>
+                                        <a href="wishlist.html" class="single-btn">
+                                            <i class="far fa-heart"></i>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -450,83 +465,14 @@
                                 </p>
                             </div>
                             <div class="fav-color">
-                                <div class="color-item">
-                                    <img src="./assets/images/color/gold.svg" alt="">
-                                    <p>
-                                        Gold Vermeil</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="favory-item">
-                                <div class="card-image">
-                                    <div class="img-product">
-                                        <a href="./detail.html">
-                                            <img src="./assets/images/person-3.jpg" class="img-responsive">
-                                            <img src="./assets/images/person-hov-3.jpg" class="img-responsive-hov">
+                                <div class="color-items" data-id="6">
+                                    <div class="color-item">
+                                        <a class="tab-color active" data-target="color-gold">
+                                            <img src="./assets/images/color/gold.svg" alt="">
                                         </a>
-                                        <div class="hover-btns">
-                                            <a class="single-btn add-basket">
-                                                <i class="fas fa-shopping-basket"></i>
-                                            </a>
-                                            <a href="wishlist.html" class="single-btn">
-                                                <i class="far fa-heart"></i>
-                                            </a>
-                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="fav-info">
-                                <a href="">
-                                    <h2>Croissant Dôme Hoops</h2>
-                                </a>
-                                <p>
-                                    <span>$</span>
-                                    75
-                                </p>
-                            </div>
-                            <div class="fav-color">
-                                <div class="color-item">
-                                    <img src="./assets/images/color/gold.svg" alt="">
-                                    <p>
-                                        Gold Vermeil</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="favory-item">
-                                <div class="card-image">
-                                    <div class="img-product">
-                                        <a href="./detail.html">
-                                            <img src="./assets/images/person-3.jpg" class="img-responsive">
-                                            <img src="./assets/images/person-hov-3.jpg" class="img-responsive-hov">
-                                        </a>
-                                        <div class="hover-btns">
-                                            <a class="single-btn add-basket">
-                                                <i class="fas fa-shopping-basket"></i>
-                                            </a>
-                                            <a href="wishlist.html" class="single-btn">
-                                                <i class="far fa-heart"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="fav-info">
-                                <a href="">
-                                    <h2>Croissant Dôme Hoops</h2>
-                                </a>
-                                <p>
-                                    <span>$</span>
-                                    75
-                                </p>
-                            </div>
-                            <div class="fav-color">
-                                <div class="color-item">
-                                    <img src="./assets/images/color/gold.svg" alt="">
-                                    <p>
-                                        Gold Vermeil</p>
-                                </div>
+                                <p>14k Yellow Gold</p>
                             </div>
                         </div>
                     </div>
@@ -534,51 +480,39 @@
             </section>
             <!--Silver Company-->
             <section id="favory">
-                <div class="container">
-                    <div class="row">
-                        <div class="favory-title">
-                            <h2>Silver Company</h2>
-                            <div class="coming-soon">
-                                <div class="countdown">
-                                    <div class="container-day time">
-                                        <h3 class="day">Time</h3>
-                                        <h3>Day</h3>
-                                    </div>
-                                    <div class="container-hour time">
-                                        <h3 class="hour">Time</h3>
-                                        <h3>Hour</h3>
-                                    </div>
-                                    <div class="container-minute time">
-                                        <h3 class="minute">Time</h3>
-                                        <h3>Minute</h3>
-                                    </div>
-                                    <div class="container-second time">
-                                        <h3 class="second">Time</h3>
-                                        <h3>Second</h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="favory-title">
+                    <h2>SILVER COMPANY</h2>
                 </div>
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-md-4">
+                        <div class="col-md-4 favs">
                             <div class="favory-item">
                                 <div class="card-image">
                                     <div class="img-product">
-                                        <a href="./detail.html">
-                                            <img src="./assets/images/silver-1.jpg" class="img-responsive">
-                                            <img src="./assets/images/silver-hov-1.jpg" class="img-responsive-hov">
-                                        </a>
-                                        <div class="hover-btns">
-                                            <a class="single-btn add-basket">
-                                                <i class="fas fa-shopping-basket"></i>
-                                            </a>
-                                            <a href="wishlist.html" class="single-btn">
-                                                <i class="far fa-heart"></i>
-                                            </a>
+                                        <div class="content-colors" id="8">
+                                            <div class="content-color active" id="color-gold">
+                                                <a href="./detail.html">
+                                                    <img src="./assets/images/silver-1.jpg" class="img-responsive">
+                                                    <img src="./assets/images/silver-hov-1.jpg"
+                                                        class="img-responsive-hov">
+                                                </a>
+                                            </div>
+                                            <div class="content-color" id="color-silver">
+                                                <a href="./detail.html">
+                                                    <img src="./assets/images/silver-2.jpg" class="img-responsive">
+                                                    <img src="./assets/images/silver-hov-2.jpg"
+                                                        class="img-responsive-hov">
+                                                </a>
+                                            </div>
                                         </div>
+                                    </div>
+                                    <div class="hover-btns">
+                                        <a class="single-btn add-basket">
+                                            <i class="fas fa-shopping-basket"></i>
+                                        </a>
+                                        <a href="wishlist.html" class="single-btn">
+                                            <i class="far fa-heart"></i>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -586,91 +520,137 @@
                                 <a href="">
                                     <h2 class="basket-head">Single Mini Hoop</h2>
                                 </a>
-                                <p>
+                                <p class="basket-price">
                                     <span>$</span>
                                     30
                                 </p>
                             </div>
                             <div class="fav-color">
-                                <div class="color-item">
-                                    <img src="./assets/images/color/gold.svg" alt="">
-                                    <img src="./assets/images/color/silver.svg" alt="">
-                                    <p>14k Yellow Gold</p>
+                                <div class="color-items" data-id="8">
+                                    <div class="color-item">
+                                        <a class="tab-color active" data-target="color-gold">
+                                            <img src="./assets/images/color/gold.svg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="color-item">
+                                        <a class="tab-color" data-target="color-silver">
+                                            <img src="./assets/images/color/silver.svg" alt="">
+                                        </a>
+                                    </div>
                                 </div>
+                                <p>14k Yellow Gold</p>
                             </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-4 favs">
                             <div class="favory-item">
                                 <div class="card-image">
                                     <div class="img-product">
-                                        <a href="./detail.html">
-                                            <img src="./assets/images/silver-2.jpg" class="img-responsive">
-                                            <img src="./assets/images/silver-hov-2.jpg" class="img-responsive-hov">
-                                        </a>
-                                        <div class="hover-btns">
-                                            <a class="single-btn add-basket">
-                                                <i class="fas fa-shopping-basket"></i>
-                                            </a>
-                                            <a href="wishlist.html" class="single-btn">
-                                                <i class="far fa-heart"></i>
-                                            </a>
+                                        <div class="content-colors" id="27">
+                                            <div class="content-color active" id="color-gold">
+                                                <a href="./detail.html">
+                                                    <img src="./assets/images/silver-2.jpg" class="img-responsive">
+                                                    <img src="./assets/images/silver-hov-2.jpg"
+                                                        class="img-responsive-hov">
+                                                </a>
+                                            </div>
+                                            <div class="content-color" id="color-silver">
+                                                <a href="./detail.html">
+                                                    <img src="./assets/images/silver-1.jpg" class="img-responsive">
+                                                    <img src="./assets/images/silver-hov-1.jpg"
+                                                        class="img-responsive-hov">
+                                                </a>
+                                            </div>
                                         </div>
-
+                                    </div>
+                                    <div class="hover-btns">
+                                        <a class="single-btn add-basket">
+                                            <i class="fas fa-shopping-basket"></i>
+                                        </a>
+                                        <a href="wishlist.html" class="single-btn">
+                                            <i class="far fa-heart"></i>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
                             <div class="fav-info">
                                 <a href="">
-                                    <h2 class="basket-head">Single Mini Hoop</h2>
+                                    <h2>Bold Hoopsp</h2>
                                 </a>
                                 <p>
                                     <span>$</span>
-                                    30
+                                    160
                                 </p>
                             </div>
                             <div class="fav-color">
-                                <div class="color-item">
-                                    <img src="./assets/images/color/gold.svg" alt="">
-                                    <img src="./assets/images/color/silver.svg" alt="">
-                                    <p>14k Yellow Gold</p>
+                                <div class="color-items" data-id="27">
+                                    <div class="color-item">
+                                        <a class="tab-color active" data-target="color-gold">
+                                            <img src="./assets/images/color/gold.svg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="color-item">
+                                        <a class="tab-color" data-target="color-silver">
+                                            <img src="./assets/images/color/silver.svg" alt="">
+                                        </a>
+                                    </div>
                                 </div>
+                                <p>14k Yellow Gold</p>
                             </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-4 favs">
                             <div class="favory-item">
                                 <div class="card-image">
                                     <div class="img-product">
-                                        <a href="./detail.html">
-                                            <img src="./assets/images/silver-3.jpg" class="img-responsive">
-                                            <img src="./assets/images/silver-hov-3.jpg" class="img-responsive-hov">
-                                        </a>
-                                        <div class="hover-btns">
-                                            <a class="single-btn add-basket">
-                                                <i class="fas fa-shopping-basket"></i>
-                                            </a>
-                                            <a href="wishlist.html" class="single-btn">
-                                                <i class="far fa-heart"></i>
-                                            </a>
+                                        <div class="content-colors" id="28">
+                                            <div class="content-color active" id="color-gold">
+                                                <a href="./detail.html">
+                                                    <img src="./assets/images/silver-2.jpg" class="img-responsive">
+                                                    <img src="./assets/images/silver-hov-2.jpg"
+                                                        class="img-responsive-hov">
+                                                </a>
+                                            </div>
+                                            <div class="content-color" id="color-silver">
+                                                <a href="./detail.html">
+                                                    <img src="./assets/images/silver-1.jpg" class="img-responsive">
+                                                    <img src="./assets/images/silver-hov-1.jpg"
+                                                        class="img-responsive-hov">
+                                                </a>
+                                            </div>
                                         </div>
-
+                                    </div>
+                                    <div class="hover-btns">
+                                        <a class="single-btn add-basket">
+                                            <i class="fas fa-shopping-basket"></i>
+                                        </a>
+                                        <a href="wishlist.html" class="single-btn">
+                                            <i class="far fa-heart"></i>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
                             <div class="fav-info">
                                 <a href="">
-                                    <h2 class="basket-head">Single Mini Hoop</h2>
+                                    <h2>Bold Hoopsp</h2>
                                 </a>
                                 <p>
                                     <span>$</span>
-                                    30
+                                    160
                                 </p>
                             </div>
                             <div class="fav-color">
-                                <div class="color-item">
-                                    <img src="./assets/images/color/gold.svg" alt="">
-                                    <img src="./assets/images/color/silver.svg" alt="">
-                                    <p>14k Yellow Gold</p>
+                                <div class="color-items" data-id="28">
+                                    <div class="color-item">
+                                        <a class="tab-color active" data-target="color-gold">
+                                            <img src="./assets/images/color/gold.svg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="color-item">
+                                        <a class="tab-color" data-target="color-silver">
+                                            <img src="./assets/images/color/silver.svg" alt="">
+                                        </a>
+                                    </div>
                                 </div>
+                                <p>14k Yellow Gold</p>
                             </div>
                         </div>
                     </div>
@@ -678,52 +658,39 @@
             </section>
             <!--Company Under 150-->
             <section id="favory">
-                <div class="container">
-                    <div class="row">
-                        <div class="favory-title">
-                            <h2>Company Under 150</h2>
-                            <div class="coming-soon">
-                                <div class="countdown">
-                                    <div class="container-day time">
-                                        <h3 class="day">Time</h3>
-                                        <h3>Day</h3>
-                                    </div>
-                                    <div class="container-hour time">
-                                        <h3 class="hour">Time</h3>
-                                        <h3>Hour</h3>
-                                    </div>
-                                    <div class="container-minute time">
-                                        <h3 class="minute">Time</h3>
-                                        <h3>Minute</h3>
-                                    </div>
-                                    <div class="container-second time">
-                                        <h3 class="second">Time</h3>
-                                        <h3>Second</h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="favory-title">
+                    <h2>COMPANY UNDER 150</h2>
                 </div>
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-md-4">
+                        <div class="col-md-4 favs">
                             <div class="favory-item">
                                 <div class="card-image">
                                     <div class="img-product">
-                                        <a href="./detail.html">
-                                            <img src="./assets/images/silver-1.jpg" class="img-responsive">
-                                            <img src="./assets/images/silver-hov-1.jpg" class="img-responsive-hov">
-                                        </a>
-                                        <div class="hover-btns">
-                                            <a class="single-btn add-basket">
-                                                <i class="fas fa-shopping-basket"></i>
-                                            </a>
-                                            <a href="wishlist.html" class="single-btn">
-                                                <i class="far fa-heart"></i>
-                                            </a>
+                                        <div class="content-colors" id="11">
+                                            <div class="content-color active" id="color-gold">
+                                                <a href="./detail.html">
+                                                    <img src="./assets/images/silver-1.jpg" class="img-responsive">
+                                                    <img src="./assets/images/silver-hov-1.jpg"
+                                                        class="img-responsive-hov">
+                                                </a>
+                                            </div>
+                                            <div class="content-color" id="color-silver">
+                                                <a href="./detail.html">
+                                                    <img src="./assets/images/silver-2.jpg" class="img-responsive">
+                                                    <img src="./assets/images/silver-hov-2.jpg"
+                                                        class="img-responsive-hov">
+                                                </a>
+                                            </div>
                                         </div>
-
+                                    </div>
+                                    <div class="hover-btns">
+                                        <a class="single-btn add-basket">
+                                            <i class="fas fa-shopping-basket"></i>
+                                        </a>
+                                        <a href="wishlist.html" class="single-btn">
+                                            <i class="far fa-heart"></i>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -731,91 +698,137 @@
                                 <a href="">
                                     <h2 class="basket-head">Single Mini Hoop</h2>
                                 </a>
-                                <p>
+                                <p class="basket-price">
                                     <span>$</span>
                                     30
                                 </p>
                             </div>
                             <div class="fav-color">
-                                <div class="color-item">
-                                    <img src="./assets/images/color/gold.svg" alt="">
-                                    <img src="./assets/images/color/silver.svg" alt="">
-                                    <p>14k Yellow Gold</p>
+                                <div class="color-items" data-id="11">
+                                    <div class="color-item">
+                                        <a class="tab-color active" data-target="color-gold">
+                                            <img src="./assets/images/color/gold.svg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="color-item">
+                                        <a class="tab-color" data-target="color-silver">
+                                            <img src="./assets/images/color/silver.svg" alt="">
+                                        </a>
+                                    </div>
                                 </div>
+                                <p>14k Yellow Gold</p>
                             </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-4 favs">
                             <div class="favory-item">
                                 <div class="card-image">
                                     <div class="img-product">
-                                        <a href="./detail.html">
-                                            <img src="./assets/images/silver-2.jpg" class="img-responsive">
-                                            <img src="./assets/images/silver-hov-2.jpg" class="img-responsive-hov">
-                                        </a>
-                                        <div class="hover-btns">
-                                            <a class="single-btn add-basket">
-                                                <i class="fas fa-shopping-basket"></i>
-                                            </a>
-                                            <a href="wishlist.html" class="single-btn">
-                                                <i class="far fa-heart"></i>
-                                            </a>
+                                        <div class="content-colors" id="25">
+                                            <div class="content-color active" id="color-gold">
+                                                <a href="./detail.html">
+                                                    <img src="./assets/images/silver-2.jpg" class="img-responsive">
+                                                    <img src="./assets/images/silver-hov-2.jpg"
+                                                        class="img-responsive-hov">
+                                                </a>
+                                            </div>
+                                            <div class="content-color" id="color-silver">
+                                                <a href="./detail.html">
+                                                    <img src="./assets/images/silver-1.jpg" class="img-responsive">
+                                                    <img src="./assets/images/silver-hov-1.jpg"
+                                                        class="img-responsive-hov">
+                                                </a>
+                                            </div>
                                         </div>
-
+                                    </div>
+                                    <div class="hover-btns">
+                                        <a class="single-btn add-basket">
+                                            <i class="fas fa-shopping-basket"></i>
+                                        </a>
+                                        <a href="wishlist.html" class="single-btn">
+                                            <i class="far fa-heart"></i>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
                             <div class="fav-info">
                                 <a href="">
-                                    <h2 class="basket-head">Single Mini Hoop</h2>
+                                    <h2>Bold Hoopsp</h2>
                                 </a>
                                 <p>
                                     <span>$</span>
-                                    30
+                                    160
                                 </p>
                             </div>
                             <div class="fav-color">
-                                <div class="color-item">
-                                    <img src="./assets/images/color/gold.svg" alt="">
-                                    <img src="./assets/images/color/silver.svg" alt="">
-                                    <p>14k Yellow Gold</p>
+                                <div class="color-items" data-id="25">
+                                    <div class="color-item">
+                                        <a class="tab-color active" data-target="color-gold">
+                                            <img src="./assets/images/color/gold.svg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="color-item">
+                                        <a class="tab-color" data-target="color-silver">
+                                            <img src="./assets/images/color/silver.svg" alt="">
+                                        </a>
+                                    </div>
                                 </div>
+                                <p>14k Yellow Gold</p>
                             </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-4 favs">
                             <div class="favory-item">
                                 <div class="card-image">
                                     <div class="img-product">
-                                        <a href="./detail.html">
-                                            <img src="./assets/images/silver-3.jpg" class="img-responsive">
-                                            <img src="./assets/images/silver-hov-3.jpg" class="img-responsive-hov">
-                                        </a>
-                                        <div class="hover-btns">
-                                            <a class="single-btn add-basket">
-                                                <i class="fas fa-shopping-basket"></i>
-                                            </a>
-                                            <a href="wishlist.html" class="single-btn">
-                                                <i class="far fa-heart"></i>
-                                            </a>
+                                        <div class="content-colors" id="26">
+                                            <div class="content-color active" id="color-gold">
+                                                <a href="./detail.html">
+                                                    <img src="./assets/images/silver-2.jpg" class="img-responsive">
+                                                    <img src="./assets/images/silver-hov-2.jpg"
+                                                        class="img-responsive-hov">
+                                                </a>
+                                            </div>
+                                            <div class="content-color" id="color-silver">
+                                                <a href="./detail.html">
+                                                    <img src="./assets/images/silver-1.jpg" class="img-responsive">
+                                                    <img src="./assets/images/silver-hov-1.jpg"
+                                                        class="img-responsive-hov">
+                                                </a>
+                                            </div>
                                         </div>
-
+                                    </div>
+                                    <div class="hover-btns">
+                                        <a class="single-btn add-basket">
+                                            <i class="fas fa-shopping-basket"></i>
+                                        </a>
+                                        <a href="wishlist.html" class="single-btn">
+                                            <i class="far fa-heart"></i>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
                             <div class="fav-info">
                                 <a href="">
-                                    <h2 class="basket-head">Single Mini Hoop</h2>
+                                    <h2>Bold Hoopsp</h2>
                                 </a>
                                 <p>
                                     <span>$</span>
-                                    30
+                                    160
                                 </p>
                             </div>
                             <div class="fav-color">
-                                <div class="color-item">
-                                    <img src="./assets/images/color/gold.svg" alt="">
-                                    <img src="./assets/images/color/silver.svg" alt="">
-                                    <p>14k Yellow Gold</p>
+                                <div class="color-items" data-id="26">
+                                    <div class="color-item">
+                                        <a class="tab-color active" data-target="color-gold">
+                                            <img src="./assets/images/color/gold.svg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="color-item">
+                                        <a class="tab-color" data-target="color-silver">
+                                            <img src="./assets/images/color/silver.svg" alt="">
+                                        </a>
+                                    </div>
                                 </div>
+                                <p>14k Yellow Gold</p>
                             </div>
                         </div>
                     </div>
@@ -823,52 +836,39 @@
             </section>
             <!--Company Under 250-->
             <section id="favory">
-                <div class="container">
-                    <div class="row">
-                        <div class="favory-title">
-                            <h2>Company Under 250</h2>
-                            <div class="coming-soon">
-                                <div class="countdown">
-                                    <div class="container-day time">
-                                        <h3 class="day">Time</h3>
-                                        <h3>Day</h3>
-                                    </div>
-                                    <div class="container-hour time">
-                                        <h3 class="hour">Time</h3>
-                                        <h3>Hour</h3>
-                                    </div>
-                                    <div class="container-minute time">
-                                        <h3 class="minute">Time</h3>
-                                        <h3>Minute</h3>
-                                    </div>
-                                    <div class="container-second time">
-                                        <h3 class="second">Time</h3>
-                                        <h3>Second</h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="favory-title">
+                    <h2>COMPANY UNDER 250</h2>
                 </div>
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-md-4">
+                        <div class="col-md-4 favs">
                             <div class="favory-item">
                                 <div class="card-image">
                                     <div class="img-product">
-                                        <a href="./detail.html">
-                                            <img src="./assets/images/silver-1.jpg" class="img-responsive">
-                                            <img src="./assets/images/silver-hov-1.jpg" class="img-responsive-hov">
-                                        </a>
-                                        <div class="hover-btns">
-                                            <a class="single-btn add-basket">
-                                                <i class="fas fa-shopping-basket"></i>
-                                            </a>
-                                            <a href="wishlist.html" class="single-btn">
-                                                <i class="far fa-heart"></i>
-                                            </a>
+                                        <div class="content-colors" id="12">
+                                            <div class="content-color active" id="color-gold">
+                                                <a href="./detail.html">
+                                                    <img src="./assets/images/silver-1.jpg" class="img-responsive">
+                                                    <img src="./assets/images/silver-hov-1.jpg"
+                                                        class="img-responsive-hov">
+                                                </a>
+                                            </div>
+                                            <div class="content-color" id="color-silver">
+                                                <a href="./detail.html">
+                                                    <img src="./assets/images/silver-2.jpg" class="img-responsive">
+                                                    <img src="./assets/images/silver-hov-2.jpg"
+                                                        class="img-responsive-hov">
+                                                </a>
+                                            </div>
                                         </div>
-
+                                    </div>
+                                    <div class="hover-btns">
+                                        <a class="single-btn add-basket">
+                                            <i class="fas fa-shopping-basket"></i>
+                                        </a>
+                                        <a href="wishlist.html" class="single-btn">
+                                            <i class="far fa-heart"></i>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -876,91 +876,137 @@
                                 <a href="">
                                     <h2 class="basket-head">Single Mini Hoop</h2>
                                 </a>
-                                <p>
+                                <p class="basket-price">
                                     <span>$</span>
                                     30
                                 </p>
                             </div>
                             <div class="fav-color">
-                                <div class="color-item">
-                                    <img src="./assets/images/color/gold.svg" alt="">
-                                    <img src="./assets/images/color/silver.svg" alt="">
-                                    <p>14k Yellow Gold</p>
+                                <div class="color-items" data-id="12">
+                                    <div class="color-item">
+                                        <a class="tab-color active" data-target="color-gold">
+                                            <img src="./assets/images/color/gold.svg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="color-item">
+                                        <a class="tab-color" data-target="color-silver">
+                                            <img src="./assets/images/color/silver.svg" alt="">
+                                        </a>
+                                    </div>
                                 </div>
+                                <p>14k Yellow Gold</p>
                             </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-4 favs">
                             <div class="favory-item">
                                 <div class="card-image">
                                     <div class="img-product">
-                                        <a href="./detail.html">
-                                            <img src="./assets/images/silver-2.jpg" class="img-responsive">
-                                            <img src="./assets/images/silver-hov-2.jpg" class="img-responsive-hov">
-                                        </a>
-                                        <div class="hover-btns">
-                                            <a class="single-btn add-basket">
-                                                <i class="fas fa-shopping-basket"></i>
-                                            </a>
-                                            <a href="wishlist.html" class="single-btn">
-                                                <i class="far fa-heart"></i>
-                                            </a>
+                                        <div class="content-colors" id="23">
+                                            <div class="content-color active" id="color-gold">
+                                                <a href="./detail.html">
+                                                    <img src="./assets/images/silver-2.jpg" class="img-responsive">
+                                                    <img src="./assets/images/silver-hov-2.jpg"
+                                                        class="img-responsive-hov">
+                                                </a>
+                                            </div>
+                                            <div class="content-color" id="color-silver">
+                                                <a href="./detail.html">
+                                                    <img src="./assets/images/silver-1.jpg" class="img-responsive">
+                                                    <img src="./assets/images/silver-hov-1.jpg"
+                                                        class="img-responsive-hov">
+                                                </a>
+                                            </div>
                                         </div>
-
+                                    </div>
+                                    <div class="hover-btns">
+                                        <a class="single-btn add-basket">
+                                            <i class="fas fa-shopping-basket"></i>
+                                        </a>
+                                        <a href="wishlist.html" class="single-btn">
+                                            <i class="far fa-heart"></i>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
                             <div class="fav-info">
                                 <a href="">
-                                    <h2 class="basket-head">Single Mini Hoop</h2>
+                                    <h2>Bold Hoopsp</h2>
                                 </a>
                                 <p>
                                     <span>$</span>
-                                    30
+                                    160
                                 </p>
                             </div>
                             <div class="fav-color">
-                                <div class="color-item">
-                                    <img src="./assets/images/color/gold.svg" alt="">
-                                    <img src="./assets/images/color/silver.svg" alt="">
-                                    <p>14k Yellow Gold</p>
+                                <div class="color-items" data-id="23">
+                                    <div class="color-item">
+                                        <a class="tab-color active" data-target="color-gold">
+                                            <img src="./assets/images/color/gold.svg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="color-item">
+                                        <a class="tab-color" data-target="color-silver">
+                                            <img src="./assets/images/color/silver.svg" alt="">
+                                        </a>
+                                    </div>
                                 </div>
+                                <p>14k Yellow Gold</p>
                             </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-4 favs">
                             <div class="favory-item">
                                 <div class="card-image">
                                     <div class="img-product">
-                                        <a href="./detail.html">
-                                            <img src="./assets/images/silver-3.jpg" class="img-responsive">
-                                            <img src="./assets/images/silver-hov-3.jpg" class="img-responsive-hov">
-                                        </a>
-                                        <div class="hover-btns">
-                                            <a class="single-btn add-basket">
-                                                <i class="fas fa-shopping-basket"></i>
-                                            </a>
-                                            <a href="wishlist.html" class="single-btn">
-                                                <i class="far fa-heart"></i>
-                                            </a>
+                                        <div class="content-colors" id="24">
+                                            <div class="content-color active" id="color-gold">
+                                                <a href="./detail.html">
+                                                    <img src="./assets/images/silver-2.jpg" class="img-responsive">
+                                                    <img src="./assets/images/silver-hov-2.jpg"
+                                                        class="img-responsive-hov">
+                                                </a>
+                                            </div>
+                                            <div class="content-color" id="color-silver">
+                                                <a href="./detail.html">
+                                                    <img src="./assets/images/silver-1.jpg" class="img-responsive">
+                                                    <img src="./assets/images/silver-hov-1.jpg"
+                                                        class="img-responsive-hov">
+                                                </a>
+                                            </div>
                                         </div>
-
+                                    </div>
+                                    <div class="hover-btns">
+                                        <a class="single-btn add-basket">
+                                            <i class="fas fa-shopping-basket"></i>
+                                        </a>
+                                        <a href="wishlist.html" class="single-btn">
+                                            <i class="far fa-heart"></i>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
                             <div class="fav-info">
                                 <a href="">
-                                    <h2 class="basket-head">Single Mini Hoop</h2>
+                                    <h2>Bold Hoopsp</h2>
                                 </a>
                                 <p>
                                     <span>$</span>
-                                    30
+                                    160
                                 </p>
                             </div>
                             <div class="fav-color">
-                                <div class="color-item">
-                                    <img src="./assets/images/color/gold.svg" alt="">
-                                    <img src="./assets/images/color/silver.svg" alt="">
-                                    <p>14k Yellow Gold</p>
+                                <div class="color-items" data-id="24">
+                                    <div class="color-item">
+                                        <a class="tab-color active" data-target="color-gold">
+                                            <img src="./assets/images/color/gold.svg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="color-item">
+                                        <a class="tab-color" data-target="color-silver">
+                                            <img src="./assets/images/color/silver.svg" alt="">
+                                        </a>
+                                    </div>
                                 </div>
+                                <p>14k Yellow Gold</p>
                             </div>
                         </div>
                     </div>
@@ -968,52 +1014,39 @@
             </section>
             <!--Company Under 500-->
             <section id="favory">
-                <div class="container">
-                    <div class="row">
-                        <div class="favory-title">
-                            <h2>Company Under 500</h2>
-                            <div class="coming-soon">
-                                <div class="countdown">
-                                    <div class="container-day time">
-                                        <h3 class="day">Time</h3>
-                                        <h3>Day</h3>
-                                    </div>
-                                    <div class="container-hour time">
-                                        <h3 class="hour">Time</h3>
-                                        <h3>Hour</h3>
-                                    </div>
-                                    <div class="container-minute time">
-                                        <h3 class="minute">Time</h3>
-                                        <h3>Minute</h3>
-                                    </div>
-                                    <div class="container-second time">
-                                        <h3 class="second">Time</h3>
-                                        <h3>Second</h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="favory-title">
+                    <h2>COMPANY UNDER 500</h2>
                 </div>
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-md-4">
+                        <div class="col-md-4 favs">
                             <div class="favory-item">
                                 <div class="card-image">
                                     <div class="img-product">
-                                        <a href="./detail.html">
-                                            <img src="./assets/images/silver-1.jpg" class="img-responsive">
-                                            <img src="./assets/images/silver-hov-1.jpg" class="img-responsive-hov">
-                                        </a>
-                                        <div class="hover-btns">
-                                            <a class="single-btn add-basket">
-                                                <i class="fas fa-shopping-basket"></i>
-                                            </a>
-                                            <a href="wishlist.html" class="single-btn">
-                                                <i class="far fa-heart"></i>
-                                            </a>
+                                        <div class="content-colors" id="13">
+                                            <div class="content-color active" id="color-gold">
+                                                <a href="./detail.html">
+                                                    <img src="./assets/images/silver-1.jpg" class="img-responsive">
+                                                    <img src="./assets/images/silver-hov-1.jpg"
+                                                        class="img-responsive-hov">
+                                                </a>
+                                            </div>
+                                            <div class="content-color" id="color-silver">
+                                                <a href="./detail.html">
+                                                    <img src="./assets/images/silver-2.jpg" class="img-responsive">
+                                                    <img src="./assets/images/silver-hov-2.jpg"
+                                                        class="img-responsive-hov">
+                                                </a>
+                                            </div>
                                         </div>
-
+                                    </div>
+                                    <div class="hover-btns">
+                                        <a class="single-btn add-basket">
+                                            <i class="fas fa-shopping-basket"></i>
+                                        </a>
+                                        <a href="wishlist.html" class="single-btn">
+                                            <i class="far fa-heart"></i>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -1021,91 +1054,137 @@
                                 <a href="">
                                     <h2 class="basket-head">Single Mini Hoop</h2>
                                 </a>
-                                <p>
+                                <p class="basket-price">
                                     <span>$</span>
                                     30
                                 </p>
                             </div>
                             <div class="fav-color">
-                                <div class="color-item">
-                                    <img src="./assets/images/color/gold.svg" alt="">
-                                    <img src="./assets/images/color/silver.svg" alt="">
-                                    <p>14k Yellow Gold</p>
+                                <div class="color-items" data-id="13">
+                                    <div class="color-item">
+                                        <a class="tab-color active" data-target="color-gold">
+                                            <img src="./assets/images/color/gold.svg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="color-item">
+                                        <a class="tab-color" data-target="color-silver">
+                                            <img src="./assets/images/color/silver.svg" alt="">
+                                        </a>
+                                    </div>
                                 </div>
+                                <p>14k Yellow Gold</p>
                             </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-4 favs">
                             <div class="favory-item">
                                 <div class="card-image">
                                     <div class="img-product">
-                                        <a href="./detail.html">
-                                            <img src="./assets/images/silver-2.jpg" class="img-responsive">
-                                            <img src="./assets/images/silver-hov-2.jpg" class="img-responsive-hov">
-                                        </a>
-                                        <div class="hover-btns">
-                                            <a class="single-btn add-basket">
-                                                <i class="fas fa-shopping-basket"></i>
-                                            </a>
-                                            <a href="wishlist.html" class="single-btn">
-                                                <i class="far fa-heart"></i>
-                                            </a>
+                                        <div class="content-colors" id="14">
+                                            <div class="content-color active" id="color-gold">
+                                                <a href="./detail.html">
+                                                    <img src="./assets/images/silver-2.jpg" class="img-responsive">
+                                                    <img src="./assets/images/silver-hov-2.jpg"
+                                                        class="img-responsive-hov">
+                                                </a>
+                                            </div>
+                                            <div class="content-color" id="color-silver">
+                                                <a href="./detail.html">
+                                                    <img src="./assets/images/silver-1.jpg" class="img-responsive">
+                                                    <img src="./assets/images/silver-hov-1.jpg"
+                                                        class="img-responsive-hov">
+                                                </a>
+                                            </div>
                                         </div>
-
+                                    </div>
+                                    <div class="hover-btns">
+                                        <a class="single-btn add-basket">
+                                            <i class="fas fa-shopping-basket"></i>
+                                        </a>
+                                        <a href="wishlist.html" class="single-btn">
+                                            <i class="far fa-heart"></i>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
                             <div class="fav-info">
                                 <a href="">
-                                    <h2 class="basket-head">Single Mini Hoop</h2>
+                                    <h2>Bold Hoopsp</h2>
                                 </a>
                                 <p>
                                     <span>$</span>
-                                    30
+                                    160
                                 </p>
                             </div>
                             <div class="fav-color">
-                                <div class="color-item">
-                                    <img src="./assets/images/color/gold.svg" alt="">
-                                    <img src="./assets/images/color/silver.svg" alt="">
-                                    <p>14k Yellow Gold</p>
+                                <div class="color-items" data-id="14">
+                                    <div class="color-item">
+                                        <a class="tab-color active" data-target="color-gold">
+                                            <img src="./assets/images/color/gold.svg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="color-item">
+                                        <a class="tab-color" data-target="color-silver">
+                                            <img src="./assets/images/color/silver.svg" alt="">
+                                        </a>
+                                    </div>
                                 </div>
+                                <p>14k Yellow Gold</p>
                             </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-4 favs">
                             <div class="favory-item">
                                 <div class="card-image">
                                     <div class="img-product">
-                                        <a href="./detail.html">
-                                            <img src="./assets/images/silver-3.jpg" class="img-responsive">
-                                            <img src="./assets/images/silver-hov-3.jpg" class="img-responsive-hov">
-                                        </a>
-                                        <div class="hover-btns">
-                                            <a class="single-btn add-basket">
-                                                <i class="fas fa-shopping-basket"></i>
-                                            </a>
-                                            <a href="wishlist.html" class="single-btn">
-                                                <i class="far fa-heart"></i>
-                                            </a>
+                                        <div class="content-colors" id="15">
+                                            <div class="content-color active" id="color-gold">
+                                                <a href="./detail.html">
+                                                    <img src="./assets/images/silver-2.jpg" class="img-responsive">
+                                                    <img src="./assets/images/silver-hov-2.jpg"
+                                                        class="img-responsive-hov">
+                                                </a>
+                                            </div>
+                                            <div class="content-color" id="color-silver">
+                                                <a href="./detail.html">
+                                                    <img src="./assets/images/silver-1.jpg" class="img-responsive">
+                                                    <img src="./assets/images/silver-hov-1.jpg"
+                                                        class="img-responsive-hov">
+                                                </a>
+                                            </div>
                                         </div>
-
+                                    </div>
+                                    <div class="hover-btns">
+                                        <a class="single-btn add-basket">
+                                            <i class="fas fa-shopping-basket"></i>
+                                        </a>
+                                        <a href="wishlist.html" class="single-btn">
+                                            <i class="far fa-heart"></i>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
                             <div class="fav-info">
                                 <a href="">
-                                    <h2 class="basket-head">Single Mini Hoop</h2>
+                                    <h2>Bold Hoopsp</h2>
                                 </a>
                                 <p>
                                     <span>$</span>
-                                    30
+                                    160
                                 </p>
                             </div>
                             <div class="fav-color">
-                                <div class="color-item">
-                                    <img src="./assets/images/color/gold.svg" alt="">
-                                    <img src="./assets/images/color/silver.svg" alt="">
-                                    <p>14k Yellow Gold</p>
+                                <div class="color-items" data-id="15">
+                                    <div class="color-item">
+                                        <a class="tab-color active" data-target="color-gold">
+                                            <img src="./assets/images/color/gold.svg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="color-item">
+                                        <a class="tab-color" data-target="color-silver">
+                                            <img src="./assets/images/color/silver.svg" alt="">
+                                        </a>
+                                    </div>
                                 </div>
+                                <p>14k Yellow Gold</p>
                             </div>
                         </div>
                     </div>
@@ -1113,52 +1192,39 @@
             </section>
             <!--Company Over 500-->
             <section id="favory">
-                <div class="container">
-                    <div class="row">
-                        <div class="favory-title">
-                            <h2>Company Over 500</h2>
-                            <div class="coming-soon">
-                                <div class="countdown">
-                                    <div class="container-day time">
-                                        <h3 class="day">Time</h3>
-                                        <h3>Day</h3>
-                                    </div>
-                                    <div class="container-hour time">
-                                        <h3 class="hour">Time</h3>
-                                        <h3>Hour</h3>
-                                    </div>
-                                    <div class="container-minute time">
-                                        <h3 class="minute">Time</h3>
-                                        <h3>Minute</h3>
-                                    </div>
-                                    <div class="container-second time">
-                                        <h3 class="second">Time</h3>
-                                        <h3>Second</h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="favory-title">
+                    <h2>COMPANY OVER 150</h2>
                 </div>
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-md-4">
+                        <div class="col-md-4 favs">
                             <div class="favory-item">
                                 <div class="card-image">
                                     <div class="img-product">
-                                        <a href="./detail.html">
-                                            <img src="./assets/images/silver-1.jpg" class="img-responsive">
-                                            <img src="./assets/images/silver-hov-1.jpg" class="img-responsive-hov">
-                                        </a>
-                                        <div class="hover-btns">
-                                            <a class="single-btn add-basket">
-                                                <i class="fas fa-shopping-basket"></i>
-                                            </a>
-                                            <a href="wishlist.html" class="single-btn">
-                                                <i class="far fa-heart"></i>
-                                            </a>
+                                        <div class="content-colors" id="16">
+                                            <div class="content-color active" id="color-gold">
+                                                <a href="./detail.html">
+                                                    <img src="./assets/images/silver-1.jpg" class="img-responsive">
+                                                    <img src="./assets/images/silver-hov-1.jpg"
+                                                        class="img-responsive-hov">
+                                                </a>
+                                            </div>
+                                            <div class="content-color" id="color-silver">
+                                                <a href="./detail.html">
+                                                    <img src="./assets/images/silver-2.jpg" class="img-responsive">
+                                                    <img src="./assets/images/silver-hov-2.jpg"
+                                                        class="img-responsive-hov">
+                                                </a>
+                                            </div>
                                         </div>
-
+                                    </div>
+                                    <div class="hover-btns">
+                                        <a class="single-btn add-basket">
+                                            <i class="fas fa-shopping-basket"></i>
+                                        </a>
+                                        <a href="wishlist.html" class="single-btn">
+                                            <i class="far fa-heart"></i>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -1166,91 +1232,137 @@
                                 <a href="">
                                     <h2 class="basket-head">Single Mini Hoop</h2>
                                 </a>
-                                <p>
+                                <p class="basket-price">
                                     <span>$</span>
                                     30
                                 </p>
                             </div>
                             <div class="fav-color">
-                                <div class="color-item">
-                                    <img src="./assets/images/color/gold.svg" alt="">
-                                    <img src="./assets/images/color/silver.svg" alt="">
-                                    <p>14k Yellow Gold</p>
+                                <div class="color-items" data-id="16">
+                                    <div class="color-item">
+                                        <a class="tab-color active" data-target="color-gold">
+                                            <img src="./assets/images/color/gold.svg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="color-item">
+                                        <a class="tab-color" data-target="color-silver">
+                                            <img src="./assets/images/color/silver.svg" alt="">
+                                        </a>
+                                    </div>
                                 </div>
+                                <p>14k Yellow Gold</p>
                             </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-4 favs">
                             <div class="favory-item">
                                 <div class="card-image">
                                     <div class="img-product">
-                                        <a href="./detail.html">
-                                            <img src="./assets/images/silver-2.jpg" class="img-responsive">
-                                            <img src="./assets/images/silver-hov-2.jpg" class="img-responsive-hov">
-                                        </a>
-                                        <div class="hover-btns">
-                                            <a class="single-btn add-basket">
-                                                <i class="fas fa-shopping-basket"></i>
-                                            </a>
-                                            <a href="wishlist.html" class="single-btn">
-                                                <i class="far fa-heart"></i>
-                                            </a>
+                                        <div class="content-colors" id="17">
+                                            <div class="content-color active" id="color-gold">
+                                                <a href="./detail.html">
+                                                    <img src="./assets/images/silver-2.jpg" class="img-responsive">
+                                                    <img src="./assets/images/silver-hov-2.jpg"
+                                                        class="img-responsive-hov">
+                                                </a>
+                                            </div>
+                                            <div class="content-color" id="color-silver">
+                                                <a href="./detail.html">
+                                                    <img src="./assets/images/silver-1.jpg" class="img-responsive">
+                                                    <img src="./assets/images/silver-hov-1.jpg"
+                                                        class="img-responsive-hov">
+                                                </a>
+                                            </div>
                                         </div>
-
+                                    </div>
+                                    <div class="hover-btns">
+                                        <a class="single-btn add-basket">
+                                            <i class="fas fa-shopping-basket"></i>
+                                        </a>
+                                        <a href="wishlist.html" class="single-btn">
+                                            <i class="far fa-heart"></i>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
                             <div class="fav-info">
                                 <a href="">
-                                    <h2 class="basket-head">Single Mini Hoop</h2>
+                                    <h2>Bold Hoopsp</h2>
                                 </a>
                                 <p>
                                     <span>$</span>
-                                    30
+                                    160
                                 </p>
                             </div>
                             <div class="fav-color">
-                                <div class="color-item">
-                                    <img src="./assets/images/color/gold.svg" alt="">
-                                    <img src="./assets/images/color/silver.svg" alt="">
-                                    <p>14k Yellow Gold</p>
+                                <div class="color-items" data-id="17">
+                                    <div class="color-item">
+                                        <a class="tab-color active" data-target="color-gold">
+                                            <img src="./assets/images/color/gold.svg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="color-item">
+                                        <a class="tab-color" data-target="color-silver">
+                                            <img src="./assets/images/color/silver.svg" alt="">
+                                        </a>
+                                    </div>
                                 </div>
+                                <p>14k Yellow Gold</p>
                             </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-4 favs">
                             <div class="favory-item">
                                 <div class="card-image">
                                     <div class="img-product">
-                                        <a href="./detail.html">
-                                            <img src="./assets/images/silver-3.jpg" class="img-responsive">
-                                            <img src="./assets/images/silver-hov-3.jpg" class="img-responsive-hov">
-                                        </a>
-                                        <div class="hover-btns">
-                                            <a class="single-btn add-basket">
-                                                <i class="fas fa-shopping-basket"></i>
-                                            </a>
-                                            <a href="wishlist.html" class="single-btn">
-                                                <i class="far fa-heart"></i>
-                                            </a>
+                                        <div class="content-colors" id="18">
+                                            <div class="content-color active" id="color-gold">
+                                                <a href="./detail.html">
+                                                    <img src="./assets/images/silver-2.jpg" class="img-responsive">
+                                                    <img src="./assets/images/silver-hov-2.jpg"
+                                                        class="img-responsive-hov">
+                                                </a>
+                                            </div>
+                                            <div class="content-color" id="color-silver">
+                                                <a href="./detail.html">
+                                                    <img src="./assets/images/silver-1.jpg" class="img-responsive">
+                                                    <img src="./assets/images/silver-hov-1.jpg"
+                                                        class="img-responsive-hov">
+                                                </a>
+                                            </div>
                                         </div>
-
+                                    </div>
+                                    <div class="hover-btns">
+                                        <a class="single-btn add-basket">
+                                            <i class="fas fa-shopping-basket"></i>
+                                        </a>
+                                        <a href="wishlist.html" class="single-btn">
+                                            <i class="far fa-heart"></i>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
                             <div class="fav-info">
                                 <a href="">
-                                    <h2 class="basket-head">Single Mini Hoop</h2>
+                                    <h2>Bold Hoopsp</h2>
                                 </a>
                                 <p>
                                     <span>$</span>
-                                    30
+                                    160
                                 </p>
                             </div>
                             <div class="fav-color">
-                                <div class="color-item">
-                                    <img src="./assets/images/color/gold.svg" alt="">
-                                    <img src="./assets/images/color/silver.svg" alt="">
-                                    <p>14k Yellow Gold</p>
+                                <div class="color-items" data-id="18">
+                                    <div class="color-item">
+                                        <a class="tab-color active" data-target="color-gold">
+                                            <img src="./assets/images/color/gold.svg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="color-item">
+                                        <a class="tab-color" data-target="color-silver">
+                                            <img src="./assets/images/color/silver.svg" alt="">
+                                        </a>
+                                    </div>
                                 </div>
+                                <p>14k Yellow Gold</p>
                             </div>
                         </div>
                     </div>
@@ -1258,52 +1370,39 @@
             </section>
             <!--Company For Him -->
             <section id="favory">
-                <div class="container">
-                    <div class="row">
-                        <div class="favory-title">
-                            <h2>Company For Him</h2>
-                            <div class="coming-soon">
-                                <div class="countdown">
-                                    <div class="container-day time">
-                                        <h3 class="day">Time</h3>
-                                        <h3>Day</h3>
-                                    </div>
-                                    <div class="container-hour time">
-                                        <h3 class="hour">Time</h3>
-                                        <h3>Hour</h3>
-                                    </div>
-                                    <div class="container-minute time">
-                                        <h3 class="minute">Time</h3>
-                                        <h3>Minute</h3>
-                                    </div>
-                                    <div class="container-second time">
-                                        <h3 class="second">Time</h3>
-                                        <h3>Second</h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="favory-title">
+                    <h2>COMPANY FOR HIM</h2>
                 </div>
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-md-4">
+                        <div class="col-md-4 favs">
                             <div class="favory-item">
                                 <div class="card-image">
                                     <div class="img-product">
-                                        <a href="./detail.html">
-                                            <img src="./assets/images/him-1.jpg" class="img-responsive">
-                                            <img src="./assets/images/him-hov-1.jpg" class="img-responsive-hov">
-                                        </a>
-                                        <div class="hover-btns">
-                                            <a class="single-btn add-basket">
-                                                <i class="fas fa-shopping-basket"></i>
-                                            </a>
-                                            <a href="wishlist.html" class="single-btn">
-                                                <i class="far fa-heart"></i>
-                                            </a>
+                                        <div class="content-colors" id="20">
+                                            <div class="content-color active" id="color-gold">
+                                                <a href="./detail.html">
+                                                    <img src="./assets/images/silver-1.jpg" class="img-responsive">
+                                                    <img src="./assets/images/silver-hov-1.jpg"
+                                                        class="img-responsive-hov">
+                                                </a>
+                                            </div>
+                                            <div class="content-color" id="color-silver">
+                                                <a href="./detail.html">
+                                                    <img src="./assets/images/silver-2.jpg" class="img-responsive">
+                                                    <img src="./assets/images/silver-hov-2.jpg"
+                                                        class="img-responsive-hov">
+                                                </a>
+                                            </div>
                                         </div>
-
+                                    </div>
+                                    <div class="hover-btns">
+                                        <a class="single-btn add-basket">
+                                            <i class="fas fa-shopping-basket"></i>
+                                        </a>
+                                        <a href="wishlist.html" class="single-btn">
+                                            <i class="far fa-heart"></i>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -1311,90 +1410,137 @@
                                 <a href="">
                                     <h2 class="basket-head">Single Mini Hoop</h2>
                                 </a>
-                                <p>
+                                <p class="basket-price">
                                     <span>$</span>
                                     30
                                 </p>
                             </div>
                             <div class="fav-color">
-                                <div class="color-item">
-                                    <img src="./assets/images/color/gold.svg" alt="">
-                                    <img src="./assets/images/color/silver.svg" alt="">
-                                    <p>14k Yellow Gold</p>
+                                <div class="color-items" data-id="20">
+                                    <div class="color-item">
+                                        <a class="tab-color active" data-target="color-gold">
+                                            <img src="./assets/images/color/gold.svg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="color-item">
+                                        <a class="tab-color" data-target="color-silver">
+                                            <img src="./assets/images/color/silver.svg" alt="">
+                                        </a>
+                                    </div>
                                 </div>
+                                <p>14k Yellow Gold</p>
                             </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-4 favs">
                             <div class="favory-item">
                                 <div class="card-image">
                                     <div class="img-product">
-                                        <a href="./detail.html">
-                                            <img src="./assets/images/him-2.jpg" class="img-responsive">
-                                            <img src="./assets/images/him-hov-2.jpg" class="img-responsive-hov">
-                                        </a>
-                                        <div class="hover-btns">
-                                            <a class="single-btn add-basket">
-                                                <i class="fas fa-shopping-basket"></i>
-                                            </a>
-                                            <a href="wishlist.html" class="single-btn">
-                                                <i class="far fa-heart"></i>
-                                            </a>
+                                        <div class="content-colors" id="21">
+                                            <div class="content-color active" id="color-gold">
+                                                <a href="./detail.html">
+                                                    <img src="./assets/images/silver-2.jpg" class="img-responsive">
+                                                    <img src="./assets/images/silver-hov-2.jpg"
+                                                        class="img-responsive-hov">
+                                                </a>
+                                            </div>
+                                            <div class="content-color" id="color-silver">
+                                                <a href="./detail.html">
+                                                    <img src="./assets/images/silver-1.jpg" class="img-responsive">
+                                                    <img src="./assets/images/silver-hov-1.jpg"
+                                                        class="img-responsive-hov">
+                                                </a>
+                                            </div>
                                         </div>
-
+                                    </div>
+                                    <div class="hover-btns">
+                                        <a class="single-btn add-basket">
+                                            <i class="fas fa-shopping-basket"></i>
+                                        </a>
+                                        <a href="wishlist.html" class="single-btn">
+                                            <i class="far fa-heart"></i>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
                             <div class="fav-info">
                                 <a href="">
-                                    <h2 class="basket-head">Single Mini Hoop</h2>
+                                    <h2>Bold Hoopsp</h2>
                                 </a>
                                 <p>
                                     <span>$</span>
-                                    30
+                                    160
                                 </p>
                             </div>
                             <div class="fav-color">
-                                <div class="color-item">
-                                    <img src="./assets/images/color/gold.svg" alt="">
-                                    <img src="./assets/images/color/silver.svg" alt="">
-                                    <p>14k Yellow Gold</p>
+                                <div class="color-items" data-id="21">
+                                    <div class="color-item">
+                                        <a class="tab-color active" data-target="color-gold">
+                                            <img src="./assets/images/color/gold.svg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="color-item">
+                                        <a class="tab-color" data-target="color-silver">
+                                            <img src="./assets/images/color/silver.svg" alt="">
+                                        </a>
+                                    </div>
                                 </div>
+                                <p>14k Yellow Gold</p>
                             </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-4 favs">
                             <div class="favory-item">
                                 <div class="card-image">
                                     <div class="img-product">
-                                        <a href="./detail.html">
-                                            <img src="./assets/images/him-3.jpg" class="img-responsive">
-                                            <img src="./assets/images/him-hov-3.jpg" class="img-responsive-hov">
-                                        </a>
-                                        <div class="hover-btns">
-                                            <a class="single-btn add-basket">
-                                                <i class="fas fa-shopping-basket"></i>
-                                            </a>
-                                            <a class="single-btn">
-                                                <i class="far fa-heart"></i>
-                                            </a>
+                                        <div class="content-colors" id="22">
+                                            <div class="content-color active" id="color-gold">
+                                                <a href="./detail.html">
+                                                    <img src="./assets/images/silver-2.jpg" class="img-responsive">
+                                                    <img src="./assets/images/silver-hov-2.jpg"
+                                                        class="img-responsive-hov">
+                                                </a>
+                                            </div>
+                                            <div class="content-color" id="color-silver">
+                                                <a href="./detail.html">
+                                                    <img src="./assets/images/silver-1.jpg" class="img-responsive">
+                                                    <img src="./assets/images/silver-hov-1.jpg"
+                                                        class="img-responsive-hov">
+                                                </a>
+                                            </div>
                                         </div>
+                                    </div>
+                                    <div class="hover-btns">
+                                        <a class="single-btn add-basket">
+                                            <i class="fas fa-shopping-basket"></i>
+                                        </a>
+                                        <a href="wishlist.html" class="single-btn">
+                                            <i class="far fa-heart"></i>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
                             <div class="fav-info">
                                 <a href="">
-                                    <h2 class="basket-head">Single Mini Hoop</h2>
+                                    <h2>Bold Hoopsp</h2>
                                 </a>
                                 <p>
                                     <span>$</span>
-                                    30
+                                    160
                                 </p>
                             </div>
                             <div class="fav-color">
-                                <div class="color-item">
-                                    <img src="./assets/images/color/gold.svg" alt="">
-                                    <img src="./assets/images/color/silver.svg" alt="">
-                                    <p>14k Yellow Gold</p>
+                                <div class="color-items" data-id="22">
+                                    <div class="color-item">
+                                        <a class="tab-color active" data-target="color-gold">
+                                            <img src="./assets/images/color/gold.svg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="color-item">
+                                        <a class="tab-color" data-target="color-silver">
+                                            <img src="./assets/images/color/silver.svg" alt="">
+                                        </a>
+                                    </div>
                                 </div>
+                                <p>14k Yellow Gold</p>
                             </div>
                         </div>
                     </div>

@@ -65,7 +65,12 @@
                                         </svg>
                                     </a>
                                 </li>
-                                <li class="nav-item"><a href="./wish-list.html"><i class="far fa-heart"></i></a></li>
+                                <li class="nav-item">
+                                    <a href="./wish-list.html">
+                                        <i class="far fa-heart"></i>
+                                    </a>
+                                    <div class="fav-number-sum">3</div>
+                                </li>
                                 <li class="nav-item"><a href="./sign.html">Sign In</a></li>
                                 <li>
                                     <a id="basket-icon" href="">
@@ -76,6 +81,7 @@
                                             </path>
                                         </svg>
                                     </a>
+                                    <div class="basket-number-sum">3</div>
                                 </li>
                                 <div id="basket">
                                     <div class="basket">
@@ -441,44 +447,6 @@
                                 </div>
                                 <div class="col-md-2">
                                     <div class="filter-item">
-                                        <h2>Prices</h2>
-                                        <div class="form-checkbox-column">
-                                            <div class="form-checkbox-container">
-                                                <label for="100" class="label-container">Under $100
-                                                    <input type="checkbox" class="form-checkbox" id="100" value="100">
-                                                    <span class="checkmark"></span>
-                                                </label>
-                                            </div>
-                                            <div class="form-checkbox-container">
-                                                <label for="200" class="label-container">
-                                                    $100-$200
-                                                    <input type="checkbox" class="form-checkbox" id="200" value="200">
-                                                    <span class="checkmark"></span>
-                                                </label>
-                                            </div>
-                                            <div class="form-checkbox-container">
-                                                <label class="label-container" for="300"> $200-$300
-                                                    <input type="checkbox" class="form-checkbox" id="300" value="300">
-                                                    <span class="checkmark"></span>
-                                                </label>
-                                            </div>
-                                            <div class="form-checkbox-container">
-                                                <label class="label-container" for="400">$300-$400
-                                                    <input type="checkbox" class="form-checkbox" id="400" value="400">
-                                                    <span class="checkmark"></span>
-                                                </label>
-                                            </div>
-                                            <div class="form-checkbox-container">
-                                                <label class="label-container" for="500">$400+
-                                                    <input type="checkbox" class="form-checkbox" id="500" value="500">
-                                                    <span class="checkmark"></span>
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-2">
-                                    <div class="filter-item">
                                         <h2>Genders</h2>
                                         <div class="form-checkbox-column">
                                             <div class="form-checkbox-container">
@@ -498,7 +466,21 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-4 filter-end">
+                                <div class="col-md-6">
+                                    <div class="filter-item">
+                                        <h2>Filter By Prices</h2>
+                                        <div class="fillter">
+                                            <section class="range-slider" id="facet-price-range-slider"
+                                                data-options='{"output":{"prefix":""},"maxSymbol":""}'>
+                                                <input name="range-1" value="300" min="50" max="5000" step="1"
+                                                    type="range">
+                                                <input name="range-2" value="3500" min="50" max="5000" step="1"
+                                                    type="range">
+                                            </section>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 filter-end">
                                     <div class="filter-button">
                                         <p role="button">
                                             Clear all</p>
@@ -911,6 +893,8 @@
         </div>
     </footer>
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="./assets/js/plugin.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
     integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
