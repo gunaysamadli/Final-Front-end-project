@@ -2,7 +2,6 @@
     padding-bottom: 4rem;
 
     .col-order {
-        background-color: #fafafa;
         border-radius: 2px;
         padding: 1.5rem;
         display: flex;
@@ -11,32 +10,89 @@
         border-radius: 2px;
         margin-top: 2.8rem;
 
+        .order-info {
+            @include flexbox();
+            padding: 7rem 0;
+
+            h1 {
+                font-size: 3.2rem;
+
+                span {
+                    color: $color-brown;
+                }
+            }
+
+            .order-info-mejuri {
+                @include flexbox();
+                flex-direction: column;
+
+                i {
+                    font-size: 6rem;
+                    color: $color-brown;
+                }
+
+                p {
+                    font-size: 2rem;
+                }
+            }
+        }
+
     }
 
     .orders {
         .table-responsive {
-            table {
-                width: 100%;
-            }
+            box-shadow: 1px 1px 3px 0px rgb(112, 115, 139);
 
-            th {
-                text-align: left;
-                padding: 1rem;
+            .order-body {
+                padding: 1rem 1.5rem;
                 font-size: 17px;
+                margin-top: 2rem;
+                border-bottom: 1px solid $color-primary-hover;
+                @include flexbox();
 
                 @media screen and (max-width:768px) {
-                    font-size: 10px;
+                    font-size: 13px;
                 }
+
+                @media screen and (max-width:576px) {
+                    flex-direction: column;
+                }
+
+
+                img {
+                    width: 17%;
+                    border-radius: 50%;
+
+                    @media screen and (max-width:768px) {
+                        width: 10%;
+                    }
+
+
+                }
+
+                p {
+                    @media screen and (max-width:576px) {
+                        padding-top: 1rem;
+                    }
+                }
+
+                i {
+                    font-size: 3rem;
+
+                    @media screen and (max-width:768px) {
+                        font-size: 2rem;
+
+                    }
+
+                    @media screen and (max-width:576px) {
+                        padding-top: 1rem;
+                    }
+                }
+
+
+
             }
 
-            td {
-                padding: 1rem;
-                font-size: 17px;
-
-                @media screen and (max-width:768px) {
-                    font-size: 10px;
-                }
-            }
         }
     }
 }
