@@ -92,106 +92,15 @@ const BasketItemParent = document.querySelectorAll(".basket-item")
 basketIcon.addEventListener("click", function (e) {
     e.preventDefault();
     const basket = document.getElementById("basket");
-    basket.style.transform = "translateX(10px)"
+    basket.style.display = "block"
 })
 
-var removeItemFromBasket = document.querySelectorAll('#removeitem');
-for (let i = 0; i < removeItemFromBasket.length; i++) {
-    var button = removeItemFromBasket[i]
-    button.addEventListener("click", function (e) {
-        e.preventDefault()
-        BasketItemParent[i].remove()
-        updateCartTotal()
-
-    })
-
-}
-
-var quantityInputs = document.getElementsByClassName("card-count");
-for (let i = 0; i < quantityInputs.length; i++) {
-    var input = quantityInputs[i];
-    input.addEventListener("change", quantityChanged)
-}
-
-function quantityChanged(e) {
-    e.preventDefault();
-    var input = e.target
-    if (isNaN(input.value) || input.value <= 0) {
-        input.value = 1;
-    }
-    updateCartTotal()
-}
-
-
-// var AddToCardButtons = document.querySelectorAll(".add-basket")
-// for (var i = 0; i < AddToCardButtons.length; i++) {
-//     var button = AddToCardButtons[i]
-//     button.addEventListener('click', addToCard)
-// }
-// function addToCard(e) {
-//     e.preventDefault();
-//     var shopItem = document.querySelectorAll(".favs")
-//     var title = document.querySelectorAll(".basket-head")[0].innerText
-//     var price = document.querySelectorAll(".basket-price")[0].innerText
-//     var imageSrc = document.querySelectorAll(".images")[0].src
-//     addItemCart(title, price, imageSrc)
-//     updateCartTotal()
-// }
-
-
-// function addItemCart(title, price, imageSrc) {
-//     var CartRow = document.createElement('div');
-//     CartRow.classList.add("basket-item-content")
-//     CartRow.innerText = title
-//     cartItems = document.getElementsByClassName('basket-item')[0]
-//     var cartRowContents = `
-//     <div class="col-md-3">
-//         <img src="${imageSrc}" alt="">
-//      </div>
-//     <div class="col-md-9">
-//         <div class="name-icon">
-//              <h2>
-//                 ${title}
-//             </h2>
-//             <button id="removeitem" type="button">
-//                 <i class="fas fa-times"></i>
-//             </button>
-//         </div>
-//         <div class="count-price">
-//              <div class="count">
-//                 <i class="fas fa-minus"></i>
-//                     <input class="card-count" value="2"
-//                      type="number">
-//                  <i class="fas fa-plus"></i>
-//             </div>
-//             <div>
-//                   <span class="price">${price}</span>
-//             </div>
-//           </div>
-//      </div>
-//     `
-//     CartRow.innerHTML = cartRowContents
-//     cartItems.append(CartRow)
-//     CartRow.querySelectorAll('#removeitem')[0].addEventListener('click', removeItemFromBasket)
-//     CartRow.getElementsByClassName('card-count')[0].addEventListener('change', quantityChanged)
-// }
-
-// function updateCartTotal() {
-//     let cartItemContainer = document.getElementsByClassName("basket-body")[0]
-//     var CartRows = cartItemContainer.getElementsByClassName("basket-item")
-//     var total = 0
-//     for (let i = 0; i < CartRows.length; i++) {
-//         var CartRow = CartRows[i]
-//         var priceElement = CartRow.getElementsByClassName("price")[0]
-//         var quantityElement = CartRow.getElementsByClassName("card-count")[0]
-//         var price = parseFloat(priceElement.innerText.replace('$', ''))
-//         var quantity = quantityElement.value
-//         total = total + (price * quantity);
-
-//     }
-//     document.getElementsByClassName("total")[0].innerText = total;
-
-// }
+//order
+$(function () {
+    $(".table-img").on("click", function () {
+        $(this).toggleClass("active").next(".order-open").toggleClass("active");
+    });
+});
 
 
 
@@ -245,9 +154,8 @@ SearchBarX.addEventListener("click", function (e) {
 
 // Filter Color
 
-
 const tabColors = Array.from(document.querySelectorAll(".tab-color"));
-const tabColorContents = Array.from(document.querySelectorAll(".content-colors .content-color"));
+const tabColorContents = Array.from(document.querySelectorAll(".card-image .content-color"));
 
 const clearColorActives = function (dataId) {
     tabColors.forEach(tabREw => {
@@ -306,29 +214,26 @@ tabDetail.forEach(tabBrand => {
     }
 })
 
+// Accordion
 
-//Timer
-// const countdown = () => {
-//     const countDate = new Date('November 26,2022 00:00:00').getTime();
-//     const now = new Date().getTime();
-//     const gap = countDate - now;
+$(document).ready(function () {
+    $('.faq-accordion').on('click', function (e) {
+        e.preventDefault();
+        if ($(this).next('.accordion-content').css('display') == 'none') {
+            $(this).find('img').css('transform', 'rotate(90deg)');
+        }
+        else {
+            $(this).find('img').css('transform', 'rotate(0deg)');
+        }
 
+        $(this).next('.accordion-content').slideToggle();
+    })
+});
 
-//     const second = 1000;
-//     const minute = second * 60;
-//     const hour = minute * 60;
-//     const day = hour * 24;
-
-//     //Calculate
-//     const textDay = Math.floor(gap / day);
-//     const textHour = Math.floor((gap % day) / hour);
-//     const textMinute = Math.floor((gap % hour) / minute);
-//     const textSEcond = Math.floor((gap % minute) / second);
-
-//     document.querySelector(".day").innerText = textDay;
-//     document.querySelector(".hour").innerText = textHour;
-//     document.querySelector(".minute").innerText = textMinute;
-//     document.querySelector(".second").innerText = textSEcond;
-
-// };
-// setInterval(countdown, 1000);
+//ask
+const ask = document.querySelector(".ask")
+ask.addEventListener("click", function (e) {
+    e.preventDefault();
+    const ques = document.querySelector(".user-question");
+    ques.classList.toggle("active");
+})

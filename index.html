@@ -71,7 +71,7 @@
                                     </a>
                                     <div class="fav-number-sum">3</div>
                                 </li>
-                                <li class="nav-item"><a href="./sign.html">Sign In</a></li>
+                                <li class="nav-item"><a href="#" id="mySizeChart">Sign In</a></li>
                                 <li>
                                     <a id="basket-icon" href="">
                                         <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg"
@@ -88,7 +88,7 @@
                                         <div>
                                             <div class="basket-header">
                                                 <a href="">
-                                                    <i class="fas fa-chevron-left"></i>
+                                                    <i class="fas fa-chevron-left close-basket"></i>
                                                 </a>
                                                 <span>You're Basket</span>
                                                 <a href="">
@@ -138,7 +138,7 @@
                                                                 </div>
                                                                 <div class="basket-item">
                                                                     <div class="basket-item-content">
-                                                                        <div class="col-md-3">
+                                                                        <div class="col-basket">
                                                                             <img src="./assets/images/baskte-1.jpg"
                                                                                 alt="">
                                                                         </div>
@@ -182,7 +182,7 @@
                                                         </span>
                                                     </div>
                                                     <div class="checkout">
-                                                        <a class="button button-secondary" href="">
+                                                        <a class="button button-secondary" href="./checkout.html">
                                                             Continue to Checkout
                                                         </a>
                                                     </div>
@@ -233,6 +233,7 @@
                 </nav>
             </div>
         </nav>
+        </div>
         <!--Search-->
         <div id="search">
             <div class="search">
@@ -269,11 +270,11 @@
                     <div class="col-lg-12">
                         <div class="info">
                             <div class="info-img">
-                                <img src="./assets/images/header.jfif" alt="">
+                                <img src="./assets/images/head.jfif" alt="">
                             </div>
                             <div class="info-text text-center">
                                 <p>THE HOLIDAY GIFT SHOP</p>
-                                <a class="button button-primary" href="">SHOP NOW</a>
+                                <a class="button button-primary" href="./shop.html">SHOP NOW</a>
                             </div>
                         </div>
                     </div>
@@ -347,6 +348,78 @@
                 <div class="row">
                     <div class="company-info">
                         <h2>Company Shop</h2>
+                    </div>
+                </div>
+                <div class="company-item company-up">
+                    <div class="col-md-4 col-sm-12 company-up-item">
+                        <a href="">
+                            <img src="./assets/images/company1.jfif" alt="">
+                        </a>
+                        <a href="">
+                            <h3>MOST GIFTED</h3>
+                        </a>
+                    </div>
+                    <div class="col-md-4 company-up-item">
+                        <a href="">
+                            <img src="./assets/images/company2.jfif" alt="">
+                        </a>
+                        <a href="">
+                            <h3>PERSONALIZED</h3>
+                        </a>
+                    </div>
+                    <div class="col-md-4 company-up-item">
+                        <a href="">
+                            <img src="./assets/images/company3.jfif" alt="">
+                        </a>
+                        <a href="">
+                            <h3>FOR HIM</h3>
+                        </a>
+                    </div>
+                </div>
+                <div class="company-item">
+                    <div class="col-md-3 col-sm-6">
+                        <a href="">
+                            <img src="./assets/images/gift1.jfif" alt="">
+                        </a>
+                        <a href="">
+                            <h3>UNDER $150</h3>
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <a href="">
+                            <img src="./assets/images/gift2.jfif" alt="">
+                        </a>
+                        <a href="">
+                            <h3>UNDER $250</h3>
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <a href="">
+                            <img src="./assets/images/gift3.jfif" alt="">
+                        </a>
+                        <a href="">
+                            <h3>UNDER $500</h3>
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <a href="">
+                            <img src="./assets/images/gift4.jfif" alt="">
+                        </a>
+                        <a href="">
+                            <h3>$500+</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <!--Style Edit-->
+        <section id="edit">
+            <div class="container">
+                <div class="row">
+                    <hr>
+                    <div class="edit-info">
+                        <h2>Company Shop</h2>
                         <div class="coming-soon">
                             <div class="countdown">
                                 <div class="container-day time">
@@ -368,119 +441,80 @@
                             </div>
                         </div>
                     </div>
-                    <div class="company-item company-up">
-                        <div class="col-md-4 col-sm-12 company-up-item">
+                    <div class="edit-item company-slider">
+                        <div class="col-md-3 company-slider-item">
                             <a href="">
-                                <img src="./assets/images/company1.jfif" alt="">
+                                <div class="img-product">
+                                    <a href="./detail.html">
+                                        <img src="./assets/images/fav-2.jpg" class="img-responsive">
+                                        <img src="./assets/images/fav-hov-2.jpg" class="img-responsive-hov">
+                                    </a>
+                                </div>
+                                <a href="">
+                                    <p>HOW TO DRESS UP YOUR STACK FOR A HOLIDAY PARTY</p>
+                                </a>
                             </a>
-                            <a href="">
-                                <h3>MOST GIFTED</h3>
-                            </a>
+                            <div class="hover-btns">
+                                <a class="single-btn add-basket">
+                                    <i class="fas fa-shopping-basket"></i>
+                                </a>
+                                <a href="wishlist.html" class="single-btn">
+                                    <i class="far fa-heart"></i>
+                                </a>
+                            </div>
                         </div>
-                        <div class="col-md-4 company-up-item">
+                        <div class="col-md-3 company-slider-item">
                             <a href="">
-                                <img src="./assets/images/company2.jfif" alt="">
+                                <img src="./assets/images/fav-2.jpg" alt="">
+                                <a href="">
+                                    <p>HOW TO DRESS UP YOUR STACK FOR A HOLIDAY PARTY</p>
+                                </a>
                             </a>
-                            <a href="">
-                                <h3>PERSONALIZED</h3>
-                            </a>
+                            <div class="hover-btns">
+                                <a class="single-btn add-basket">
+                                    <i class="fas fa-shopping-basket"></i>
+                                </a>
+                                <a href="wishlist.html" class="single-btn">
+                                    <i class="far fa-heart"></i>
+                                </a>
+                            </div>
                         </div>
-                        <div class="col-md-4 company-up-item">
+                        <div class="col-md-3 company-slider-item">
                             <a href="">
-                                <img src="./assets/images/company3.jfif" alt="">
+                                <img src="./assets/images/fav-3.jpg" alt="">
+                                <a href="">
+                                    <p>HOW TO DRESS UP YOUR STACK FOR A HOLIDAY PARTY</p>
+                                </a>
                             </a>
-                            <a href="">
-                                <h3>FOR HIM</h3>
-                            </a>
+                            <div class="hover-btns">
+                                <a class="single-btn add-basket">
+                                    <i class="fas fa-shopping-basket"></i>
+                                </a>
+                                <a href="wishlist.html" class="single-btn">
+                                    <i class="far fa-heart"></i>
+                                </a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="company-item">
-                        <div class="col-md-3 col-sm-6">
+                        <div class="col-md-3 company-slider-item">
                             <a href="">
-                                <img src="./assets/images/gift1.jfif" alt="">
+                                <img src="./assets/images/fav-1.jpg" alt="">
+                                <a href="">
+                                    <p>HOW TO DRESS UP YOUR STACK FOR A HOLIDAY PARTY</p>
+                                </a>
                             </a>
-                            <a href="">
-                                <h3>UNDER $150</h3>
-                            </a>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <a href="">
-                                <img src="./assets/images/gift2.jfif" alt="">
-                            </a>
-                            <a href="">
-                                <h3>UNDER $250</h3>
-                            </a>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <a href="">
-                                <img src="./assets/images/gift3.jfif" alt="">
-                            </a>
-                            <a href="">
-                                <h3>UNDER $500</h3>
-                            </a>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <a href="">
-                                <img src="./assets/images/gift4.jfif" alt="">
-                            </a>
-                            <a href="">
-                                <h3>$500+</h3>
-                            </a>
+                            <div class="hover-btns">
+                                <a class="single-btn add-basket">
+                                    <i class="fas fa-shopping-basket"></i>
+                                </a>
+                                <a href="wishlist.html" class="single-btn">
+                                    <i class="far fa-heart"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!--Style Edit-->
-        <!-- <section id="edit">
-            <div class="container">
-                <div class="row">
-                    <hr>
-                    <div class="edit-info">
-                        <h2>STYLE EDIT</h2>
-                        <a href="">See All</a>
-                    </div>
-                    <div class="edit-item">
-                        <div class="col-md-6">
-                            <a href="">
-                                <img src="./assets/images/edit1.jfif" alt="">
-                                <a href="">
-                                    <p>HOW TO DRESS UP YOUR STACK FOR A HOLIDAY PARTY</p>
-                                </a>
-                                <a href="">Watch Now</a>
-                            </a>
-                        </div>
-                        <div class="col-md-6">
-                            <a href="">
-                                <img src="./assets/images/edit1.jfif" alt="">
-                                <a href="">
-                                    <p>HOW TO DRESS UP YOUR STACK FOR A HOLIDAY PARTY</p>
-                                </a>
-                                <a href="">Watch Now</a>
-                            </a>
-                        </div>
-                        <div class="col-md-6">
-                            <a href="">
-                                <img src="./assets/images/edit1.jfif" alt="">
-                                <a href="">
-                                    <p>HOW TO DRESS UP YOUR STACK FOR A HOLIDAY PARTY</p>
-                                </a>
-                                <a href="">Watch Now</a>
-                            </a>
-                        </div>
-                        <div class="col-md-6">
-                            <a href="">
-                                <img src="./assets/images/edit1.jfif" alt="">
-                                <a href="">
-                                    <p>HOW TO DRESS UP YOUR STACK FOR A HOLIDAY PARTY</p>
-                                </a>
-                                <a href="">Watch Now</a>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
         <!--New-->
         <section id="new">
             <div class="container">
@@ -492,7 +526,7 @@
                                 <div class="new-info">
                                     <h4>Weekly Monday Drop</h4>
                                     <p>Forged Carbon</p>
-                                    <a class="button button-primary" href="">Shop New</a>
+                                    <a class="button button-primary" href="./shop.html">Shop New</a>
                                 </div>
                             </div>
                         </div>
@@ -502,7 +536,7 @@
                                 <div class="new-info">
                                     <h4>Weekly Monday Drop</h4>
                                     <p>Forged Carbon</p>
-                                    <a class="button button-primary" href="">Shop New</a>
+                                    <a class="button button-primary" href="./shop.html">Shop New</a>
                                 </div>
                             </div>
                         </div>
@@ -512,7 +546,7 @@
                                 <div class="new-info">
                                     <h4>Weekly Monday Drop</h4>
                                     <p>Forged Carbon</p>
-                                    <a class="button button-primary" href="">Shop New</a>
+                                    <a class="button button-primary" href="./shop.html">Shop New</a>
                                 </div>
                             </div>
                         </div>
@@ -522,7 +556,7 @@
                                 <div class="new-info">
                                     <h4>Weekly Monday Drop</h4>
                                     <p>Forged Carbon</p>
-                                    <a class="button button-primary" href="">Shop New</a>
+                                    <a class="button button-primary" href="./shop.html">Shop New</a>
                                 </div>
                             </div>
                         </div>
@@ -532,7 +566,7 @@
                                 <div class="new-info">
                                     <h4>Weekly Monday Drop</h4>
                                     <p>Forged Carbon</p>
-                                    <a class="button button-primary" href="">Shop New</a>
+                                    <a class="button button-primary" href="./shop.html">Shop New</a>
                                 </div>
                             </div>
                         </div>
@@ -548,7 +582,7 @@
                         <div class="location-info">
                             <h3>Come Say Hi</h3>
                             <p>Shop our entire lineup of fine faves in store, get styled and join the Fine Crew.</p>
-                            <a class="button button-secondary" href="">Shop New</a>
+                            <a class="button button-secondary" href="./shop.html">Shop New</a>
                         </div>
                     </div>
                     <div class="col-md-6 location-right">
@@ -558,61 +592,43 @@
             </div>
         </section>
         <!--Brand-->
-        <section id="brand">
-            <div class="container brands">
-                <div class="row">
-                    <div class="col-md-12 col-xs-12">
-                        <div class="content-brands">
-                            <div class="content-brand active" id="elle">
-                                <p class="text-brand"><q>Prices are lower than traditional luxury brands,
-                                        meaning you can stock up on the pieces you love.</q></p>
-                            </div>
-                            <div class="content-brand" id="www">
-                                <p class="text-brand"><q>Mejuri's affordable gold pieces are both timeless
-                                        and of the moment.</q></p>
-                            </div>
-                            <div class="content-brand" id="vogue">
-                                <p class="text-brand"><q>Mejuri pieces are designed by women for women to
-                                        wear everyday because, quite simply, “luxury should be a habit”, not a
-                                        rarity.</q></p>
-                            </div>
-                            <div class="content-brand" id="wwd">
-                                <p class="text-brand"><q>Mejuri should serve as an example for large
-                                        jewelry brands.</q></p>
-                            </div>
-                            <div class="content-brand" id="forbes">
-                                <p class="text-brand"><q>[T]here’s an authentic coolness to the brand that
-                                        is more about community, than contrived allure.</q></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <section id="new">
             <div class="container">
                 <div class="row">
-                    <div class="brand-items">
-                        <div class="brand-item">
-                            <a class="tab-brand active" data-target="elle">
+                    <div class="new-items single-items">
+                        <div class="content-brand">
+                            <p class="text-brand"><q>Prices are lower than traditional luxury brands,
+                                    meaning you can stock up on the pieces you love.</q></p>
+                            <a class="tab-brand">
                                 <img src="./assets/images/elle.png">
                             </a>
                         </div>
-                        <div class="brand-item">
-                            <a class="tab-brand" data-target="www">
+                        <div class="content-brand">
+                            <p class="text-brand"><q>Mejuri's affordable gold pieces are both timeless
+                                    and of the moment.</q></p>
+                            <a class="tab-brand">
                                 <img src="./assets/images/www.png">
                             </a>
                         </div>
-                        <div class="brand-item">
-                            <a class="tab-brand" data-target="vogue">
+                        <div class="content-brand">
+                            <p class="text-brand"><q>Mejuri pieces are designed by women for women to
+                                    wear everyday because, quite simply, “luxury should be a habit”, not a
+                                    rarity.</q></p>
+                            <a class="tab-brand">
                                 <img src="./assets/images/vogue.png">
                             </a>
                         </div>
-                        <div class="brand-item">
-                            <a class="tab-brand" data-target="wwd">
+                        <div class="content-brand">
+                            <p class="text-brand"><q>Mejuri should serve as an example for large
+                                    jewelry brands.</q></p>
+                            <a class="tab-brand">
                                 <img src="./assets/images/wwd.png">
                             </a>
                         </div>
-                        <div class="brand-item">
-                            <a class="tab-brand" data-target="forbes">
+                        <div class="content-brand">
+                            <p class="text-brand"><q>[T]here’s an authentic coolness to the brand that
+                                    is more about community, than contrived allure.</q></p>
+                            <a class="tab-brand">
                                 <img src="./assets/images/forbes.png">
                             </a>
                         </div>
@@ -638,8 +654,8 @@
                     <div class="footer-item">
                         <h3>ABOUT US</h3>
                         <ul>
-                            <li><a href="./shop.html">Review</a></li>
-                            <li><a href="./shop.html">Questions</a></li>
+                            <li><a href="./contact.html">Contact</a></li>
+                            <li><a href="./faq.html">FAQ</a></li>
                         </ul>
                     </div>
                 </div>
@@ -675,13 +691,15 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="./assets/js/slider.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/modal.js"></script>
+    <script src="./assets/js/plugin.js"></script>
+    <script src="./assets/js/timer.js"></script>
 </body>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-<script src="./assets/js/slider.js"></script>
-<script src="./assets/js/main.js"></script>
-<script src="./assets/js/plugin.js"></script>
 
 </html>

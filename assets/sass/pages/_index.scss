@@ -147,38 +147,7 @@ main {
             white-space: nowrap;
         }
 
-        .coming-soon {
-
-            .countdown {
-                @include flexbox;
-                padding-right: 2rem;
-
-                @media screen and (max-width:576px) {
-                    padding: 0;
-                }
-
-
-
-                .time {
-                    @include flexbox;
-                    flex-direction: column;
-                    text-align: center;
-                    padding: 10px 20px;
-                    background-color: #f0f1f2;
-                    font-size: 10px;
-                    color: #282828;
-                    position: relative;
-                    border-right: 1px solid $color-secondary;
-
-                    .day,
-                    .hour,
-                    .minute,
-                    .second {
-                        font-size: 2rem;
-                    }
-                }
-            }
-        }
+        .coming-soon {}
 
         .company-info {
             @include flexbox;
@@ -264,14 +233,92 @@ main {
     }
 
     #edit {
+
+
+        .countdown {
+            @include flexbox;
+            padding-right: 2rem;
+
+            @media screen and (max-width:576px) {
+                padding: 0;
+            }
+
+
+
+            .time {
+                @include flexbox;
+                flex-direction: column;
+                text-align: center;
+                padding: 10px 20px;
+                background-color: #f0f1f2;
+                font-size: 10px;
+                color: #282828;
+                position: relative;
+                border-right: 1px solid $color-secondary;
+
+                .day,
+                .hour,
+                .minute,
+                .second {
+                    font-size: 2rem;
+                }
+            }
+        }
+
+        .fa-chevron-left {
+            position: absolute;
+            z-index: 2;
+            left: -40px;
+            top: 40%;
+            cursor: pointer;
+            font-size: 2rem;
+            color: rgb(148, 148, 148);
+            border-radius: 50%;
+            padding: 5px 10px;
+            border: 1px solid rgb(218, 218, 218);
+
+            @media screen and (max-width:768px) {
+                display: none !important;
+            }
+        }
+
+        .fa-chevron-right {
+            position: absolute;
+            z-index: 2;
+            right: -30px;
+            top: 40%;
+            cursor: pointer;
+            font-size: 2rem;
+            color: rgb(148, 148, 148);
+            border-radius: 50%;
+            padding: 5px 10px;
+            border: 1px solid rgb(218, 218, 218);
+
+            @media screen and (max-width:768px) {
+                display: none !important;
+            }
+        }
+
         .edit-info {
             @include flexbox;
             padding: 3rem 0;
+
+            @media screen and (max-width:768px) {
+                flex-direction: column;
+            }
+
+            @media screen and (max-width:576px) {
+                padding: 2rem;
+            }
 
             h2 {
                 font-weight: 500;
                 line-height: 1.1;
                 font-size: 3.2rem;
+
+                @media screen and (max-width:768px) {
+                    padding-bottom: 1.5rem;
+                }
             }
 
             a {
@@ -283,7 +330,85 @@ main {
             }
         }
 
+        .img-product {
+            position: relative;
+
+            .img-responsive {
+                opacity: 1;
+
+                &:hover {
+                    opacity: 0;
+                }
+            }
+
+            .img-responsive-hov {
+                transition: opacity 0.25s ease, filter 0.25s ease;
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                opacity: 0;
+
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
+
+        .hover-btns {
+            position: absolute;
+            top: 50%;
+            left: 80%;
+            display: block;
+            opacity: 0;
+            visibility: hidden;
+            transition: all .3s linear;
+
+
+            .single-btn {
+                cursor: pointer;
+                font-size: 2rem;
+                width: 46px;
+                height: 46px;
+                line-height: 29px;
+                background-color: $color-secondary;
+                border-radius: 50%;
+                text-align: center;
+                display: block;
+                margin-bottom: 13px;
+                transition: .5s;
+                padding: 10px;
+
+                i {
+                    &:hover {
+                        color: $color-brown;
+                    }
+                }
+
+            }
+
+        }
+
+
         .edit-item {
+            margin-left: 1rem;
+
+            @media screen and (max-width:768px) {
+                margin-left: 0;
+            }
+
+            .company-slider-item {
+                position: relative;
+
+                &:hover .hover-btns {
+                    opacity: 1;
+                    visibility: visible;
+                    transition: .5s;
+                    transform: translateX(-50%);
+                }
+            }
+
             img {
                 opacity: 1;
                 transition: opacity 200ms ease-out 0s;
@@ -292,10 +417,6 @@ main {
                 height: 100%;
                 object-fit: cover;
                 object-position: center center;
-
-                &:hover {
-                    opacity: 0.7;
-                }
             }
 
             p {
@@ -320,195 +441,149 @@ main {
             .new-item {
                 position: relative;
                 @include flexbox(flex, center, center);
-
-                img {
-                    width: 100%;
-                }
-
-                .new-info {
-                    position: absolute;
-                    margin-left: 50%;
-
-                    h4 {
-                        font-size: 1.4rem;
-                        color: $color-secondary;
-                        font-weight: 400;
-                        margin-bottom: 15px;
-                        letter-spacing: 1px;
-                        line-height: 1.1;
-                    }
-
-                    p {
-                        font-size: 3.2rem;
-                        font-weight: 500;
-                        color: rgb(255, 255, 255);
-                        line-height: 40px;
-                        margin-bottom: 30px;
-                    }
-
-                    @media screen and (max-width:576px) {
-                        margin: 0;
-                    }
-                }
             }
 
-            .slick-dots {
+            img {
+                width: 100%;
+            }
+
+            .new-info {
                 position: absolute;
-                display: flex;
-                justify-content: center;
-                list-style: none;
-                margin: 0;
-                padding-bottom: 2rem;
+                margin-left: 50%;
 
-                li {
-                    margin: 0 4px;
-
-                    button {
-                        cursor: pointer;
-                        height: 3px;
-                        width: 35px;
-                        overflow: hidden;
-                        border-radius: 2px;
-                        font-size: 0px;
-                        border: none;
-                        outline: none;
-                        opacity: 0.75;
-                    }
-
-                    &.slick-active {
-                        button {
-                            opacity: 1;
-                            border: none;
-
-                        }
-                    }
-                }
-
-                @media screen and (max-width:420px) {
-                    padding-bottom: 0;
-
-                }
-            }
-        }
-    }
-
-    #location {
-        .location-left {
-            background-color: $color-berj;
-            padding: 0;
-            @include flexbox(flex, center, center);
-
-            .location-info {
-                color: $color-primary;
-
-                h3 {
-                    font-weight: 500;
-                    margin-bottom: 20px;
-                    font-size: 4rem;
-
-                    @media screen and (max-width:768px) {
-                        font-size: 3rem;
-
-
-                    }
+                h4 {
+                    font-size: 1.4rem;
+                    color: $color-secondary;
+                    font-weight: 400;
+                    margin-bottom: 15px;
+                    letter-spacing: 1px;
+                    line-height: 1.1;
                 }
 
                 p {
-                    font-size: 1.6rem;
-                    font-weight: 300;
+                    font-size: 3.2rem;
+                    font-weight: 500;
+                    color: rgb(255, 255, 255);
+                    line-height: 40px;
                     margin-bottom: 30px;
                 }
-            }
 
-            @media screen and (max-width:768px) {
-                padding: 3rem 0;
-            }
-
-            @media screen and (max-width:576px) {
-                padding: 3rem;
+                @media screen and (max-width:576px) {
+                    margin: 0;
+                }
             }
         }
 
-        .location-right {
-            padding: 0;
+        .content-brand {
+            width: 1125px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 50px;
 
-            @media screen and (max-width:768px) {
-                display: none;
+            img {
+                width: max-content;
+            }
 
+            .text-brand {
+                margin-bottom: 16px;
+                color: #0f0d1e;
+                font-size: 24px;
+                line-height: 170%;
+                font-weight: 300;
+                text-align: center;
             }
         }
 
-        img {
-            width: 100%;
+        .slick-dots {
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            margin: 0;
+            padding-bottom: 2rem;
+
+            li {
+                margin: 0 4px;
+
+                button {
+                    cursor: pointer;
+                    height: 3px;
+                    width: 35px;
+                    overflow: hidden;
+                    border-radius: 2px;
+                    font-size: 0px;
+                    border: none;
+                    outline: none;
+                    opacity: 0.75;
+                }
+
+                &.slick-active {
+                    button {
+                        opacity: 1;
+                        border: none;
+                        background-color: $color-brown;
+
+                    }
+                }
+            }
+
+            @media screen and (max-width:420px) {
+                padding-bottom: 0;
+
+            }
         }
     }
+}
 
-    #brand {
-        padding: 10rem 0;
+#location {
+    .location-left {
+        background-color: $color-berj;
+        padding: 0;
+        @include flexbox(flex, center, center);
 
-        .brand-items {
-            @include flexbox(flex, center, center);
+        .location-info {
+            color: $color-primary;
 
-            @media screen and (max-width:768px) {
-                .brand-item:nth-last-child(-n+2) {
-                    display: none;
+            h3 {
+                font-weight: 500;
+                margin-bottom: 20px;
+                font-size: 4rem;
+
+                @media screen and (max-width:768px) {
+                    font-size: 3rem;
+
+
                 }
             }
-        }
 
-        .brand-item {
-            .tab-brand {
-                opacity: 0.3;
-                cursor: pointer;
-
-                img {
-                    margin-right: 1.4rem;
-                    border-radius: 0;
-                }
-
-            }
-
-            .tab-brand.active {
-                background-color: transparent;
-                opacity: 1;
-
-            }
-        }
-
-        .container.brands {
-            @include flexbox(flex, center, center);
-            padding-bottom: 4rem;
-
-            .row {
-                text-align: center;
-
-                .content-brands {
-                    position: relative;
-
-                    .content-brand {
-                        display: none;
-                        position: relative;
-                        width: 100%;
-
-                        .text-brand {
-                            margin-bottom: 16px;
-                            color: #0f0d1e;
-                            font-size: 24px;
-                            line-height: 170%;
-                            font-weight: 300;
-                            text-align: center;
-                        }
-                    }
-
-                    .content-brand.active {
-                        display: block;
-                    }
-                }
+            p {
+                font-size: 1.6rem;
+                font-weight: 300;
+                margin-bottom: 30px;
             }
         }
 
         @media screen and (max-width:768px) {
-            padding: 5rem 0;
+            padding: 3rem 0;
         }
+
+        @media screen and (max-width:576px) {
+            padding: 3rem;
+        }
+    }
+
+    .location-right {
+        padding: 0;
+
+        @media screen and (max-width:768px) {
+            display: none;
+
+        }
+    }
+
+    img {
+        width: 100%;
     }
 }

@@ -71,7 +71,7 @@
                                     </a>
                                     <div class="fav-number-sum">3</div>
                                 </li>
-                                <li class="nav-item"><a href="./sign.html">Sign In</a></li>
+                                <li class="nav-item"><a href="#" id="mySizeChart">Sign In</a></li>
                                 <li>
                                     <a id="basket-icon" href="">
                                         <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg"
@@ -88,7 +88,7 @@
                                         <div>
                                             <div class="basket-header">
                                                 <a href="">
-                                                    <i class="fas fa-chevron-left"></i>
+                                                    <i class="fas fa-chevron-left close-basket"></i>
                                                 </a>
                                                 <span>You're Basket</span>
                                                 <a href="">
@@ -182,7 +182,7 @@
                                                         </span>
                                                     </div>
                                                     <div class="checkout">
-                                                        <a class="button button-secondary" href="">
+                                                        <a class="button button-secondary" href="./checkout.html">
                                                             Continue to Checkout
                                                         </a>
                                                     </div>
@@ -262,125 +262,71 @@
         </div>
     </header>
     <main>
-        <section id="checkout">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-8 col-xs-12 user-col">
-                        <div class="user-info">
-                            <h1>Shipping Address</h1>
-                            <form action="">
-                                <div class="name-surname">
-                                    <div class="fieldset">
-                                        <label class="placeholder">First Name</label>
-                                        <input type="text" required="" autocomplete="off">
-                                    </div>
-                                    <div class="fieldset">
-                                        <label class="placeholder">Last Name</label>
-                                        <input type="text" required="" autocomplete="off">
-                                    </div>
-                                </div>
-                                <div class="fieldset">
-                                    <label class="placeholder">Country</label>
-                                    <select required="">
-                                        <option value="" disabled=""></option>
-                                        <option value="214">Azerbaijan</option>
-                                        <option value="214">United States of America</option>
-                                        <option value="213">United Kingdom</option>
-                                        <option value="212">United Arab Emirates</option>
-                                        <option value="200">Thailand</option>
-                                        <option value="197">Taiwan</option>
-                                        <option value="194">Sweden</option>
-                                        <option value="188">Spain</option>
-                                        <option value="106">South Korea</option>
-                                        <option value="183">Slovakia</option>
-                                        <option value="182">Singapore</option>
-                                        <option value="178">Saudi Arabia</option>
-                                        <option value="165">Qatar</option>
-                                        <option value="164">Puerto Rico</option>
-                                        <option value="162">Poland</option>
-                                        <option value="160">Philippines</option>
-                                        <option value="152">Norway</option>
-                                        <option value="145">New Zealand</option>
-                                        <option value="142">Netherlands</option>
-                                        <option value="122">Malaysia</option>
-                                        <option value="100">Japan</option>
-                                        <option value="98">Italy</option>
-                                        <option value="96">Ireland</option>
-                                        <option value="93">Indonesia</option>
-                                        <option value="90">Hungary</option>
-                                        <option value="89">Hong Kong</option>
-                                        <option value="74">Germany</option>
-                                        <option value="68">France</option>
-                                        <option value="67">Finland</option>
-                                        <option value="53">Denmark</option>
-                                        <option value="52">Czech Republic</option>
-                                        <option value="35">Canada</option>
-                                        <option value="20">Belgium</option>
-                                        <option value="13">Austria</option>
-                                        <option value="12">Australia</option>
-                                    </select>
-                                </div>
-                                <div class="fieldset">
-                                    <label class="placeholder">Address</label>
-                                    <input type="text" required="" autocomplete="off">
-                                </div>
-                                <div class="name-surname">
-                                    <div class="fieldset">
-                                        <label class="placeholder">Email</label>
-                                        <input type="email" required="" autocomplete="off">
-                                    </div>
-                                    <div class="fieldset">
-                                        <label class="placeholder">Number</label>
-                                        <input type="number" required="" autocomplete="off">
-                                    </div>
-                                </div>
-                                <div class="fieldset">
-                                    <label class="placeholder">Postal Code</label>
-                                    <input type="number" required="" autocomplete="off">
-                                </div>
-                                <button class="button button-secondary order" type="submit">Place Order</button>
-                            </form>
-                        </div>
+        <section id="contact">
+            <div class="contact-info">
+                <img src="./assets/images/contact.jfif" alt="">
+                <h1>CONTACT US</h1>
+            </div>
+            <div class="contact-body">
+                <div class="contact-body-info">
+                    <div class="container">
+                        <p>
+                            Feel free to check out our FAQs or send us an email or text.
+                        </p>
+                        <h5>
+                            Due to an intermittent system outage, we are experiencing higher than normal volume & our
+                            Customer Happiness team may take up to 5 business days to respond.
+                        </h5>
                     </div>
-                    <div class="col-xl-4">
-                        <div class="user-order">
-                            <div class="order-item">
-                                <div class="col-md-12">
-                                    <div class="row">
-                                        <div class="col-md-2">
-                                            <img src="./assets/images/order-1.jpg" alt="">
-                                        </div>
-                                        <div class="col-md-10">
-                                            <div class="order-item-info">
-                                                <div class="count-name">
-                                                    <span>2</span>X <span>Jewelry Care Kit</span>
-                                                </div>
-                                                <p>$40</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="contact-content">
+                                <i class="far fa-question-circle"></i>
+                                <h5>FAQ</h5>
+                                <p data-isolate="true">Most questions can be answered here.</p>
+                                <span>Our FAQ</span>
                             </div>
-                            <div class="order-item">
-                                <div class="col-md-12">
-                                    <div class="row">
-                                        <div class="col-md-2">
-                                            <img src="./assets/images/order-1.jpg" alt="">
-                                        </div>
-                                        <div class="col-md-10">
-                                            <div class="order-item-info">
-                                                <div class="count-name">
-                                                    <span>2</span>X <span>Jewelry Care Kit</span>
-                                                </div>
-                                                <p>$40</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="contact-content">
+                                <i class="fas fa-keyboard"></i>
+                                <h5>TEXT</h5>
+                                <p data-isolate="true">Text us! This is a US based number. Charges may apply.</p>
+                                <span>+1 (310) 597-4745</span>
                             </div>
-                            <div class="total-price">
-                                <h2>Order total</h2>
-                                <p>$100</p>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="contact-content">
+                                <i class="far fa-envelope"></i>
+                                <h5>EMAIL</h5>
+                                <p data-isolate="true">Send us an email to speak to an agent directly.</p>
+                                <span>CONTACT@MEJURI.COM</span>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="contact-content">
+                                <i class="fas fa-user-friends"></i>
+                                <h5>VIRTUAL SHOPPING</h5>
+                                <p data-isolate="true">Video chat with a stylist to see all of your picks up close.</p>
+                                <span>BOOK NOW</span>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="contact-content">
+                                <i class="far fa-map"></i>
+                                <h5>STORE LOCATIONS</h5>
+                                <p data-isolate="true">Find your nearest Mejuri store.</p>
+                                <span>STORE DIRECTORY</span>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="contact-content">
+                                <i class="far fa-star"></i>
+                                <h5>PARTNERSHIPS</h5>
+                                <p data-isolate="true">Interested in partnering with Mejuri?</p>
+                                <span>APPLY HERE</span>
                             </div>
                         </div>
                     </div>

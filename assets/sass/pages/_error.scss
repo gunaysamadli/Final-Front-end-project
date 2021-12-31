@@ -1,0 +1,26 @@
+#error {
+    .box {
+        padding-bottom: 13rem;
+
+        .page-header {
+            padding-bottom: 9px;
+            margin: 40px 0 20px;
+            border-bottom: 1px solid #eeeeee;
+            text-transform: uppercase;
+
+            h1 {
+                font-size: 4rem;
+                font-weight: 500;
+                line-height: 1.1;
+            }
+        }
+
+        p {
+            font-size: 15px;
+            line-height: 18px;
+            margin: 0 0 10px;
+            font-weight: 300;
+
+        }
+    }
+}

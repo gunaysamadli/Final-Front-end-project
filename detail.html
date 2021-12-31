@@ -480,11 +480,47 @@
                                                     <span>(2649)</span>
                                                 </div>
                                             </div>
-                                            <a href="" class="button button-secondary">ASk Question</a>
+                                            <a href="" class="button button-secondary ask">ASk Question</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                        <div class="user-question">
+                            <h2>ASK A QUESTION</h2>
+                            <form action="">
+                                <div class="form-group">
+                                    <div class="form-element">
+                                        <label for="yotpo_input_question_content"><span>*
+                                            </span>Question: <span class="form-input-error yotpo-hidden"></span>
+                                        </label>
+                                        <textarea id="yotpo_input_question_content" name="review_content"
+                                            maxlength="1000" aria-required="true" placeholder=""></textarea>
+                                    </div>
+                                </div>
+                                <div class="user-nam-em">
+                                    <div class="form-group">
+                                        <div class="form-element">
+                                            <label for="yotpo_input_question_content"><span>*
+                                                </span>Use your name:: <span
+                                                    class="form-input-error yotpo-hidden"></span>
+                                            </label>
+                                            <input type="text" id="yotpo_input_question_content">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="form-element">
+                                            <label for="yotpo_input_question_content"><span>*
+                                                </span>Email: <span class="form-input-error yotpo-hidden"></span>
+                                            </label>
+                                            <input type="email" id="yotpo_input_question_content">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-element submit-button">
+                                    <button type="submit" class="button button-secondary pp"> Post</button>
+                                </div>
+                            </form>
                         </div>
                         <div class="review-down-body">
                             <div class="container">
@@ -704,6 +740,47 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="user-review">
+                            <form method="post" action="/shop/review/6">
+                                <h4>Add a Review</h4>
+                                <div class="row">
+                                    <div class="add-a-review">
+                                        <h6>Your Ratings:</h6>
+                                        <div class="product-ratting">
+                                            <ul class="rate-pr">
+                                                <li><a href="#"><i class="fas fa-star rank"></i></a></li>
+                                                <li><a href="#"><i class="fas fa-star rank"></i></a></li>
+                                                <li><a href="#"><i class="fas fa-star rank"></i></a></li>
+                                                <li><a href="#"><i class="fas fa-star rank"></i></a></li>
+                                                <li><a href="#"><i class="fas fa-star rank"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <input type="hidden" class="rate" value="1" data-val="true"
+                                    data-val-required="The Rate field is required." id="Review_Rate" name="Review.Rate">
+                                <input type="hidden" name="productId" value="6">
+                                <div class="input-item input-item-textarea">
+                                    <textarea placeholder="Type your comments...." id="Review_Text"
+                                        name="Review.Text"></textarea>
+                                </div>
+                                <div class="input-item input-item-name">
+                                    <input type="text" placeholder="Type your name...." value="" id="Review_Username"
+                                        name="Review.Username">
+                                </div>
+                                <div class="input-item input-item-email">
+                                    <input type="email" placeholder="Type your email...." value="" id="Review_Email"
+                                        name="Review.Email">
+                                </div>
+                                <label class="save-info"><input type="checkbox" name="agree"> Save my name, email, and
+                                    website in this browser for the next time I comment.</label>
+                                <div class="btn-wrapper">
+                                    <button class="button button-primary
+                                    " type="submit">Submit</button>
+                                </div>
+                            </form>
+
+                        </div>
                     </div>
                 </div>
             </div>
@@ -774,8 +851,8 @@
                     <div class="footer-item">
                         <h3>ABOUT US</h3>
                         <ul>
-                            <li><a href="./shop.html">Review</a></li>
-                            <li><a href="./shop.html">Questions</a></li>
+                            <li><a href="./contact.html">Contact</a></li>
+                            <li><a href="./faq.html">FAQ</a></li>
                         </ul>
                     </div>
                 </div>
@@ -811,11 +888,15 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="./assets/js/slider.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/modal.js"></script>
+    <script src="./assets/js/plugin.js"></script>
+    <script src="./assets/js/timer.js"></script>
 </body>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-<script src="./assets/js/main.js"></script>
 
 </html>
